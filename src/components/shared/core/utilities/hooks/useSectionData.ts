@@ -35,14 +35,11 @@ export const useSectionData = (
     []
   )
 
-  const destroySection = useCallback(
-    (id: string) => {
-      setSections((currentSections) =>
-        currentSections.filter((section) => section.id !== id)
-      )
-    },
-    [sections]
-  )
+  const destroySection = useCallback((id: string) => {
+    setSections((currentSections) =>
+      currentSections.filter((section) => section.id !== id)
+    )
+  }, [])
 
   return [sections, initSection, destroySection]
 }

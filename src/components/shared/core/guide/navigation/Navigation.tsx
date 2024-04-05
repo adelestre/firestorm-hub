@@ -56,7 +56,7 @@ function Navigation({ headerRef }: Readonly<Props>) {
         style={{ height: height }}
         className={`anim bg-primary-2 border-primary-3 pointer-events-auto absolute bottom-0 left-0 z-40 flex w-full max-w-80 flex-col border-r sm:min-w-80 ${navigationContext.navigation ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div className="anim text-secondary-4 flex w-full flex-row justify-between gap-2 p-4 pb-0 text-3xl md:pt-0">
+        <div className="anim text-secondary-4 flex w-full flex-row justify-between gap-2 p-4 pb-0 text-3xl md:pt-2">
           <div
             id="spec-select"
             className="flex w-full min-w-0 flex-1 font-eco text-2xl font-bold"

@@ -5,7 +5,7 @@ import {
   useContext,
   useMemo,
 } from 'react'
-import { ThemeContextType } from '../utilities/types/contexts'
+import { ThemeContextType } from './utilities/types/contexts'
 import { useLocalStorage } from '@uidotdev/usehooks'
 
 const ThemeProvider = createContext<ThemeContextType>({

@@ -1,6 +1,6 @@
 import { MdNightlightRound, MdLightMode } from 'react-icons/md'
 import IconButton from './IconButton'
-import { useThemeContext } from '../../home/ThemeContext'
+import { useThemeContext } from '../../ThemeContext'
 
 function ThemeToggle() {
   const theme = useThemeContext()

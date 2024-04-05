@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
-import HeaderHome from '../utilities/header/HeaderHome'
+import HeaderHome from './HeaderHome'
 
 function Home() {
   const navigate = useNavigate()

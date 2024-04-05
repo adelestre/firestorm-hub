@@ -9,8 +9,8 @@ type Props = {
 
 function IconButton({ children, onClick, tooltip }: Readonly<Props>) {
   return (
-    <button onClick={onClick}>
-      <div className="anim hover:bg-primary-3 peer relative rounded-md p-2 text-3xl">
+    <button onClick={onClick} className="relative">
+      <div className="anim hover:bg-primary-3 peer flex h-12 w-12 items-center justify-center rounded-md p-2 text-3xl">
         {children}
       </div>
       {tooltip && <Tooltip {...tooltip} />}

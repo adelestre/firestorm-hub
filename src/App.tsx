@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Guide from './components/shared/core/guide/Guide'
 import Home from './components/shared/core/home/Home'
-import { ThemeContext } from './components/shared/core/home/ThemeContext'
+import { ThemeContext } from './components/shared/core/ThemeContext'
 
 function App() {
   return (

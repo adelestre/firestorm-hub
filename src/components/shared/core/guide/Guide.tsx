@@ -1,5 +1,5 @@
 import Document from './Document'
-import HeaderGuide from '../utilities/header/HeaderGuide'
+import HeaderGuide from './HeaderGuide'
 import Navigation from './navigation/Navigation'
 import { GuideContext } from '../guide/GuideContext'
 import { useRef } from 'react'

@@ -15,7 +15,6 @@ import {
 } from '../utilities/types/contexts'
 import { useSectionData } from '../utilities/hooks/useSectionData'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
-import { SectionData } from '../utilities/types/sectionData'
 import { transformStringForUrl } from '../utilities/utils'
 
 export const SectionProvider = createContext<SectionContext>(undefined)
@@ -37,10 +36,7 @@ export function GuideContext({ children }: Readonly<Props>) {
   const navigate = useNavigate()
   const { job, spec, content } = useParams()
   const location = useLocation()
-  const [sectionsMythic, initSectionMythic, destroySectionMythic] =
-    useSectionData('mythic+')
-  const [sectionsRaid, initSectionRaid, destroySectionRaid] =
-    useSectionData('mythic+')
+  const [sections, initSection, destroySection] = useSectionData('mythic+')
   useEffect(() => {
     if (!job || !spec) {
       navigate('/', { replace: true })
@@ -51,35 +47,16 @@ export function GuideContext({ children }: Readonly<Props>) {
     }
     if (location.hash) {
       const anchor = location.hash.substring(1)
-      let section: SectionData | undefined = undefined
-      switch (content) {
-        case 'mythic-plus':
-          section = sectionsMythic.find(
-            (section) => transformStringForUrl(section.name) === anchor
-          )
-          break
-        case 'raid':
-          section = sectionsRaid.find(
-            (section) => transformStringForUrl(section.name) === anchor
-          )
-          break
-      }
+      const section = sections.find(
+        (section) => transformStringForUrl(section.name) === anchor
+      )
       if (section) {
         setTimeout(() => {
           section?.ref?.current?.scrollIntoView({ behavior: 'smooth' })
         }, 100)
       }
     }
-  }, [
-    job,
-    spec,
-    content,
-    location.hash,
-    location.pathname,
-    sectionsMythic,
-    sectionsRaid,
-    navigate,
-  ])
+  }, [job, spec, content, location.hash, location.pathname, sections, navigate])
   const changeContent = useCallback(
     (type: string) => {
       navigate(
@@ -90,10 +67,10 @@ export function GuideContext({ children }: Readonly<Props>) {
     },
     [navigate, location.pathname]
   )
-  const [navigation, setNavigation] = useState(true)
+  const [navigation, setNavigation] = useState(false)
   useEffect(() => {
-    if (window.matchMedia('(min-width: 640px)').matches) {
-      setNavigation(false)
+    if (window.matchMedia('(min-width: 1210px)').matches) {
+      setNavigation(true)
     }
   }, [])
   const toggleNavigation = useCallback(() => {
@@ -111,34 +88,14 @@ export function GuideContext({ children }: Readonly<Props>) {
   }, [navigation])
 
   const sectionContext: SectionContext = useMemo(() => {
-    switch (content) {
-      case 'raid':
-        return {
-          sections: sectionsRaid,
-          initSection: initSectionRaid,
-          destroySection: destroySectionRaid,
-          parentId: sectionsRaid[0].id,
-          level: 0,
-        }
-      case 'mythic-plus':
-      default:
-        return {
-          sections: sectionsMythic,
-          initSection: initSectionMythic,
-          destroySection: destroySectionMythic,
-          parentId: sectionsMythic[0].id,
-          level: 0,
-        }
+    return {
+      sections: sections,
+      initSection: initSection,
+      destroySection: destroySection,
+      parentId: sections[0].id,
+      level: 0,
     }
-  }, [
-    content,
-    sectionsMythic,
-    initSectionMythic,
-    destroySectionMythic,
-    sectionsRaid,
-    initSectionRaid,
-    destroySectionRaid,
-  ])
+  }, [sections, initSection, destroySection])
   const navigationContext: NavigationContext = useMemo(
     () => ({ navigation, toggleNavigation }),
     [navigation, toggleNavigation]
