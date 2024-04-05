@@ -19,7 +19,7 @@ function HeaderGuide({ reference }: Readonly<Props>) {
         <IconButton onClick={navigationContext.toggleNavigation}>
           <div className="anim text-size-3 flex flex-row items-center gap-2">
             <BurgerMenu navigation={navigationContext.navigation} />
-            <p className="text-size-2 hidden sm:block">Navigation</p>
+            <p className="text-size-3 hidden sm:block">Navigation</p>
           </div>
         </IconButton>
       </div>
@@ -42,7 +42,7 @@ function HeaderGuide({ reference }: Readonly<Props>) {
 }
 
 type BurgerMenuProps = {
-  navigation: any
+  navigation: boolean
 }
 
 function BurgerMenu({ navigation }: Readonly<BurgerMenuProps>) {

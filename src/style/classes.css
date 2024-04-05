@@ -4,7 +4,7 @@
 
 @layer components {
   .eco {
-    @apply font-economica;
+    @apply font-eco;
   }
   .space-top {
     @apply mt-3 md:mt-4;
@@ -13,16 +13,16 @@
     @apply mt-6 md:mt-8;
   }
   .title-1 {
-    @apply font-economica font-black text-light-secondary-2 dark:text-dark-secondary-2;
+    @apply font-eco font-black text-light-secondary-2 dark:text-dark-secondary-2;
   }
   .title-2 {
-    @apply font-economica text-light-secondary-2 dark:text-dark-secondary-2;
+    @apply font-eco text-light-secondary-2 dark:text-dark-secondary-2;
   }
   .title-3 {
-    @apply font-economica text-light-accent-2 dark:text-dark-accent-2;
+    @apply font-eco text-light-accent-2 dark:text-dark-accent-2;
   }
   .title-4 {
-    @apply underlined font-economica text-light-secondary-3 dark:text-dark-secondary-3;
+    @apply underlined font-eco text-light-secondary-3 dark:text-dark-secondary-3;
   }
   .underlined {
     @apply underline decoration-1 underline-offset-4;

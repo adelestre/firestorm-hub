@@ -59,7 +59,7 @@ function Navigation({ headerRef }: Readonly<Props>) {
         <div className="anim text-secondary-4 flex w-full flex-row justify-between gap-2 p-4 pb-0 text-3xl md:pt-0">
           <div
             id="spec-select"
-            className="flex w-full min-w-0 flex-1 font-economica text-2xl font-bold"
+            className="flex w-full min-w-0 flex-1 font-eco text-2xl font-bold"
           >
             {specContext && (
               <Select

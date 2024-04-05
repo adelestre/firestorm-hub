@@ -1,10 +1,13 @@
-import React from 'react'
 import Header from './Header'
 
 function HeaderHome() {
   return (
     <Header>
-      <h1 className="title-1 text-size-4">Firestorm Guides</h1>
+      <div className="flex h-full w-full flex-row items-center justify-between">
+        <div></div>
+        <h1 className="text-size-4">Firestorm Hub</h1>
+        <div></div>
+      </div>
     </Header>
   )
 }

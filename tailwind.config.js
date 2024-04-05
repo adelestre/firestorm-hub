@@ -3,7 +3,7 @@ export const content = ['./src/**/*.{js,jsx,ts,tsx}']
 export const darkMode = 'class'
 export const theme = {
   fontFamily: {
-    economica: ['Economica', 'sans-serif'],
+    eco: ["Economica", 'sans-serif'],
   },
   extend: {
     colors: {
