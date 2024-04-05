@@ -1,0 +1,70 @@
+import NavigationLink from './NavigationLink'
+import { SectionData } from '../../utilities/types/sectionData'
+import { useEffect, useMemo, useState } from 'react'
+import { SectionProvider, useSectionContext } from '../GuideContext'
+import { SectionContext } from '../../utilities/types/contexts'
+
+type Props = {
+  id: string
+}
+
+function NavigationGroup({ id }: Readonly<Props>) {
+  const sectionContext = useSectionContext()
+  const [textSize, setTextSize] = useState('text-size-4')
+  const [section, setSection] = useState<SectionData | undefined>(undefined)
+  const [children, setChildren] = useState<SectionData[]>([])
+  useEffect(() => {
+    if (sectionContext === null || sectionContext === undefined) return
+    else {
+      setSection(sectionContext.sections.find((section) => section.id === id))
+      const ch = sectionContext.sections.filter(
+        (section) => section.parentId === id
+      )
+      setChildren(ch)
+      switch (sectionContext.level) {
+        case undefined:
+        case 0:
+          setTextSize('text-4xl')
+          break
+        case 1:
+          setTextSize('text-3xl')
+          break
+        case 2:
+          setTextSize('text-2xl')
+          break
+        default:
+          setTextSize('text-xl')
+          break
+      }
+    }
+  }, [sectionContext, textSize, id])
+  const newContext: SectionContext = useMemo(() => {
+    if (!sectionContext || !section) {
+      return undefined
+    }
+    return {
+      ...sectionContext,
+      parentId: section.id,
+      level: sectionContext.level + 1,
+    }
+  }, [section, sectionContext])
+  return section && children ? (
+    <div className="flex w-full flex-col items-start">
+      <div className={`eco w-full ${textSize}`}>
+        <NavigationLink name={section.name} />
+      </div>
+      <SectionProvider.Provider value={newContext}>
+        {children.map((child) => (
+          <div
+            key={'navigation' + child.id}
+            className="flex w-full flex-col items-start pl-4"
+          >
+            <NavigationGroup id={child.id} />
+          </div>
+        ))}
+      </SectionProvider.Provider>
+    </div>
+  ) : null
+}
+
+export default NavigationGroup

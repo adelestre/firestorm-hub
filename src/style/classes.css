@@ -1,0 +1,483 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .eco {
+    @apply font-economica;
+  }
+  .space-top {
+    @apply mt-3 md:mt-4;
+  }
+  .space-top-2 {
+    @apply mt-6 md:mt-8;
+  }
+  .title-1 {
+    @apply font-economica font-black text-light-secondary-2 dark:text-dark-secondary-2;
+  }
+  .title-2 {
+    @apply font-economica text-light-secondary-2 dark:text-dark-secondary-2;
+  }
+  .title-3 {
+    @apply font-economica text-light-accent-2 dark:text-dark-accent-2;
+  }
+  .title-4 {
+    @apply underlined font-economica text-light-secondary-3 dark:text-dark-secondary-3;
+  }
+  .underlined {
+    @apply underline decoration-1 underline-offset-4;
+  }
+}
+
+@layer utilities {
+  .text-size-0 {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  .text-size-1 {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+  .text-size-2 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  .text-size-3 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  .text-size-4 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+  .text-size-5 {
+    @apply text-4xl sm:text-5xl md:text-7xl;
+  }
+  .anim-fast {
+    @apply duration-75 ease-in-out;
+  }
+  .anim {
+    @apply duration-100 ease-in-out;
+  }
+  .anim-slow {
+    @apply duration-200 ease-in-out;
+  }
+  .bg-primary-0 {
+    @apply bg-light-primary-0 dark:bg-dark-primary-0;
+  }
+  .bg-primary-1 {
+    @apply bg-light-primary-1 dark:bg-dark-primary-1;
+  }
+  .bg-primary-2 {
+    @apply bg-light-primary-2 dark:bg-dark-primary-2;
+  }
+  .bg-primary-3 {
+    @apply bg-light-primary-3 dark:bg-dark-primary-3;
+  }
+  .bg-primary-4 {
+    @apply bg-light-primary-4 dark:bg-dark-primary-4;
+  }
+  .bg-secondary-0 {
+    @apply bg-light-secondary-0 dark:bg-dark-secondary-0;
+  }
+  .bg-secondary-1 {
+    @apply bg-light-secondary-1 dark:bg-dark-secondary-1;
+  }
+  .bg-secondary-2 {
+    @apply bg-light-secondary-2 dark:bg-dark-secondary-2;
+  }
+  .bg-secondary-3 {
+    @apply bg-light-secondary-3 dark:bg-dark-secondary-3;
+  }
+  .bg-secondary-4 {
+    @apply bg-light-secondary-4 dark:bg-dark-secondary-4;
+  }
+  .bg-accent-1 {
+    @apply bg-light-accent-1 dark:bg-dark-accent-1;
+  }
+  .bg-accent-2 {
+    @apply bg-light-accent-2 dark:bg-dark-accent-2;
+  }
+  .bg-accent-3 {
+    @apply bg-light-accent-3 dark:bg-dark-accent-3;
+  }
+  .bg-accent-4 {
+    @apply bg-light-accent-4 dark:bg-dark-accent-4;
+  }
+  .bg-accent-5 {
+    @apply bg-light-accent-5 dark:bg-dark-accent-5;
+  }
+  .bg-accent-6 {
+    @apply bg-light-accent-6 dark:bg-dark-accent-6;
+  }
+  .bg-green-1 {
+    @apply bg-light-green-1 dark:bg-dark-green-1;
+  }
+  .bg-green-2 {
+    @apply bg-light-green-2 dark:bg-dark-green-2;
+  }
+  .bg-green-3 {
+    @apply bg-light-green-3 dark:bg-dark-green-3;
+  }
+  .bg-green-4 {
+    @apply bg-light-green-4 dark:bg-dark-green-4;
+  }
+  .bg-green-5 {
+    @apply bg-light-green-5 dark:bg-dark-green-5;
+  }
+  .bg-green-6 {
+    @apply bg-light-green-6 dark:bg-dark-green-6;
+  }
+  .text-primary-1 {
+    @apply text-light-primary-1 dark:text-dark-primary-1;
+  }
+  .text-primary-2 {
+    @apply text-light-primary-2 dark:text-dark-primary-2;
+  }
+  .text-primary-3 {
+    @apply text-light-primary-3 dark:text-dark-primary-3;
+  }
+  .text-primary-4 {
+    @apply text-light-primary-4 dark:text-dark-primary-4;
+  }
+  .text-secondary-1 {
+    @apply text-light-secondary-1 dark:text-dark-secondary-1;
+  }
+  .text-secondary-2 {
+    @apply text-light-secondary-2 dark:text-dark-secondary-2;
+  }
+  .text-secondary-3 {
+    @apply text-light-secondary-3 dark:text-dark-secondary-3;
+  }
+  .text-secondary-4 {
+    @apply text-light-secondary-4 dark:text-dark-secondary-4;
+  }
+  .text-accent-1 {
+    @apply text-light-accent-1 dark:text-dark-accent-1;
+  }
+  .text-accent-2 {
+    @apply text-light-accent-2 dark:text-dark-accent-2;
+  }
+  .text-accent-3 {
+    @apply text-light-accent-3 dark:text-dark-accent-3;
+  }
+  .text-accent-4 {
+    @apply text-light-accent-4 dark:text-dark-accent-4;
+  }
+  .text-accent-5 {
+    @apply text-light-accent-5 dark:text-dark-accent-5;
+  }
+  .text-accent-6 {
+    @apply text-light-accent-6 dark:text-dark-accent-6;
+  }
+  .border-primary-1 {
+    @apply border-light-primary-1 dark:border-dark-primary-1;
+  }
+  .border-primary-2 {
+    @apply border-light-primary-2 dark:border-dark-primary-2;
+  }
+  .border-primary-3 {
+    @apply border-light-primary-3 dark:border-dark-primary-3;
+  }
+  .border-primary-4 {
+    @apply border-light-primary-4 dark:border-dark-primary-4;
+  }
+  .border-secondary-1 {
+    @apply border-light-secondary-1 dark:border-dark-secondary-1;
+  }
+  .border-secondary-2 {
+    @apply border-light-secondary-2 dark:border-dark-secondary-2;
+  }
+  .border-secondary-3 {
+    @apply border-light-secondary-3 dark:border-dark-secondary-3;
+  }
+  .border-secondary-4 {
+    @apply border-light-secondary-4 dark:border-dark-secondary-4;
+  }
+  .border-accent-1 {
+    @apply border-light-accent-1 dark:border-dark-accent-1;
+  }
+  .border-accent-2 {
+    @apply border-light-accent-2 dark:border-dark-accent-2;
+  }
+  .border-accent-3 {
+    @apply border-light-accent-3 dark:border-dark-accent-3;
+  }
+  .border-accent-4 {
+    @apply border-light-accent-4 dark:border-dark-accent-4;
+  }
+  .border-accent-5 {
+    @apply border-light-accent-5 dark:border-dark-accent-5;
+  }
+  .border-accent-6 {
+    @apply border-light-accent-6 dark:border-dark-accent-6;
+  }
+  .shadow-primary-1 {
+    @apply shadow-light-primary-1 dark:shadow-dark-primary-1;
+  }
+  .shadow-primary-2 {
+    @apply shadow-light-primary-2 dark:shadow-dark-primary-2;
+  }
+  .shadow-primary-3 {
+    @apply shadow-light-primary-3 dark:shadow-dark-primary-3;
+  }
+  .shadow-primary-4 {
+    @apply shadow-light-primary-4 dark:shadow-dark-primary-4;
+  }
+  .shadow-secondary-1 {
+    @apply shadow-light-secondary-1 dark:shadow-dark-secondary-1;
+  }
+  .shadow-secondary-2 {
+    @apply shadow-light-secondary-2 dark:shadow-dark-secondary-2;
+  }
+  .shadow-secondary-3 {
+    @apply shadow-light-secondary-3 dark:shadow-dark-secondary-3;
+  }
+  .shadow-secondary-4 {
+    @apply shadow-light-secondary-4 dark:shadow-dark-secondary-4;
+  }
+  .shadow-accent-1 {
+    @apply shadow-light-accent-1 dark:shadow-dark-accent-1;
+  }
+  .shadow-accent-2 {
+    @apply shadow-light-accent-2 dark:shadow-dark-accent-2;
+  }
+  .shadow-accent-3 {
+    @apply shadow-light-accent-3 dark:shadow-dark-accent-3;
+  }
+  .shadow-accent-4 {
+    @apply shadow-light-accent-4 dark:shadow-dark-accent-4;
+  }
+  .shadow-accent-5 {
+    @apply shadow-light-accent-5 dark:shadow-dark-accent-5;
+  }
+  .shadow-accent-6 {
+    @apply shadow-light-accent-6 dark:shadow-dark-accent-6;
+  }
+  .scroll-track-primary-1 {
+    @apply scrollbar-track-light-primary-1 dark:scrollbar-track-dark-primary-1;
+  }
+  .scroll-track-primary-2 {
+    @apply scrollbar-track-light-primary-2 dark:scrollbar-track-dark-primary-2;
+  }
+  .scroll-track-primary-3 {
+    @apply scrollbar-track-light-primary-3 dark:scrollbar-track-dark-primary-3;
+  }
+  .scroll-track-primary-4 {
+    @apply scrollbar-track-light-primary-4 dark:scrollbar-track-dark-primary-4;
+  }
+  .scroll-thumb-primary-1 {
+    @apply scrollbar-thumb-light-primary-1 dark:scrollbar-thumb-dark-primary-1;
+  }
+  .scroll-thumb-primary-2 {
+    @apply scrollbar-thumb-light-primary-2 dark:scrollbar-thumb-dark-primary-2;
+  }
+  .scroll-thumb-primary-3 {
+    @apply scrollbar-thumb-light-primary-3 dark:scrollbar-thumb-dark-primary-3;
+  }
+  .scroll-thumb-primary-4 {
+    @apply scrollbar-thumb-light-primary-4 dark:scrollbar-thumb-dark-primary-4;
+  }
+  .scroll-track-secondary-1 {
+    @apply scrollbar-track-light-secondary-1 dark:scrollbar-track-dark-secondary-1;
+  }
+  .scroll-track-secondary-2 {
+    @apply scrollbar-track-light-secondary-2 dark:scrollbar-track-dark-secondary-2;
+  }
+  .scroll-track-secondary-3 {
+    @apply scrollbar-track-light-secondary-3 dark:scrollbar-track-dark-secondary-3;
+  }
+  .scroll-track-secondary-4 {
+    @apply scrollbar-track-light-secondary-4 dark:scrollbar-track-dark-secondary-4;
+  }
+  .scroll-thumb-secondary-1 {
+    @apply scrollbar-thumb-light-secondary-1 dark:scrollbar-thumb-dark-secondary-1;
+  }
+  .scroll-thumb-secondary-2 {
+    @apply scrollbar-thumb-light-secondary-2 dark:scrollbar-thumb-dark-secondary-2;
+  }
+  .scroll-thumb-secondary-3 {
+    @apply scrollbar-thumb-light-secondary-3 dark:scrollbar-thumb-dark-secondary-3;
+  }
+  .scroll-thumb-secondary-4 {
+    @apply scrollbar-thumb-light-secondary-4 dark:scrollbar-thumb-dark-secondary-4;
+  }
+  .scroll-track-accent-1 {
+    @apply scrollbar-track-light-accent-1 dark:scrollbar-track-dark-accent-1;
+  }
+  .scroll-track-accent-2 {
+    @apply scrollbar-track-light-accent-2 dark:scrollbar-track-dark-accent-2;
+  }
+  .scroll-track-accent-3 {
+    @apply scrollbar-track-light-accent-3 dark:scrollbar-track-dark-accent-3;
+  }
+  .scroll-track-accent-4 {
+    @apply scrollbar-track-light-accent-4 dark:scrollbar-track-dark-accent-4;
+  }
+  .scroll-track-accent-5 {
+    @apply scrollbar-track-light-accent-5 dark:scrollbar-track-dark-accent-5;
+  }
+  .scroll-track-accent-6 {
+    @apply scrollbar-track-light-accent-6 dark:scrollbar-track-dark-accent-6;
+  }
+  .scroll-thumb-accent-1 {
+    @apply scrollbar-thumb-light-accent-1 dark:scrollbar-thumb-dark-accent-1;
+  }
+  .scroll-thumb-accent-2 {
+    @apply scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-2;
+  }
+  .scroll-thumb-accent-3 {
+    @apply scrollbar-thumb-light-accent-3 dark:scrollbar-thumb-dark-accent-3;
+  }
+  .scroll-thumb-accent-4 {
+    @apply scrollbar-thumb-light-accent-4 dark:scrollbar-thumb-dark-accent-4;
+  }
+  .scroll-thumb-accent-5 {
+    @apply scrollbar-thumb-light-accent-5 dark:scrollbar-thumb-dark-accent-5;
+  }
+  .scroll-thumb-accent-6 {
+    @apply scrollbar-thumb-light-accent-6 dark:scrollbar-thumb-dark-accent-6;
+  }
+}
+
+div.rcs-inner-handle {
+  @apply bg-light-accent-1 dark:bg-dark-accent-1;
+}
+div.rcs-inner-container {
+  overflow-y: hidden;
+}
+
+#spec-select > div > button {
+  @apply flex w-full flex-row items-center justify-between gap-2 *:line-clamp-1;
+}
+#spec-select > div:has(ul) > button {
+  @apply border-light-accent-2 dark:border-dark-accent-2;
+}
+
+#spec-select > div > button > span {
+  @apply relative left-0 min-w-0 flex-1 text-nowrap;
+}
+
+#spec-select > div > button > div {
+  @apply anim relative right-0 flex-shrink-0;
+}
+#spec-select > div:has(> ul) > button > div {
+  @apply rotate-180;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  @apply anim;
+}
+
+p {
+  @apply sm:text-justify;
+}
+
+@layer colors {
+  [spec-theme='deathknight'] {
+    --accent-1: #79091c;
+    --accent-2: #9c0f27;
+    --accent-3: #c41e3a;
+    --accent-4: #e3344f;
+    --accent-5: #f6687f;
+    --accent-6: #f9a3b0;
+  }
+  [spec-theme='demonhunter'] {
+    --accent-1: #650b83;
+    --accent-2: #8a0fba;
+    --accent-3: #a330c9;
+    --accent-4: #b44fd9;
+    --accent-5: #c77ff0;
+    --accent-6: #e0baf7;
+  }
+  [spec-theme='druid'] {
+    --accent-1: #a54d00;
+    --accent-2: #d36600;
+    --accent-3: #ff7d0a;
+    --accent-4: #ff9e3d;
+    --accent-5: #ffb56b;
+    --accent-6: #ffcc99;
+  }
+  [spec-theme='evoker'] {
+    --accent-1: #0e6352;
+    --accent-2: #0f7f6e;
+    --accent-3: #33937f;
+    --accent-4: #4faa9a;
+    --accent-5: #7fcfc3;
+    --accent-6: #baf7f0;
+  }
+  [spec-theme='hunter'] {
+    --accent-1: #5c8425;
+    --accent-2: #7fae3d;
+    --accent-3: #aad372;
+    --accent-4: #c5e08c;
+    --accent-5: #d9f0a3;
+    --accent-6: #eaf7b8;
+  }
+  [spec-theme='mage'] {
+    --accent-1: #0e6f8a;
+    --accent-2: #0f8db0;
+    --accent-3: #3fc7eb;
+    --accent-4: #6fd9f0;
+    --accent-5: #9feaf7;
+    --accent-6: #baf7f9;
+  }
+  [spec-theme='monk'] {
+    --accent-1: #149360;
+    --accent-2: #0fc186;
+    --accent-3: #0ce991;
+    --accent-4: #76ffd4;
+    --accent-5: #b3ffe6;
+    --accent-6: #e0fff5;
+  }
+  [spec-theme='paladin'] {
+    --accent-1: #a03a68;
+    --accent-2: #c65c8c;
+    --accent-3: #f48cba;
+    --accent-4: #ff9eb5;
+    --accent-5: #ffccda;
+    --aacent-6: #fff5f7;
+  }
+  [spec-theme='priest'] {
+    --accent-1: #8a8a8a;
+    --accent-2: #b1b1b1;
+    --accent-3: #ffffff;
+    --accent-4: #b1b1b1;
+    --accent-5: #8a8a8a;
+    --accent-6: #656565;
+  }
+  [spec-theme='rogue'] {
+    --accent-1: #aea41c;
+    --accent-2: #d6d00f;
+    --accent-3: #fff468;
+    --accent-4: #fff68f;
+    --accent-5: #fff6b5;
+    --accent-6: #fff6d9;
+  }
+  [spec-theme='shaman'] {
+    --accent-1: #003971;
+    --accent-2: #0052a1;
+    --accent-3: #0070dd;
+    --accent-4: #27a1f8;
+    --accent-5: #5cc2ff;
+    --accent-6: #8cd4ff;
+  }
+  [spec-theme='warlock'] {
+    --accent-1: #3436a8;
+    --accent-2: #4d4ff0;
+    --accent-3: #8788ee;
+    --accent-4: #a3a3f9;
+    --accent-5: #b8b8ff;
+    --accent-6: #d1d1ff;
+  }
+  [spec-theme='warrior'] {
+    --accent-1: #855929;
+    --accent-2: #9a744c;
+    --accent-3: #c69b6d;
+    --accent-4: #d4b08a;
+    --accent-5: #e1c0a1;
+    --accent-6: #f0d9c5;
+  }
+}
