@@ -3,7 +3,8 @@ export const content = ['./src/**/*.{js,jsx,ts,tsx}']
 export const darkMode = 'class'
 export const theme = {
   fontFamily: {
-    eco: ["Economica", 'sans-serif'],
+    eco: ['Economica', 'sans-serif'],
+    assistant: ['Assistant', 'sans-serif'],
   },
   extend: {
     colors: {
@@ -61,7 +62,7 @@ export const theme = {
     },
     boxShadow: {
       img: 'inset 0px 0px 30px 15px #000000',
-      'md-right': '4px 0px 6px -1px rgb(0 0 0 / 0.1)',
+      'md-left': '-4px 3px 6px -1px rgb(0 0 0 / 0.1)',
     },
   },
 }

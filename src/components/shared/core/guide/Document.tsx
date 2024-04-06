@@ -24,13 +24,13 @@ function Document() {
         const rootFontSize = parseFloat(
           getComputedStyle(document.documentElement).fontSize
         )
-        const maxSideWidth = 20 * rootFontSize
+        const maxSideWidth = 18 * rootFontSize
         const translateX =
           maxSideWidth - (window.innerWidth - documentWidth) / 2
         if (translateX > 0)
           return translateX < maxSideWidth / 2
-            ? `${translateX}px`
-            : `${maxSideWidth / 2 - (translateX - maxSideWidth / 2)}px`
+            ? `-${translateX}px`
+            : `-${maxSideWidth / 2 - (translateX - maxSideWidth / 2)}px`
       }
     }
     return '0px'
@@ -42,7 +42,10 @@ function Document() {
   return loading ? (
     <Spinner />
   ) : sectionContext ? (
-    <div className="min-h-0 w-full flex-1">
+    <div
+      id="document"
+      className={`min-h-0 w-full flex-1 ${navigationContext?.navigation ? 'nav-open' : ''}`}
+    >
       <CustomScroll heightRelativeToParent="100%">
         <div ref={ref} className="relative flex flex-col items-center">
           <ScrollBack docRef={ref} translateX={translateX} />
@@ -54,7 +57,7 @@ function Document() {
                   : {}
               }
               ref={sectionContext.sections[0].ref as React.Ref<HTMLDivElement>}
-              className="anim bg-primary-1 border-primary-3 flex w-full max-w-4xl flex-col items-start rounded-sm px-4 py-8 sm:w-5/6 sm:border-x sm:px-12 md:w-3/4 md:py-12"
+              className="anim bg-primary-1 border-primary-3 flex w-full max-w-4xl flex-col items-start px-4 py-8 sm:w-5/6 sm:border sm:border-t-0 sm:px-12 md:w-3/4 md:py-12"
             >
               <GuideRouter />
             </div>

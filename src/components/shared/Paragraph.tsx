@@ -3,7 +3,11 @@ type Props = {
 }
 
 function Paragraph({ children }: Readonly<Props>) {
-  return <p className="space-top">{children}</p>
+  return (
+    <p className="space-top text-size-1 font-assistant font-normal !leading-6">
+      {children}
+    </p>
+  )
 }
 
 export default Paragraph

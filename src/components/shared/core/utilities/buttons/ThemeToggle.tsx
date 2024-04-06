@@ -8,8 +8,8 @@ function ThemeToggle() {
     <IconButton
       onClick={theme.toggle}
       tooltip={{
-        text: theme.state ? 'Light Theme' : 'Dark Theme',
-        bottom: true,
+        content: 'Theme mode',
+        placement: 'bottom',
       }}
     >
       <div className={`${!theme.state && '-rotate-[30deg]'}`}>

@@ -16,8 +16,11 @@ function HeaderGuide({ reference }: Readonly<Props>) {
       reference={reference}
       childrenRight={
         <IconButton
-          tooltip={{ text: 'Navigation', bottom: true }}
           onClick={navigationContext.toggleNavigation}
+          tooltip={{
+            content: navigationContext.navigation ? 'close' : 'navigation',
+            placement: 'bottom',
+          }}
         >
           <BurgerMenu navigation={navigationContext.navigation} />
         </IconButton>

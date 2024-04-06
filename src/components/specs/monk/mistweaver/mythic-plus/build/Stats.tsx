@@ -11,13 +11,12 @@ function Stats() {
     <Section name="Stats">
       <Paragraph>In Mythic+, each stat has a use :</Paragraph>
       <Definitions
-        className="space-top"
         defs={[
           {
             key: 'mast',
             abbreviation: 'Mastery',
             definition: (
-              <div>
+              <span>
                 Increase significantly your ST healing output and{' '}
                 <ItemLink
                   icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
@@ -25,7 +24,7 @@ function Stats() {
                   link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
                 />
                 's power.
-              </div>
+              </span>
             ),
           },
           {
@@ -52,18 +51,18 @@ function Stats() {
         damage reduction and reactiveness. So your stats priority will logically
         look like :
       </Paragraph>
-      <List className="space-top list-decimal">
+      <List className="list-decimal">
         <ListElement>
-          <p>Haste</p>
+          <span>Haste</span>
         </ListElement>
         <ListElement>
-          <p>Versatility</p>
+          <span>Versatility</span>
         </ListElement>
         <ListElement>
-          <p>Critical Strike</p>
+          <span>Critical Strike</span>
         </ListElement>
         <ListElement>
-          <p>Mastery</p>
+          <span>Mastery</span>
         </ListElement>
       </List>
       <Paragraph>
@@ -122,14 +121,17 @@ function Stats() {
         As an example, here are my stats from gear and consummables :
       </Paragraph>
       <Definitions
-        className="space-top"
         defs={[
           {
             key: 'my-ilvl',
             abbreviation: 'Item lvl',
             definition: '420.1',
           },
-          { key: 'my-int', abbreviation: 'Intelligence ', definition: '9120' },
+          {
+            key: 'my-int',
+            abbreviation: 'Intelligence ',
+            definition: '9120',
+          },
           {
             key: 'my-crit',
             abbreviation: 'Critical Strike',

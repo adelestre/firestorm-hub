@@ -27,21 +27,21 @@ function Definitions({ defs, ...props }: Readonly<Props>) {
   useThrottledEffect(resize, 'resize')
   return (
     <List className={'max-w-full list-disc ' + props.className}>
-      <div ref={containerRef}>
+      <span ref={containerRef}>
         {defs.map((def) => (
           <ListElement key={def.key}>
-            <div className="flex flex-row leading-none">
+            <span className="flex flex-row leading-none">
               <span className="mr-2 w-max" style={{ width: size + 'px' }}>
                 <span className="def w-max truncate text-nowrap">
                   {def.abbreviation}
                 </span>
               </span>
-              <div className="pr-2">:</div>
+              <span className="pr-2">:</span>
               <span className="flex-1 text-left">{def.definition}</span>
-            </div>
+            </span>
           </ListElement>
         ))}
-      </div>
+      </span>
     </List>
   )
 }

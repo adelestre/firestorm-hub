@@ -6,6 +6,9 @@
   .eco {
     @apply font-eco;
   }
+  .space-top-half {
+    @apply mt-1 md:mt-2;
+  }
   .space-top {
     @apply mt-3 md:mt-4;
   }
@@ -340,6 +343,10 @@ div.rcs-inner-handle {
 }
 div.rcs-inner-container {
   overflow-y: hidden;
+}
+
+#document.nav-open .rcs-inner-handle {
+  @apply -translate-x-72;
 }
 
 #spec-select > div > button {

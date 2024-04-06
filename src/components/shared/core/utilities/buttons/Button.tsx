@@ -11,7 +11,7 @@ function Button({ children, active, ...props }: Readonly<Props>) {
     ' ' +
     (active
       ? 'bg-accent-3 border-accent-1 cursor-default text-zinc-900 font-extrabold'
-      : 'bg-primary-3 hover:bg-primary-1 border-primary-4 dark:bg-dark-primary-1 dark:hover:bg-dark-primary-3')
+      : 'bg-primary-1 hover:bg-primary-3 border-primary-4')
   return (
     <button {...props} className={classes}>
       {children}

@@ -6,7 +6,7 @@ function Abbreviations() {
   return (
     <div>
       <Section name="Abbreviations">
-        <div className="space-top flex flex-col flex-wrap md:flex-row">
+        <span className="flex flex-col flex-wrap md:flex-row">
           <Definitions
             defs={[
               { key: 'mw', abbreviation: 'MW', definition: 'Mistweaver' },
@@ -169,7 +169,7 @@ function Abbreviations() {
               },
             ]}
           />
-        </div>
+        </span>
       </Section>
     </div>
   )

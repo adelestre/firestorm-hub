@@ -172,7 +172,7 @@ function Cons() {
           through consumable. It is fairly expensive but it is very important to
           maximize your character. Here's all you can use :{' '}
         </Paragraph>
-        <List className="space-top list-disc font-semibold">
+        <List className="list-disc font-semibold">
           <ListElement>
             <ItemLink
               icon="https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_bottle_shape2_black.jpg"
