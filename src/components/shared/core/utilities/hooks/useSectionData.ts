@@ -12,7 +12,7 @@ export const useSectionData = (
     {
       id: v4(),
       parentId: `${'0000'}-${'0000'}-${'0000'}-${'0000'}-${'0000'}`,
-      name: guide + ' Guide',
+      name: '#root',
       ref: createRef(),
     },
   ])

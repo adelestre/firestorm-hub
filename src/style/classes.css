@@ -349,21 +349,21 @@ div.rcs-inner-container {
   @apply -translate-x-72;
 }
 
-#spec-select > div > button {
+.spec-select > div > button {
   @apply flex w-full flex-row items-center justify-between gap-2 *:line-clamp-1;
 }
-#spec-select > div:has(ul) > button {
+.spec-select > div:has(ul) > button {
   @apply border-light-accent-2 dark:border-dark-accent-2;
 }
 
-#spec-select > div > button > span {
+.spec-select > div > button > span {
   @apply relative left-0 min-w-0 flex-1 text-nowrap;
 }
 
-#spec-select > div > button > div {
+.spec-select > div > button > div {
   @apply anim relative right-0 flex-shrink-0;
 }
-#spec-select > div:has(> ul) > button > div {
+.spec-select > div:has(> ul) > button > div {
   @apply rotate-180;
 }
 
@@ -383,6 +383,14 @@ p {
 }
 
 @layer colors {
+  [spec-theme='default'] {
+    --accent-1: #149360;
+    --accent-2: #0fc186;
+    --accent-3: #0ce991;
+    --accent-4: #76ffd4;
+    --accent-5: #b3ffe6;
+    --accent-6: #e0fff5;
+  }
   [spec-theme='deathknight'] {
     --accent-1: #79091c;
     --accent-2: #9c0f27;

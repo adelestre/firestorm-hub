@@ -3,6 +3,7 @@ import { useContentContext, useNavigationContext } from './GuideContext'
 import Header from '../utilities/header/Header'
 import IconButton from '../utilities/buttons/IconButton'
 import { useEffect, useState } from 'react'
+import { useThrottledEffect } from '../utilities/hooks/useThrottledEffect'
 
 type Props = {
   reference: React.RefObject<HTMLDivElement>
@@ -11,6 +12,14 @@ type Props = {
 function HeaderGuide({ reference }: Readonly<Props>) {
   const navigationContext = useNavigationContext()
   const contentContext = useContentContext()
+  const [mythicLabel, setMythicLabel] = useState('Mythic +')
+  useThrottledEffect(() => {
+    if (window.matchMedia('(min-width: 640px)').matches) {
+      setMythicLabel('Mythic +')
+    } else {
+      setMythicLabel('M+')
+    }
+  }, 'resize')
   return navigationContext && contentContext ? (
     <Header
       reference={reference}
@@ -26,12 +35,12 @@ function HeaderGuide({ reference }: Readonly<Props>) {
         </IconButton>
       }
     >
-      <div className="text-size-1 absolute left-1/2 top-1/2 grid -translate-x-1/2 -translate-y-1/2 grid-cols-2 gap-2 sm:gap-4">
+      <div className="text-size-1 grid grid-cols-2 gap-2 sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:gap-4">
         <Button
           onClick={() => contentContext.changeContent('mythic-plus')}
           active={contentContext.content === 'mythic-plus'}
         >
-          Mythic+
+          {mythicLabel}
         </Button>
         <Button
           onClick={() => contentContext.changeContent('raid')}

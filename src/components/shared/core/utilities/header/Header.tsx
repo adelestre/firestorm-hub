@@ -27,7 +27,7 @@ function Header({
       ref={reference}
       className="anim bg-primary-2 border-primary-3 relative z-40 flex h-20 w-full flex-row items-center justify-between gap-2 border-b p-3 shadow-md"
     >
-      <div className="flex h-full flex-row items-center justify-start pl-2">
+      <div className="flex h-full flex-shrink-0 flex-row items-center justify-start pl-2">
         <button
           className="anim hover:bg-primary-3 h-full rounded-md px-2 py-1"
           onClick={navigateHome}
@@ -46,10 +46,8 @@ function Header({
         {childrenLeft}
       </div>
       {children}
-      <div className="flex flex-row gap-2 sm:pr-1">
-        <div className="hidden sm:block">
-          <ThemeToggle />
-        </div>
+      <div className="flex flex-row sm:gap-2 sm:pr-1">
+        <ThemeToggle />
         {childrenRight}
       </div>
     </div>

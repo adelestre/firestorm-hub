@@ -5,11 +5,3 @@ body {
   margin: 0;
   font-family: 'Economica', sans-serif;
 }
-
-*:not(#spec-select *) {
-  scrollbar-width: none;
-}
-
-*::-webkit-scrollbar:not(#spec-select *) {
-  display: none;
-}

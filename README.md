@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# Firestorm Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository with the open-source code used for the website.
 
-Currently, two official plugins are available:
+## Add you own guide ?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you're interested in participating by writing a guide for your own spec ? You can contact me on discord : rise_of_elements.
 
-## Expanding the ESLint configuration
+## The Website
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To build this website, I used Typescript, React, and TailwindCSS. Most of the components were made from scratch. I used :
 
-- Configure the top-level `parserOptions` property like this:
+- [Material Tailwind](https://www.material-tailwind.com/docs/react/select) for its Select component (used in the right menu in the guides).
+- [React Custom Scroll](https://www.npmjs.com/package/react-custom-scroll) for any scrollbars (cause fuck default scrollbars).
+- [React tooltip](https://www.npmjs.com/package/react-tooltip) for some tooltips. I might drop it cause it feels wanky at times.
+- [WowHead Tooltips](https://www.wowhead.com/tooltips) to display blizzard-like tooltips very easily.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+If you have any question, don't hesitate to contact me on discord (rise_of_elements), I am always very happy to discuss any topics !

@@ -1,21 +1,11 @@
-import { useCallback } from 'react'
-import { useNavigate } from 'react-router-dom'
 import HeaderHome from './HeaderHome'
+import Specs from './Specs'
 
 function Home() {
-  const navigate = useNavigate()
-  const navigateToGuide = useCallback(
-    (job: string, spec: string) => {
-      navigate(`/guide/${job}/${spec}`)
-    },
-    [navigate]
-  )
   return (
-    <div className="h-full w-full">
+    <div className="flex h-full w-full flex-col" spec-theme="default">
       <HeaderHome />
-      <button onClick={() => navigateToGuide('monk', 'mistweaver')}>
-        Go to Mistweaver Guide
-      </button>
+      <Specs />
     </div>
   )
 }

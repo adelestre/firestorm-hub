@@ -18,7 +18,7 @@ function App() {
       <Tooltip
         disableStyleInjection
         delayShow={200}
-        className="bg-primary-1 anim bg-secondary-3 text-primary-1 z-50 -translate-y-1 rounded p-2 text-center font-bold *:h-2 *:w-2 *:rotate-45"
+        className="bg-primary-1 anim bg-secondary-3 text-primary-1 z-50 hidden -translate-y-1 rounded p-2 text-center font-bold *:h-2 *:w-2 *:rotate-45 lg:block"
         id="tooltip"
       />
     </div>

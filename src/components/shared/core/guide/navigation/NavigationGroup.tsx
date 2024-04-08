@@ -1,7 +1,11 @@
 import NavigationLink from './NavigationLink'
 import { SectionData } from '../../utilities/types/sectionData'
 import { useEffect, useMemo, useState } from 'react'
-import { SectionProvider, useSectionContext } from '../GuideContext'
+import {
+  SectionProvider,
+  useContentContext,
+  useSectionContext,
+} from '../GuideContext'
 import { SectionContext } from '../../utilities/types/contexts'
 
 type Props = {
@@ -10,9 +14,21 @@ type Props = {
 
 function NavigationGroup({ id }: Readonly<Props>) {
   const sectionContext = useSectionContext()
+  const contentContext = useContentContext()
   const [textSize, setTextSize] = useState('text-size-4')
   const [section, setSection] = useState<SectionData | undefined>(undefined)
   const [children, setChildren] = useState<SectionData[]>([])
+  const getName = () => {
+    if (!section || !contentContext) return ''
+    if (section.name !== '#root') return section.name
+    switch (contentContext.content) {
+      case 'mythic-plus':
+        return 'Mythic+ Guide'
+      case 'raids':
+        return 'Raids Guide'
+    }
+    return ''
+  }
   useEffect(() => {
     if (sectionContext === null || sectionContext === undefined) return
     else {
@@ -51,7 +67,7 @@ function NavigationGroup({ id }: Readonly<Props>) {
   return section && children ? (
     <div className="flex w-full flex-col items-start">
       <div className={`eco w-full ${textSize}`}>
-        <NavigationLink name={section.name} />
+        <NavigationLink name={getName()} />
       </div>
       <SectionProvider.Provider value={newContext}>
         {children.map((child) => (

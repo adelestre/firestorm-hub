@@ -5,7 +5,7 @@ import { SectionContext } from './core/utilities/types/contexts'
 
 type Props = {
   name: string
-  children: React.ReactNode
+  children?: React.ReactNode
   CustomTitle?: ({
     level,
     name,
