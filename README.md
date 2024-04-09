@@ -1,6 +1,6 @@
 # Firestorm Hub
 
-This is the repository with the open-source code used for the website [Firestorm-Hub](https://firestorm-hub.web.app).
+This is the repository with the open-source code used for the website [Firestorm-Hub](https://firestorm-hub.com).
 
 ## Add you own guide ?
 
