@@ -341,8 +341,9 @@
 div.rcs-inner-handle {
   @apply bg-light-accent-1 dark:bg-dark-accent-1;
 }
+
 div.rcs-inner-container {
-  overflow-y: hidden;
+  overflow-y: auto !important;
 }
 
 #document.nav-open .rcs-inner-handle {
