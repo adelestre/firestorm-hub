@@ -1,0 +1,182 @@
+{
+  "lariat": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_necklace_necklace1_color3.jpg",
+    "name": "Elemental Lariat",
+    "link": "https://www.wowhead.com/item=193001/elemental-lariat"
+  },
+  "whisperingIcon": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_necklace_1_omni.jpg",
+    "name": "Whispering Incarnate Icon",
+    "link": "https://www.wowhead.com/item=194301/whispering-incarnate-icon"
+  },
+  "flaskSolemnNight": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_alchemy_crystalvial.jpg",
+    "name": "Flask of the Solemn Night",
+    "link": "https://www.wowhead.com/item=137484/flask-of-the-solemn-night"
+  },
+  "broodkeeperPromise": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_trinket_3_omni.jpg",
+    "name": "Broodkeeper's Promise",
+    "link": "https://www.wowhead.com/item=194307/broodkeepers-promise"
+  },
+  "hornOfValor": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_horn_03.jpg",
+    "name": "Horn of Valor",
+    "link": "https://www.wowhead.com/item=133642/horn-of-valor"
+  },
+  "deathsnare": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_web_01.jpg",
+    "name": "Iceblood Deathsnare",
+    "link": "https://www.wowhead.com/item=194304/iceblood-deathsnare"
+  },
+  "moteOfSanctification": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/paladin_holy.jpg",
+    "name": "Mote of Sanctification",
+    "link": "https://www.wowhead.com/item=133646/mote-of-sanctification"
+  },
+  "energizedMalygite": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_blue.jpg",
+    "name": "Energized Malygite",
+    "link": "https://www.wowhead.com/item=192935/energized-malygite"
+  },
+  "craftyAlexstrazite": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_red.jpg",
+    "name": "Crafty Alexstraszite",
+    "link": "https://www.wowhead.com/item=192919/crafty-alexstraszite"
+  },
+  "craftyYsemerald": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_green.jpg",
+    "name": "Crafty Ysemerald",
+    "link": "https://www.wowhead.com/item=192945/crafty-ysemerald"
+  },
+  "radiantMalygite": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg",
+    "name": "Radiant Malygite",
+    "link": "https://www.wowhead.com/item=192932/radiant-malygite"
+  },
+  "respIlimitedDiam": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_blue.jpg",
+    "name": "Resplendent Illimited Diamond",
+    "link": "https://www.wowhead.com/item=192991/resplendent-illimited-diamond"
+  },
+  "fortAvoidance": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Fortified Avoidance",
+    "link": "https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance"
+  },
+  "devoAvoidance": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Devotion of Avoidance",
+    "link": "https://www.wowhead.com/item=200021/enchant-bracer-devotion-of-avoidance"
+  },
+  "regenLeech": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Regenerative Leech",
+    "link": "https://www.wowhead.com/item=200033/enchant-cloak-regenerative-leech"
+  },
+  "gracefulAvoidance": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Graceful Avoidance",
+    "link": "https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance"
+  },
+  "devoLeech": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Devotion of Leech",
+    "link": "https://www.wowhead.com/item=200022/enchant-bracer-devotion-of-leech"
+  },
+  "wakingStats": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Waking Stats",
+    "link": "https://www.wowhead.com/item=200030/enchant-chest-waking-stats"
+  },
+  "tempSpellthread": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_tailoring_craftingoptionalreagent_enhancedspellthread_color1.jpg",
+    "name": "Temporal Spellthread",
+    "link": "https://www.wowhead.com/item=194016/temporal-spellthread"
+  },
+  "frozenSpellthread": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_tailoring_craftingoptionalreagent_enhancedspellthread_color2.jpg",
+    "name": "Frozen Spellthread",
+    "link": "https://www.wowhead.com/item=194013/frozen-spellthread"
+  },
+  "watchersLoam": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Watchers' Loam",
+    "link": "https://www.wowhead.com/item=200020/enchant-boots-watchers-loam"
+  },
+  "devoHaste": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Devotion of Haste",
+    "link": "https://www.wowhead.com/item=200038/enchant-ring-devotion-of-haste"
+  },
+  "devoVers": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Devotion of Versatility",
+    "link": "https://www.wowhead.com/item=200040/enchant-ring-devotion-of-versatility"
+  },
+  "devoCrit": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Devotion of Critical Strike",
+    "link": "https://www.wowhead.com/item=200037/enchant-ring-devotion-of-critical-strike"
+  },
+  "sophicDevo": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Sophic Devotion",
+    "link": "https://www.wowhead.com/item=200054/enchant-weapon-sophic-devotion"
+  },
+  "phialVers": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_bottle_shape2_black.jpg",
+    "name": "Phial of Tepid Versatility",
+    "link": "https://www.wowhead.com/item=191341/phial-of-tepid-versatility"
+  },
+  "timelyDemise": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_legion_seedbatteredfishplate.jpg",
+    "name": "Timely Demise",
+    "link": "https://www.wowhead.com/item=197778/timely-demise"
+  },
+  "seamothSurprise": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_159_fish_82.jpg",
+    "name": "Seamoth Surprise",
+    "link": "https://www.wowhead.com/item=197780/seamoth-surprise"
+  },
+  "hoardDelicacies": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_cooking_10_draconicdelicacies.jpg",
+    "name": "Hoard of Draconic Delicacies",
+    "link": "https://www.wowhead.com/item=197795/hoard-of-draconic-delicacies"
+  },
+  "howlingRune": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_rune_05.jpg",
+    "name": "Howling Rune",
+    "link": "https://www.wowhead.com/item=194820/howling-rune"
+  },
+  "draconicRune": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting3_rainbowprism_color2.jpg",
+    "name": "Draconic Augment Rune",
+    "link": "https://www.wowhead.com/item=201325/draconic-augment-rune"
+  },
+  "shockingDisclo": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_bottle_shape1_violet.jpg",
+    "name": "Potion of Shocking Disclosure",
+    "link": "https://www.wowhead.com/item=191401/potion-of-shocking-disclosure"
+  },
+  "ultimatePowerPotion": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/trade_alchemy_dpotion_b20.jpg",
+    "name": "Elemental Potion of Ultimate Power",
+    "link": "https://www.wowhead.com/item=191383/elemental-potion-of-ultimate-power"
+  },
+  "toxicThornFootwraps": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_leather_dragondungeon_c_01_boot.jpg",
+    "name": "Toxic Thorn Footwraps",
+    "link": "https://www.wowhead.com/item=193452/toxic-thorn-footwraps"
+  },
+  "magazineHealingDarts": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_runichealthinjector.jpg",
+    "name": "Magazine of Healing Darts",
+    "link": "https://www.wowhead.com/item=198258/magazine-of-healing-darts"
+  },
+  "toxifiedArmorPatch": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cataclysmarmorkit_10.jpg",
+    "name": "Toxified Armor Patch",
+    "link": "https://www.wowhead.com/item=193555/toxified-armor-patch"
+  }
+}

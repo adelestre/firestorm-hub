@@ -1,4 +1,4 @@
-import Section from '../../../../../shared/Section'
+import Section from '@shared/Section'
 import Cons from './Cons'
 import Embellishments from './Embellishments'
 import FullBuild from './FullBuild'

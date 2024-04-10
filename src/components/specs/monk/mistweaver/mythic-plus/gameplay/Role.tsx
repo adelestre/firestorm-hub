@@ -1,6 +1,7 @@
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import Paragraph from '../../../../../shared/Paragraph'
-import Section from '../../../../../shared/Section'
+import ItemLink from '@shared/Links/ItemLink'
+import Paragraph from '@shared/Paragraph'
+import Section from '@shared/Section'
+import spells from '@shared/spells.json'
 
 function Role() {
   return (
@@ -14,39 +15,14 @@ function Role() {
       </Paragraph>
       <Paragraph>
         As a Mistweaver you have more tools that many people think for that.{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/spell_monk_ringofpeace.jpg"
-          name="Ring of Peace"
-          link="https://www.wowhead.com/spell=116844/ring-of-peace"
-        />{' '}
-        or{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_legsweep.jpg"
-          name="Leg Sweep"
-          link="https://www.wowhead.com/spell=119381/leg-sweep"
-        />{' '}
-        comes to mind first, but you shouldn't underestimate other spells such
-        as{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_paralysis.jpg"
-          name="Paralysis"
-          link="https://www.wowhead.com/spell=115078/paralysis"
-        />
-        ,{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg"
-          name="Provoke"
-          link="https://www.wowhead.com/spell=115546/provoke"
-        />{' '}
-        or{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerslust.jpg"
-          name="Tiger's Lust"
-          link="https://www.wowhead.com/spell=116841/tigers-lust"
-        />
-        . Knowing when to use this cooldowns effectively is the biggest step
-        towards mastering Mistweaver. I will give more details about each of
-        these spells later in this guide.
+        <ItemLink item={spells['monk-rop']} /> or{' '}
+        <ItemLink item={spells['monk-sweep']} /> comes to mind first, but you
+        shouldn't underestimate other spells such as{' '}
+        <ItemLink item={spells['monk-para']} />,{' '}
+        <ItemLink item={spells['monk-prov']} /> or{' '}
+        <ItemLink item={spells['monk-tl']} />. Knowing when to use this
+        cooldowns effectively is the biggest step towards mastering Mistweaver.
+        I will give more details about each of these spells later in this guide.
       </Paragraph>
       <Paragraph>
         Let's not forget that Mistweaver was made to be played melee and use

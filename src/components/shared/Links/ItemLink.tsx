@@ -1,16 +1,18 @@
 import TextLink from './TextLink'
 
 type Props = {
-  icon: string
-  name: string
-  link: string
+  item: {
+    icon: string
+    name: string
+    link: string
+  }
   className?: string
 }
 
-function ItemLink({ icon, name, link, className }: Readonly<Props>) {
+function ItemLink({ item, className }: Readonly<Props>) {
   return (
     <a
-      href={link}
+      href={item.link}
       className={`relative inline-flex items-baseline text-nowrap leading-none ${className}`}
       target="_blank"
       rel="noopener noreferrer"
@@ -18,12 +20,12 @@ function ItemLink({ icon, name, link, className }: Readonly<Props>) {
       <span className="peer absolute left-px top-1/2 -translate-y-1/2">
         <img
           className="border-primary-4 w-5 -translate-y-px rounded-sm border"
-          src={icon}
-          alt={name}
+          src={item.icon}
+          alt={item.name}
         />
       </span>
       <span className="ml-6">
-        <TextLink text={name} />
+        <TextLink text={item.name} />
       </span>
     </a>
   )

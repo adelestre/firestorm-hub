@@ -1,0 +1,227 @@
+{
+  "monk-soom": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_soothingmists.jpg",
+    "name": "Soothing Mist",
+    "link": "https://www.wowhead.com/spell=115175/soothing-mist?spellModifier=137024"
+  },
+  "monk-viv": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_vivify.jpg",
+    "name": "Vivify",
+    "link": "https://www.wowhead.com/spell=116670/vivify"
+  },
+  "monk-tp": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerpalm.jpg",
+    "name": "Tiger Palm",
+    "link": "https://www.wowhead.com/spell=100780/tiger-palm"
+  },
+  "monk-bok": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_roundhousekick.jpg",
+    "name": "Blackout Kick",
+    "link": "https://www.wowhead.com/spell=100784/blackout-kick"
+  },
+  "monk-sck": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_cranekick_new.jpg",
+    "name": "Spinning Crane Kick",
+    "link": "https://www.wowhead.com/spell=101546/spinning-crane-kick"
+  },
+  "monk-rsk": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_risingsunkick.jpg",
+    "name": "Rising Sun Kick",
+    "link": "https://www.wowhead.com/spell=107428/rising-sun-kick"
+  },
+  "monk-rop": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_ringofpeace.jpg",
+    "name": "Ring of Peace",
+    "link": "https://www.wowhead.com/spell=116844/ring-of-peace"
+  },
+  "monk-sweep": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_legsweep.jpg",
+    "name": "Leg Sweep",
+    "link": "https://www.wowhead.com/spell=119381/leg-sweep"
+  },
+  "monk-para": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_paralysis.jpg",
+    "name": "Paralysis",
+    "link": "https://www.wowhead.com/spell=115078/paralysis"
+  },
+  "monk-prov": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_provoke.jpg",
+    "name": "Provoke",
+    "link": "https://www.wowhead.com/spell=115546/provoke"
+  },
+  "monk-tl": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_tigerslust.jpg",
+    "name": "Tiger's Lust",
+    "link": "https://www.wowhead.com/spell=116841/tigers-lust"
+  },
+  "monk-improvedDetox": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_imrovedrecuperate.jpg",
+    "name": "improved Detox",
+    "link": "https://www.wowhead.com/spell=388874/improved-detox"
+  },
+  "monk-bounceBack": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_butcher_heavyhanded.jpg",
+    "name": "Bounce Back",
+    "link": "https://www.wowhead.com/spell=389577/bounce-back"
+  },
+  "monk-chiBurst": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcanetorrent.jpg",
+    "name": "Chi Burst",
+    "link": "https://www.wowhead.com/spell=123986/chi-burst"
+  },
+  "monk-shs": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_spearhand.jpg",
+    "name": "Spear Hand Strike",
+    "link": "https://www.wowhead.com/spell=116705/spear-hand-strike"
+  },
+  "monk-dh": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dampenharm.jpg",
+    "name": "Dampen Harm",
+    "link": "https://www.wowhead.com/spell=122278/dampen-harm"
+  },
+  "monk-fb": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg",
+    "name": "Fortifying Brew",
+    "link": "https://www.wowhead.com/spell=115203/fortifying-brew"
+  },
+  "monk-dm": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_diffusemagic.jpg",
+    "name": "Diffuse Magic",
+    "link": "https://www.wowhead.com/spell=122783/diffuse-magic"
+  },
+  "monk-grace": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dragonkick.jpg",
+    "name": "Yu'lon's Grace",
+    "link": "https://www.wowhead.com/spell=414131/yulons-grace"
+  },
+  "monk-cth": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_pvppandarias2_c_01.jpg",
+    "name": "Close to Heart",
+    "link": "https://www.wowhead.com/spell=389574/close-to-heart"
+  },
+  "monk-gp": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_legion_goocaramel_bottle.jpg",
+    "name": "Generous Pour",
+    "link": "https://www.wowhead.com/spell=389575/generous-pour"
+  },
+  "monk-sta": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_hand_22.jpg",
+    "name": "Save Them All",
+    "link": "https://www.wowhead.com/spell=389579/save-them-all"
+  },
+  "monk-rf": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_hand_16.jpg",
+    "name": "Resonant Fists",
+    "link": "https://www.wowhead.com/spell=389578/resonant-fists"
+  },
+  "monk-expeFort": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_fortifyingale_new.jpg",
+    "name": "Expeditious Fortification",
+    "link": "https://www.wowhead.com/spell=388813/expeditious-fortification"
+  },
+  "mw-rem": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_renewingmists.jpg",
+    "name": "Renewing Mist",
+    "link": "https://www.wowhead.com/spell=119611/renewing-mist"
+  },
+  "mw-em": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_envelopingmist.jpg",
+    "name": "Enveloping Mist",
+    "link": "https://www.wowhead.com/spell=124682/enveloping-mist"
+  },
+  "mw-ef": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_essencefont.jpg",
+    "name": "Essence Font",
+    "link": "https://www.wowhead.com/spell=191837/essence-font"
+  },
+  "mw-tft": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_thunderfocustea.jpg",
+    "name": "Thunder Focus Tea",
+    "link": "https://www.wowhead.com/spell=116680/thunder-focus-tea"
+  },
+  "mw-si": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chibrew.jpg",
+    "name": "Secret Infusion",
+    "link": "https://www.wowhead.com/spell=388491/secret-infusion"
+  },
+  "mw-rm": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_effuse.jpg",
+    "name": "Rising Mist",
+    "link": "https://www.wowhead.com/spell=274909/rising-mist"
+  },
+  "mw-at": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg",
+    "name": "Ancient Teachings",
+    "link": "https://www.wowhead.com/spell=388023/ancient-teachings"
+  },
+  "mw-totm": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/passive_monk_teachingsofmonastery.jpg",
+    "name": "Teachings of the Monastery",
+    "link": "https://www.wowhead.com/spell=116645/teachings-of-the-monastery"
+  },
+  "mw-tom": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_uplift.jpg",
+    "name": "Tear of Morning",
+    "link": "https://www.wowhead.com/spell=387991/tear-of-morning"
+  },
+  "mw-lc": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_chicocoon.jpg",
+    "name": "Life Cocoon",
+    "link": "https://www.wowhead.com/spell=116849/life-cocoon"
+  },
+  "mw-chiji": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg",
+    "name": "Chi-Ji",
+    "link": "https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
+  },
+  "mw-sheilun": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_artifactshaohao_d_01.jpg",
+    "name": "Sheilun's Gift",
+    "link": "https://www.wowhead.com/spell=399491/sheiluns-gift"
+  },
+  "mw-faeline": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_monk.jpg",
+    "name": "Faeline Stomp",
+    "link": "https://www.wowhead.com/spell=388193/jadefire-stomp"
+  },
+  "mw-eb": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_jadeserpentbreath.jpg",
+    "name": "Enveloping Breath",
+    "link": "https://www.wowhead.com/spell=325209/enveloping-breath"
+  },
+  "mw-zp": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_forcesphere.jpg",
+    "name": "Zen Pulse",
+    "link": "https://www.wowhead.com/spell=124081/zen-pulse"
+  },
+  "mw-rev": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_monk_revival.jpg",
+    "name": "Revival",
+    "link": "https://www.wowhead.com/spell=115310/revival"
+  },
+  "mw-mt": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/monk_ability_cherrymanatea.jpg",
+    "name": "Mana Tea",
+    "link": "https://www.wowhead.com/spell=115869/mana-tea"
+  },
+  "mw-er": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_legacyoftheemperor.jpg",
+    "name": "Echoing Reverberation",
+    "link": "https://www.wowhead.com/spell=388604/echoing-reverberation"
+  },
+  "mw-mol": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_shoulder__inv_leather_raidmonkmythic_s_01.jpg",
+    "name": "Mists of Life",
+    "link": "https://www.wowhead.com/spell=388548/mists-of-life"
+  },
+  "mw-chrys": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_domeofmist.jpg",
+    "name": "Chrysalis",
+    "link": "https://www.wowhead.com/spell=202424/chrysalis"
+  },
+  "mw-mw": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_pathofmists.jpg",
+    "name": "Mist Wrap",
+    "link": "https://www.wowhead.com/spell=197900/mist-wrap"
+  }
+}

@@ -2,7 +2,7 @@ import Role from './Role'
 import DamagingToHeal from './DamagingToHeal'
 import Damaging from './damaging/Damaging'
 import Healing from './Healing/Healing'
-import Section from '../../../../../shared/Section'
+import Section from '@shared/Section'
 
 function Gameplay() {
   return (

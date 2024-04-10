@@ -1,5 +1,5 @@
-import { useContentContext } from '../../../../shared/core/guide/GuideContext'
-import Separator from '../../../../shared/Separator'
+import { useContentContext } from '@shared/core/guide/GuideContext'
+import Separator from '@shared/Separator'
 
 type TitleProps = {
   name: string

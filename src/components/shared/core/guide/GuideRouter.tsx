@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom'
-import * as specs from '../../../specs/index'
+import * as specs from '@specs/index'
 import { useSpecContext } from '../guide/GuideContext'
 import { useMemo } from 'react'
 

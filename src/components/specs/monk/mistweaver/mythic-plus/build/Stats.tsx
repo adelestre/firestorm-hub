@@ -1,10 +1,11 @@
-import Section from '../../../../../shared/Section'
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import TextLink from '../../../../../shared/Links/TextLink'
-import Definitions from '../../../../../shared/list/Definitions'
-import List from '../../../../../shared/list/List'
-import ListElement from '../../../../../shared/list/ListElement'
-import Paragraph from '../../../../../shared/Paragraph'
+import Section from '@shared/Section'
+import ItemLink from '@shared/Links/ItemLink'
+import TextLink from '@shared/Links/TextLink'
+import Definitions from '@shared/list/Definitions'
+import List from '@shared/list/List'
+import ListElement from '@shared/list/ListElement'
+import Paragraph from '@shared/Paragraph'
+import spells from '@shared/spells.json'
 
 function Stats() {
   return (
@@ -18,11 +19,7 @@ function Stats() {
             definition: (
               <span>
                 Increase significantly your ST healing output and{' '}
-                <ItemLink
-                  icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
-                  name="Chi-Ji"
-                  link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
-                />
+                <ItemLink item={spells['mw-chiji']} />
                 's power.
               </span>
             ),
@@ -71,22 +68,11 @@ function Stats() {
         the order above while never reaching the soft cap on any of them. Only
         mastery is really behind the others and should alawys be prioritized
         last. Why is Mastery bad could you ask ? Well Mastery only works on your
-        current target or with{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/spell_monk_revival.jpg"
-          name="Revival"
-          link="https://www.wowhead.com/spell=115310/revival"
-        />{' '}
-        and{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
-          name="Chi-Ji"
-          link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
-        />
-        . So basically it's not incredible outside CDs since it will only
-        increase your spot healing and unlike all the other stats it doesn't
-        amplify damage. So it is not a complete waste, but definitely worse than
-        the others.
+        current target or with <ItemLink item={spells['mw-rev']} /> and{' '}
+        <ItemLink item={spells['mw-chiji']} />. So basically it's not incredible
+        outside CDs since it will only increase your spot healing and unlike all
+        the other stats it doesn't amplify damage. So it is not a complete
+        waste, but definitely worse than the others.
       </Paragraph>
       <Paragraph>
         Versatility increases in value the higher you go in keys, as it will
@@ -98,12 +84,8 @@ function Stats() {
         becomes an issue (which isn't really the case in M+ but it's good to
         know), first because unlike haste, it doesn't increase your mana
         consumption, and secondly because of its synergy with{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/monk_ability_cherrymanatea.jpg"
-          name="Mana Tea"
-          link="https://www.wowhead.com/spell=115869/mana-tea"
-        />
-        . It increases stack generation depending on your crit chance.
+        <ItemLink item={spells['mw-mt']} />. It increases stack generation
+        depending on your crit chance.
       </Paragraph>
       <Paragraph>
         Don't forget about{' '}
