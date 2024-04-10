@@ -1,4 +1,4 @@
-import Section from '../../../../shared/Section'
+import Section from '@shared/Section'
 
 function Raid() {
   return (

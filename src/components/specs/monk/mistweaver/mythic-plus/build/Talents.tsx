@@ -1,8 +1,8 @@
 import { FaStarOfLife } from 'react-icons/fa'
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import ClipboardCopyButton from '../../../../../shared/ClipboardCopyButton'
-import Section from '../../../../../shared/Section'
-import Paragraph from '../../../../../shared/Paragraph'
+import ItemLink from '@shared/Links/ItemLink'
+import ClipboardCopyButton from '@shared/ClipboardCopyButton'
+import Section from '@shared/Section'
+import Paragraph from '@shared/Paragraph'
 
 function Talents() {
   return (
@@ -24,12 +24,7 @@ function Talents() {
       <Paragraph>
         The tree is pretty locked and isn't easy to navigate through. On the
         first section of the tree, we upgrade{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_vivify.jpg"
-          name="Vivify"
-          link="https://www.wowhead.com/spell=116670/vivify"
-        />{' '}
-        and take{' '}
+        <ItemLink item={spells['monk-viv']} /> and take{' '}
         <ItemLink
           icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_paralysis.jpg"
           name="Paralysis"
@@ -185,13 +180,7 @@ function Talents() {
           link="https://www.wowhead.com/spell=388604/echoing-reverberation"
         />
         . It's a very small DPS gain and Tank heal burst, but it's better than
-        other options. We buff{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_chicocoon.jpg"
-          name="Life Cocoon"
-          link="https://www.wowhead.com/spell=116849/life-cocoon"
-        />{' '}
-        through{' '}
+        other options. We buff <ItemLink item={spells['mw-lc']} /> through{' '}
         <ItemLink
           icon="https://wow.zamimg.com/images/wow/icons/large/inv_shoulder__inv_leather_raidmonkmythic_s_01.jpg"
           name="Mists of Life"
@@ -204,12 +193,7 @@ function Talents() {
           link="https://www.wowhead.com/spell=202424/chrysalis"
         />{' '}
         to get a huge external on a small CD.{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
-          name="Chi-Ji"
-          link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
-        />
-        ,{' '}
+        <ItemLink item={spells['mw-chiji']} />,{' '}
         <ItemLink
           icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_pathofmists.jpg"
           name="Mist Wrap"
@@ -220,19 +204,8 @@ function Talents() {
       <Paragraph>
         Last part of the tree is very locked as there are a lot of very strong
         talents but for some reason we need to spend 4 points just to be able to
-        heal with{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/ability_monk_cranekick_new.jpg"
-          name="SCK"
-          link="https://www.wowhead.com/spell=101546/spinning-crane-kick"
-        />{' '}
-        and 3 points to make{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_artifactshaohao_d_01.jpg"
-          name="Sheilun's Gift"
-          link="https://www.wowhead.com/spell=399491/sheiluns-gift"
-        />{' '}
-        heal the whole group. This and
+        heal with <ItemLink item={spells['monk-sck']} /> and 3 points to make{' '}
+        <ItemLink item={spells['mw-sheilun']} /> heal the whole group. This and
         <ItemLink
           icon="https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_07.jpg"
           name="Ancient Teachings"
@@ -240,12 +213,8 @@ function Talents() {
         />{' '}
         represents the major part of our healing output in M+. It's all about
         being able to deal damage and passively heal.{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
-          name="Chi-Ji"
-          link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
-        />{' '}
-        on a 1min CD is also a no brainer.
+        <ItemLink item={spells['mw-chiji']} /> on a 1min CD is also a no
+        brainer.
       </Paragraph>
     </Section>
   )

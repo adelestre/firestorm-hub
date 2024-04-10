@@ -1,6 +1,6 @@
-import Section from '../../../../../shared/Section'
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import Paragraph from '../../../../../shared/Paragraph'
+import Section from '@shared/Section'
+import ItemLink from '@shared/Links/ItemLink'
+import Paragraph from '@shared/Paragraph'
 
 function Embellishments() {
   return (

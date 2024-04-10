@@ -1,6 +1,6 @@
-import Section from '../../../../../shared/Section'
-import GearPiece from '../../../../../shared/GearPiece'
-import Paragraph from '../../../../../shared/Paragraph'
+import Section from '@shared/Section'
+import GearPiece from '@shared/GearPiece'
+import Paragraph from '@shared/Paragraph'
 
 function FullBuild() {
   return (

@@ -1,4 +1,4 @@
-import { useContentContext } from '../../../shared/core/guide/GuideContext'
+import { useContentContext } from '@shared/core/guide/GuideContext'
 import Introduction from './introduction/Introduction'
 import MythicPlus from './mythic-plus/MythicPlus'
 import Raid from './raid/Raid'

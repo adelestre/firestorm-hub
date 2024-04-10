@@ -1,4 +1,4 @@
-import Section from '../../../../../../shared/Section'
+import Section from '@shared/Section'
 import AOERotation from './AOERotation'
 import FaelineStomp from './FaelineStomp'
 import STRotation from './STRotation'

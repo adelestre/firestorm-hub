@@ -1,8 +1,8 @@
-import Section from '../../../../../shared/Section'
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import List from '../../../../../shared/list/List'
-import ListElement from '../../../../../shared/list/ListElement'
-import Paragraph from '../../../../../shared/Paragraph'
+import Section from '@shared/Section'
+import ItemLink from '@shared/Links/ItemLink'
+import List from '@shared/list/List'
+import ListElement from '@shared/list/ListElement'
+import Paragraph from '@shared/Paragraph'
 
 function Trinkets() {
   return (

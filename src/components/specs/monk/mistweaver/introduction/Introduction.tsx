@@ -1,7 +1,7 @@
 import Abbreviations from './Abbreviations'
-import Section from '../../../../shared/Section'
+import Section from '@shared/Section'
 import IntroductionTitle from './IntroductionTitle'
-import Paragraph from '../../../../shared/Paragraph'
+import Paragraph from '@shared/Paragraph'
 
 function Introduction() {
   return (

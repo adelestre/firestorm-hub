@@ -1,4 +1,4 @@
-import Section from '../../../../../shared/Section'
+import Section from '@shared/Section'
 import EssenceFont from './EssenceFont'
 import Tft from './Tft'
 

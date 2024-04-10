@@ -2,7 +2,7 @@ import LowDamageHealing from './LowDamageHealing'
 import HealingBasics from './HealingBasics'
 import HighSTDamageHealing from './HighSTDamageHealing'
 import HighGroupDamageHealing from './HighGroupDamageHealing'
-import Section from '../../../../../../shared/Section'
+import Section from '@shared/Section'
 
 function Healing() {
   return (

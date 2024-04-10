@@ -1,10 +1,10 @@
-import Section from '../../../../../shared/Section'
-import ItemLink from '../../../../../shared/Links/ItemLink'
-import TextLink from '../../../../../shared/Links/TextLink'
-import Definitions from '../../../../../shared/list/Definitions'
-import List from '../../../../../shared/list/List'
-import ListElement from '../../../../../shared/list/ListElement'
-import Paragraph from '../../../../../shared/Paragraph'
+import Section from '@shared/Section'
+import ItemLink from '@shared/Links/ItemLink'
+import TextLink from '@shared/Links/TextLink'
+import Definitions from '@shared/list/Definitions'
+import List from '@shared/list/List'
+import ListElement from '@shared/list/ListElement'
+import Paragraph from '@shared/Paragraph'
 
 function Stats() {
   return (
@@ -77,16 +77,10 @@ function Stats() {
           name="Revival"
           link="https://www.wowhead.com/spell=115310/revival"
         />{' '}
-        and{' '}
-        <ItemLink
-          icon="https://wow.zamimg.com/images/wow/icons/large/inv_pet_cranegod.jpg"
-          name="Chi-Ji"
-          link="https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
-        />
-        . So basically it's not incredible outside CDs since it will only
-        increase your spot healing and unlike all the other stats it doesn't
-        amplify damage. So it is not a complete waste, but definitely worse than
-        the others.
+        and <ItemLink item={spells['mw-chiji']} />. So basically it's not
+        incredible outside CDs since it will only increase your spot healing and
+        unlike all the other stats it doesn't amplify damage. So it is not a
+        complete waste, but definitely worse than the others.
       </Paragraph>
       <Paragraph>
         Versatility increases in value the higher you go in keys, as it will
