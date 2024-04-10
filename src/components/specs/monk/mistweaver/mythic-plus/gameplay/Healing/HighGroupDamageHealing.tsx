@@ -1,7 +1,7 @@
 import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
-import Rotation from '@shared/rotation/Rotation'
-import RotationSpell from '@shared/rotation/RotationSpell'
+import SpellRotation from '@shared/spell-rotation/SpellRotation'
+import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
 
@@ -56,24 +56,24 @@ function HighGroupDamageHealing() {
         can have something to heal while the shield is tanking. But in both
         cases, the rotation is the same and as follows:
       </Paragraph>
-      <Rotation className="space-top">
-        <RotationSpell item={spells['mw-faeline']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['mw-chiji']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['mw-em']} />
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['mw-em']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['mw-em']} />
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['mw-em']} />
-      </Rotation>
+      <SpellRotation className="space-top">
+        <SpellRotationElement item={spells['mw-faeline']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['mw-chiji']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['mw-em']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['mw-em']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['mw-em']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['mw-em']} />
+      </SpellRotation>
       <Paragraph>
         It's probably hard to understand this rotation looking at it, but I can
         assure you it makes a lot of sense and is actually very straightforward.

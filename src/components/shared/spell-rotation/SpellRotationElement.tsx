@@ -4,7 +4,7 @@ type Props = {
   duration?: number
 }
 
-function RotationSpell({ item, channeled, duration }: Readonly<Props>) {
+function SpellRotationElement({ item, channeled, duration }: Readonly<Props>) {
   return (
     <span
       style={{ paddingRight: (duration ? 2 * duration : 2) + 'rem' }}
@@ -26,4 +26,4 @@ function RotationSpell({ item, channeled, duration }: Readonly<Props>) {
   )
 }
 
-export default RotationSpell
+export default SpellRotationElement

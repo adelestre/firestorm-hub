@@ -1,7 +1,7 @@
 import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
-import Rotation from '@shared/rotation/Rotation'
-import RotationSpell from '@shared/rotation/RotationSpell'
+import SpellRotation from '@shared/spell-rotation/SpellRotation'
+import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
 
@@ -18,20 +18,20 @@ function STRotation() {
         with <ItemLink item={spells['mw-totm']} /> and cast it as soon as it
         comes off CD. The rotation will be as follow :
       </Paragraph>
-      <Rotation className="space-top">
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-rsk']} />
-      </Rotation>
+      <SpellRotation className="space-top">
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+      </SpellRotation>
       <Paragraph>
         Now, this is an example where you get no reset before 2nd{' '}
         <ItemLink item={spells['monk-rsk']} /> (it has a CD exactly equal to 8
@@ -41,18 +41,18 @@ function STRotation() {
         Then we are able to get a reset instantly. Obviously if you're very
         lucky, rotation will look like :
       </Paragraph>
-      <Rotation className="space-top">
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-rsk']} />
-        <RotationSpell item={spells['monk-tp']} />
-        <RotationSpell item={spells['monk-bok']} />
-        <RotationSpell item={spells['monk-rsk']} />
-      </Rotation>
+      <SpellRotation className="space-top">
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement item={spells['monk-tp']} />
+        <SpellRotationElement item={spells['monk-bok']} />
+        <SpellRotationElement item={spells['monk-rsk']} />
+      </SpellRotation>
       <Paragraph>
         It is very simple, but mastering this makes a lot of difference.
       </Paragraph>
