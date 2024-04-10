@@ -1,6 +1,7 @@
 import Section from '@shared/Section'
 import GearPiece from '@shared/GearPiece'
 import Paragraph from '@shared/Paragraph'
+import items from '@shared/items.json'
 
 function FullBuild() {
   return (
@@ -21,13 +22,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=200363/gaze-of-the-waking-fist?bonus=1498',
               ilvl: 424,
             }}
-            gems={[
-              {
-                name: 'Resplendent Illimited Diamond',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192991/resplendent-illimited-diamond',
-              },
-            ]}
+            gems={[items['respIlimitedDiam']]}
           />
           <GearPiece
             item={{
@@ -37,21 +32,9 @@ function FullBuild() {
               ilvl: 418,
             }}
             gems={[
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
+              items['radiantMalygite'],
+              items['radiantMalygite'],
+              items['radiantMalygite'],
             ]}
           />
           <GearPiece
@@ -69,10 +52,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=193712/potion-stained-cloak?bonus=1594',
               ilvl: 421,
             }}
-            enchant={{
-              name: 'Graceful Avoidance',
-              link: 'https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance',
-            }}
+            enchant={items['gracefulAvoidance']}
           />
           <GearPiece
             item={{
@@ -81,10 +61,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=200360/chestwrap-of-the-waking-fist?bonus=1498',
               ilvl: 421,
             }}
-            enchant={{
-              name: 'Waking Stats',
-              link: 'https://www.wowhead.com/item=200030/enchant-chest-waking-stats',
-            }}
+            enchant={items['wakingStats']}
           />
           <GearPiece
             item={{
@@ -93,17 +70,8 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=193419/life-bound-bindings?bonus=8846:8792',
               ilvl: 418,
             }}
-            gems={[
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
-            ]}
-            enchant={{
-              name: 'Devotion of Avoidance',
-              link: 'https://www.wowhead.com/item=200021/enchant-bracer-devotion-of-avoidance',
-            }}
+            gems={[items['radiantMalygite']]}
+            enchant={items['devoAvoidance']}
           />
           <GearPiece
             item={{
@@ -112,10 +80,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=195481/scepter-of-drastic-measures',
               ilvl: 421,
             }}
-            enchant={{
-              name: 'Sophic Devotion',
-              link: 'https://www.wowhead.com/item=200054/enchant-weapon-sophic-devotion',
-            }}
+            enchant={items['sophicDevo']}
           />
           <GearPiece
             item={{
@@ -142,13 +107,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=193407/life-bound-belt?bonus=8846:8792',
               ilvl: 418,
             }}
-            gems={[
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
-            ]}
+            gems={[items['radiantMalygite']]}
           />
           <GearPiece
             item={{
@@ -157,10 +116,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=200364/legguards-of-the-waking-fist?bonus=1498',
               ilvl: 415,
             }}
-            enchant={{
-              name: 'Frozen Spellthread',
-              link: 'https://www.wowhead.com/item=194013/frozen-spellthread',
-            }}
+            enchant={items['frozenSpellthread']}
           />
           <GearPiece
             item={{
@@ -169,10 +125,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=193452/toxic-thorn-footwraps?bonus=9404:8846',
               ilvl: 418,
             }}
-            enchant={{
-              name: "Watcher's Loam",
-              link: 'https://www.wowhead.com/item=200020/enchant-boots-watchers-loam',
-            }}
+            enchant={items['watchersLoam']}
           />
           <GearPiece
             item={{
@@ -181,17 +134,8 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=144112/crystallized-droplet',
               ilvl: 421,
             }}
-            gems={[
-              {
-                name: 'Radiant Malygite',
-                icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_fire_cut_blue.jpg',
-                link: 'https://www.wowhead.com/item=192932/radiant-malygite',
-              },
-            ]}
-            enchant={{
-              name: 'Devotion of Critical Strike',
-              link: 'https://www.wowhead.com/item=200037/enchant-ring-devotion-of-critical-strike',
-            }}
+            gems={[items['radiantMalygite']]}
+            enchant={items['devoCrit']}
           />
           <GearPiece
             item={{
@@ -207,10 +151,7 @@ function FullBuild() {
                 link: 'https://www.wowhead.com/item=192932/radiant-malygite',
               },
             ]}
-            enchant={{
-              name: 'Devotion of Critical Strike',
-              link: 'https://www.wowhead.com/item=200037/enchant-ring-devotion-of-critical-strike',
-            }}
+            enchant={items['devoCrit']}
           />
           <GearPiece
             item={{
