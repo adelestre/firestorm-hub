@@ -19,6 +19,6 @@ If you have any question, don't hesitate to contact me on discord (rise_of_eleme
 
 ## Install locally
 
-If you want to install and run the website locally, you will need [NodeJS](https://nodejs.org/en). Once you cloned the repository, in your terminal navigate to the root folder and use the command : `npm i` to install all the dependancies.
+If you want to install and run the website locally, you will need [NodeJS](https://nodejs.org/en). Once you cloned the repository, in your terminal navigate to the root folder and use the command : `npm i` to install all the dependencies.
 
 To start the local server, use the command `npm run dev` and go to the local URL given.
