@@ -3,7 +3,7 @@ type Props = {
   children?: React.ReactNode
 }
 
-function Rotation({ className, children }: Readonly<Props>) {
+function SpellRotation({ className, children }: Readonly<Props>) {
   return (
     <div className={className}>
       <div className="border-primary-4 w-fit rounded-lg border-2 p-2">
@@ -15,4 +15,4 @@ function Rotation({ className, children }: Readonly<Props>) {
   )
 }
 
-export default Rotation
+export default SpellRotation

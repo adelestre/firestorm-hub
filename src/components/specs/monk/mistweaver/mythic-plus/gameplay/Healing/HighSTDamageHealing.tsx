@@ -1,7 +1,7 @@
 import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
-import Rotation from '@shared/rotation/Rotation'
-import RotationSpell from '@shared/rotation/RotationSpell'
+import SpellRotation from '@shared/spell-rotation/SpellRotation'
+import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
 
@@ -20,13 +20,13 @@ function HighSTDamageHealing() {
         in ST encounters. If the target really needs to be healed you will need
         the following rotation :
       </Paragraph>
-      <Rotation className="space-top">
-        <RotationSpell item={spells['monk-soom']} channeled />
-        <RotationSpell item={spells['mw-em']} channeled />
-        <RotationSpell item={spells['monk-viv']} channeled />
-        <RotationSpell item={spells['monk-viv']} channeled />
-        <RotationSpell item={spells['monk-viv']} />
-      </Rotation>
+      <SpellRotation className="space-top">
+        <SpellRotationElement item={spells['monk-soom']} channeled />
+        <SpellRotationElement item={spells['mw-em']} channeled />
+        <SpellRotationElement item={spells['monk-viv']} channeled />
+        <SpellRotationElement item={spells['monk-viv']} channeled />
+        <SpellRotationElement item={spells['monk-viv']} />
+      </SpellRotation>
       <Paragraph>
         But keep in mind, this is really last resort and is neither mana
         efficient, damage efficient and force you to stop moving. So use with
