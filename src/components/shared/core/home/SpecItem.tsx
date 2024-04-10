@@ -26,14 +26,18 @@ function SpecItem({ job, spec }: Readonly<Props>) {
       value={job_spec}
       spec-theme={job}
       onClick={() => navigateToSpec(navigate, job_spec, navigationContext)}
-      className="anim bg-accent-3 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-1 rounded-md border-2 px-2 py-1 hover:scale-110 sm:px-4 sm:py-2"
+      className="anim bg-accent-3 text-size-5 sm:text-size-2 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-1 rounded-md border-2 px-2 py-1 sm:px-4 sm:py-2 sm:hover:scale-110"
     >
       <img
-        className="h-6 w-6 rounded-sm border border-zinc-900"
+        className="h-8 w-8 rounded-sm border border-zinc-900 sm:h-6 sm:w-6"
         src={icon}
         alt={job_spec}
       />
-      <div className="font-bold text-zinc-900">{name}</div>
+      <div className="hidden font-bold text-zinc-900 lg:block">{name}</div>
+      <div className="flex-1 font-bold capitalize text-zinc-900 lg:hidden">
+        {spec}
+      </div>
+      <div className="h-8 w-8"></div>
     </button>
   )
 }

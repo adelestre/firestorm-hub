@@ -6,11 +6,11 @@ function Specs() {
   return (
     <div className="min-h-0 w-full flex-1">
       <CustomScroll heightRelativeToParent="100%">
-        <div className="text-size-2 flex w-full flex-col items-center gap-3 p-4 sm:grid sm:grid-cols-2 lg:flex">
+        <div className="text-size-2 flex w-full flex-col items-center gap-3 p-4">
           {Object.keys(specs).map((job) => (
             <div
               key={'home-specs-' + job}
-              className="flex w-full flex-col gap-1 sm:w-auto lg:flex-row"
+              className="flex w-full flex-col justify-center gap-1 sm:flex-row"
             >
               {Object.keys(specs[job as keyof typeof specs]).map((spec) => (
                 <SpecItem

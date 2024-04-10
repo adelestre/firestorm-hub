@@ -59,7 +59,7 @@ function Navigation({ headerRef }: Readonly<Props>) {
           className={`anim bg-primary-2 border-primary-3 pointer-events-auto absolute bottom-0 right-0 z-40 flex w-full max-w-72 flex-col border-l shadow-md-left sm:min-w-72 ${navigationContext.navigation ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <div className="anim text-secondary-4 flex w-full flex-row justify-between gap-2 p-4 pb-0 text-3xl md:pt-2">
-            <div className="spec-select flex w-full min-w-0 flex-1 font-eco text-2xl font-bold">
+            <div className="spec-select flex w-full min-w-0 flex-1 font-eco text-3xl font-bold">
               {specContext && (
                 <Select
                   selected={getSelected}
