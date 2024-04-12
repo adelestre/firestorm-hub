@@ -1,3 +1,6 @@
+import dungeons from './dungeons.json'
+import { MythicRun, Player } from './types'
+
 export function scaleScore(
   time: number,
   dungTimers: number[],
@@ -52,4 +55,30 @@ function keyLevelToScore(lvl: number): number {
     156, 163, 170, 177, 184, 191, 198, 205, 212, 219, 226, 233, 240,
   ]
   return keylvltoscore[lvl]
+}
+
+export function getPlayer(players: Player[], pid: number): Player | undefined {
+  return players.find((player) => player.pid === pid)
+}
+
+export function getRun(runs: MythicRun[], rid: string): MythicRun | undefined {
+  return runs.find((run) => run.rid === rid)
+}
+
+export function updatefsio(player: Player, currentRuns: MythicRun[]) {
+  let newio = 0
+  const runs = player.bruns
+    .map((run) => getRun(currentRuns, run))
+    .filter((run) => run !== undefined) as MythicRun[]
+  dungeons.forEach((dungeon) => {
+    const tmp = runs
+      .filter((run) => run.dungeon.id === dungeon.id)
+      .map((run) => run.score)
+    tmp.sort((a, b) => b - a)
+    if (tmp.length > 0) newio += tmp[0] * 1.5
+    if (tmp.length > 1) newio += tmp[1] * 0.5
+  })
+
+  player.fsio = newio
+  player.fsio = Math.round(player.fsio * 100) / 100
 }

@@ -17,3 +17,11 @@ export type Dungeon = {
   name: string
   timer: number[]
 }
+
+export type Player = {
+  pid: number
+  name: string
+  pclass: string
+  bruns: string[]
+  fsio: number
+}
