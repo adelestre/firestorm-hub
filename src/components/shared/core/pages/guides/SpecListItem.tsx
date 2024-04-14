@@ -37,7 +37,7 @@ function SpecListItem({ job, spec }: Readonly<Props>) {
       <div className="flex-1 font-bold capitalize text-zinc-900 lg:hidden">
         {spec}
       </div>
-      <div className="h-8 w-8 lg:hidden"></div>
+      <div className="h-8 w-8 sm:hidden"></div>
     </button>
   )
 }
