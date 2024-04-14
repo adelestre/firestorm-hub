@@ -1,7 +1,10 @@
 import { useMemo } from 'react'
-import { SectionProvider, useSectionContext } from './core/guide/GuideContext'
-import { useSection } from './core/utilities/hooks/useSection'
-import { SectionContext } from './core/utilities/types/contexts'
+import {
+  SectionProvider,
+  useSectionContext,
+} from '@shared/core/contexts/Contexts'
+import { useSection } from './core/hooks/useSection'
+import { SectionContext } from './core/types/contexts'
 
 type Props = {
   name: string

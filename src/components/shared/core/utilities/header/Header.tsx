@@ -1,6 +1,6 @@
 import { ReactNode, useCallback } from 'react'
 import ThemeToggle from '../buttons/ThemeToggle'
-import { useThemeContext } from '../../ThemeContext'
+import { useThemeContext } from '@shared/core/contexts/ThemeContext'
 import { useNavigate } from 'react-router-dom'
 
 type Props = {
@@ -35,7 +35,7 @@ function Header({
           <img
             className="hidden h-full lg:block"
             src={`/assets/logo-name-horizontal${themeContext?.state ? '-light' : ''}.svg`}
-            alt=""
+            alt="Firestorm Hub Logo"
           />
           <img
             className="block h-2/3 sm:h-full lg:hidden"

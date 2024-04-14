@@ -1,38 +1,20 @@
-import {
-  createContext,
-  ReactNode,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react'
-import {
-  SectionContext,
-  NavigationContext,
-  ContentContext,
-  SpecContext,
-} from '../utilities/types/contexts'
-import { useSectionData } from '../utilities/hooks/useSectionData'
+import { ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import { SectionContext, NavigationContext } from '../types/contexts'
+import { useSectionData } from '../hooks/useSectionData'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { transformStringForUrl } from '../utilities/utils'
-
-export const SectionProvider = createContext<SectionContext>(undefined)
-
-const NavigationProvider = createContext<NavigationContext>(undefined)
-
-export const ContentProvider = createContext<ContentContext>({
-  content: 'mythic+',
-  changeContent: () => null,
-})
-
-export const SpecProvider = createContext<SpecContext>(undefined)
+import {
+  SpecProvider,
+  SectionProvider,
+  NavigationProvider,
+  ContentProvider,
+} from './Contexts'
 
 type Props = {
   children: ReactNode
 }
 
-export function GuideContext({ children }: Readonly<Props>) {
+function GuideContext({ children }: Readonly<Props>) {
   const navigate = useNavigate()
   const { job, spec, content } = useParams()
   const location = useLocation()
@@ -123,15 +105,4 @@ export function GuideContext({ children }: Readonly<Props>) {
   )
 }
 
-export function useSectionContext() {
-  return useContext(SectionProvider)
-}
-export function useNavigationContext() {
-  return useContext(NavigationProvider)
-}
-export function useContentContext() {
-  return useContext(ContentProvider)
-}
-export function useSpecContext() {
-  return useContext(SpecProvider)
-}
+export default GuideContext

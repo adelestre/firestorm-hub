@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { CustomScroll } from 'react-custom-scroll'
-import { useThrottledEffect } from '../utilities/hooks/useThrottledEffect'
-import { useNavigationContext, useSectionContext } from '../guide/GuideContext'
-import ScrollBack from '../utilities/buttons/ScrollBack'
-import Spinner from '../utilities/Spinner'
+import { useThrottledEffect } from '../../../hooks/useThrottledEffect'
+import {
+  useNavigationContext,
+  useSectionContext,
+} from '../../../contexts/Contexts'
+import ScrollBack from '../../../utilities/buttons/ScrollBack'
+import Loading from '../../../utilities/Loading'
 import GuideRouter from './GuideRouter'
 
 function Document() {
@@ -40,7 +43,7 @@ function Document() {
     setTranslateX(getTranslateX())
   }, 'resize')
   return loading ? (
-    <Spinner />
+    <Loading />
   ) : sectionContext ? (
     <div
       id="document"

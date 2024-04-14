@@ -1,15 +1,15 @@
 import { useNavigate } from 'react-router-dom'
-import { useNavigationContext } from '../guide/GuideContext'
-import icons from '../data/icons.json'
-import specs from '../data/specs.json'
-import { navigateToSpec } from '../utilities/utils'
+import { useNavigationContext } from '@shared/core/contexts/Contexts'
+import icons from '@shared/core/data/icons.json'
+import specs from '@shared/core/data/specs.json'
+import { navigateToSpec } from '@shared/core/utilities/utils'
 
 type Props = {
   job: string
   spec: string
 }
 
-function SpecItem({ job, spec }: Readonly<Props>) {
+function SpecListItem({ job, spec }: Readonly<Props>) {
   const navigate = useNavigate()
   const navigationContext = useNavigationContext()
   const job_spec = `${job}-${spec}`
@@ -42,4 +42,4 @@ function SpecItem({ job, spec }: Readonly<Props>) {
   )
 }
 
-export default SpecItem
+export default SpecListItem

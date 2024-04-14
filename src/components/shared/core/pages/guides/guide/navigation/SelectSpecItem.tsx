@@ -1,8 +1,8 @@
 import { Option } from '@material-tailwind/react'
-import icons from '../../data/icons.json'
+import icons from '@shared/core/data/icons.json'
 import { useNavigate } from 'react-router-dom'
-import { useNavigationContext } from '../GuideContext'
-import { navigateToSpec } from '../../utilities/utils'
+import { useNavigationContext } from '@shared/core/contexts/Contexts'
+import { navigateToSpec } from '@shared/core/utilities/utils'
 
 type Props = {
   job: string
