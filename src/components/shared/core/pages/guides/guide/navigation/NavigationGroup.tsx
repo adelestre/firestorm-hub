@@ -1,12 +1,12 @@
 import NavigationLink from './NavigationLink'
-import { SectionData } from '../../utilities/types/sectionData'
+import { SectionData } from '../../../../types/sectionData'
 import { useEffect, useMemo, useState } from 'react'
 import {
   SectionProvider,
   useContentContext,
   useSectionContext,
-} from '../GuideContext'
-import { SectionContext } from '../../utilities/types/contexts'
+} from '@shared/core/contexts/Contexts'
+import { SectionContext } from '../../../../types/contexts'
 
 type Props = {
   id: string

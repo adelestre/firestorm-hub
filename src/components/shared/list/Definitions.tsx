@@ -1,8 +1,8 @@
 import { useCallback, useRef, useState } from 'react'
 import List from './List'
 import ListElement from './ListElement'
-import { useThrottledEffect } from '../core/utilities/hooks/useThrottledEffect'
-import { Definition } from '../core/utilities/types/list'
+import { useThrottledEffect } from '../core/hooks/useThrottledEffect'
+import { Definition } from '../core/types/list'
 
 type Props = {
   defs: Definition[]

@@ -1,9 +1,12 @@
-import Button from '../utilities/buttons/Button'
-import { useContentContext, useNavigationContext } from './GuideContext'
-import Header from '../utilities/header/Header'
-import IconButton from '../utilities/buttons/IconButton'
+import Button from '../../../utilities/buttons/Button'
+import {
+  useContentContext,
+  useNavigationContext,
+} from '../../../contexts/Contexts'
+import Header from '../../../utilities/header/Header'
+import IconButton from '../../../utilities/buttons/IconButton'
 import { useEffect, useState } from 'react'
-import { useThrottledEffect } from '../utilities/hooks/useThrottledEffect'
+import { useThrottledEffect } from '../../../hooks/useThrottledEffect'
 
 type Props = {
   reference: React.RefObject<HTMLDivElement>

@@ -1,5 +1,5 @@
 import { NavigateFunction } from 'react-router-dom'
-import { NavigationContext } from './types/contexts'
+import { NavigationContext } from '../types/contexts'
 
 export function transformStringForUrl(str: string): string {
   return str

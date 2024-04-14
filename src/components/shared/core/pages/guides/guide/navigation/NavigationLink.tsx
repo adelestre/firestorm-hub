@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { useNavigationContext } from '../GuideContext'
-import { transformStringForUrl } from '../../utilities/utils'
+import { useNavigationContext } from '@shared/core/contexts/Contexts'
+import { transformStringForUrl } from '../../../../utilities/utils'
 
 type Props = {
   name: string

@@ -1,16 +1,16 @@
 import NavigationGroup from './NavigationGroup'
-import { useThrottledEffect } from '../../utilities/hooks/useThrottledEffect'
+import { useThrottledEffect } from '../../../../hooks/useThrottledEffect'
 import React, { useCallback, useState } from 'react'
 import { MdOutlineClose } from 'react-icons/md'
-import IconButton from '../../utilities/buttons/IconButton'
+import IconButton from '../../../../utilities/buttons/IconButton'
 import { CustomScroll } from 'react-custom-scroll'
 import {
   useNavigationContext,
   useSectionContext,
   useSpecContext,
-} from '../GuideContext'
+} from '@shared/core/contexts/Contexts'
 import SelectSpecItem from './SelectSpecItem'
-import specs from '../../data/specs.json'
+import specs from '../../../../data/specs.json'
 import { Select } from '@material-tailwind/react'
 
 type Props = {

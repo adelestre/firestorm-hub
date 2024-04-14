@@ -1,6 +1,6 @@
 import { HiOutlineChevronUp } from 'react-icons/hi'
-import { useNavigationContext } from '../../guide/GuideContext'
-import useWindowIsScrolled from '../hooks/useWindowIsScrolled'
+import { useNavigationContext } from '@shared/core/contexts/Contexts'
+import useWindowIsScrolled from '../../hooks/useWindowIsScrolled'
 
 type Props = {
   docRef: React.RefObject<HTMLDivElement>
