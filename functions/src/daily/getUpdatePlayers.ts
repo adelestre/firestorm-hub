@@ -1,25 +1,28 @@
-import { playersPath, runsPath } from './env'
-import { MythicRun, Player } from './types'
-import { getPlayer, getRun, scaleScore, updatefsio } from './utils'
-import * as fs from 'fs'
+import { MythicRun, Player } from '../types'
+import {
+  getDungeon,
+  getPlayer,
+  getRun,
+  logInfo,
+  scaleScore,
+  updatefsio,
+} from '../utils'
 
-export function updatePlayers(newRuns: MythicRun[]): Player[] {
+export function getUpdatedPlayers(
+  runs: MythicRun[],
+  newRuns: MythicRun[],
+  players: Player[]
+): Player[] {
   let creationCounter = 0
   let updateCounter = 0
-  let currentRuns: MythicRun[] = []
-  if (fs.existsSync(runsPath))
-    currentRuns = JSON.parse(fs.readFileSync(runsPath, 'utf-8'))
-
-  let currentPlayers: Player[] = []
-  if (fs.existsSync(playersPath))
-    currentPlayers = JSON.parse(fs.readFileSync(playersPath, 'utf-8'))
 
   const updatedPlayers: Player[] = []
 
   newRuns.forEach((run) => {
-    if (!run.score) scaleScore(run.time, run.dungeon.timer, run.lvl)
+    const dungeon = getDungeon(run.dungeon)
+    if (!run.score && dungeon) scaleScore(run.time, dungeon.timer, run.lvl)
     run.pids.forEach((pid, pidx) => {
-      const player = getPlayer(currentPlayers.concat(updatedPlayers), pid)
+      const player = getPlayer(players.concat(updatedPlayers), pid)
 
       if (!player) {
         updatedPlayers.push({
@@ -27,6 +30,7 @@ export function updatePlayers(newRuns: MythicRun[]): Player[] {
           name: run.pnames[pidx],
           pclass: run.pclasses[pidx],
           bruns: [run.rid],
+          runCount: 1,
           fsio: run.score,
         })
         creationCounter++
@@ -34,8 +38,10 @@ export function updatePlayers(newRuns: MythicRun[]): Player[] {
         // Update player name if it has changed
         if (player.name !== run.pnames[pidx]) player.name = run.pnames[pidx]
 
+        player.runCount++
+
         player.bruns.forEach((pbrid) => {
-          const cbrun = getRun(currentRuns, pbrid)
+          const cbrun = getRun(runs, pbrid)
           if (
             cbrun &&
             pbrid !== run.rid &&
@@ -54,15 +60,11 @@ export function updatePlayers(newRuns: MythicRun[]): Player[] {
     })
   })
   updatedPlayers.forEach((player) => {
-    updatefsio(player, currentRuns.concat(newRuns))
+    updatefsio(player, runs.concat(newRuns))
     updateCounter++
   })
-
-  console.log(
-    'created ',
-    creationCounter,
-    ' updated ',
-    updateCounter - creationCounter
+  logInfo(
+    `created ${creationCounter} users and updated ${updateCounter - creationCounter}`
   )
   return updatedPlayers
 }
