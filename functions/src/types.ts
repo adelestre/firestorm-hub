@@ -1,8 +1,8 @@
 export type MythicRun = {
   rid: string
-  pids: number[]
+  pids: string[]
   pnames: string[]
-  dungeon: Dungeon
+  dungeon: string
   lvl: number
   time: number
   score: number
@@ -19,9 +19,10 @@ export type Dungeon = {
 }
 
 export type Player = {
-  pid: number
+  pid: string
   name: string
   pclass: string
   bruns: string[]
+  runCount: number
   fsio: number
 }

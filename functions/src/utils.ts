@@ -1,4 +1,5 @@
-import dungeons from './dungeons.json'
+import { log } from 'firebase-functions/logger'
+import dungeons from './dungeons/dungeonsS1.json'
 import { MythicRun, Player } from './types'
 
 export function scaleScore(
@@ -57,12 +58,16 @@ function keyLevelToScore(lvl: number): number {
   return keylvltoscore[lvl]
 }
 
-export function getPlayer(players: Player[], pid: number): Player | undefined {
+export function getPlayer(players: Player[], pid: string): Player | undefined {
   return players.find((player) => player.pid === pid)
 }
 
 export function getRun(runs: MythicRun[], rid: string): MythicRun | undefined {
   return runs.find((run) => run.rid === rid)
+}
+
+export function getDungeon(dungeonId: string) {
+  return dungeons.find((dungeon) => dungeon.id === dungeonId)
 }
 
 export function updatefsio(player: Player, currentRuns: MythicRun[]) {
@@ -72,7 +77,7 @@ export function updatefsio(player: Player, currentRuns: MythicRun[]) {
     .filter((run) => run !== undefined) as MythicRun[]
   dungeons.forEach((dungeon) => {
     const tmp = runs
-      .filter((run) => run.dungeon.id === dungeon.id)
+      .filter((run) => run.dungeon === dungeon.id)
       .map((run) => run.score)
     tmp.sort((a, b) => b - a)
     if (tmp.length > 0) newio += tmp[0] * 1.5
@@ -81,4 +86,9 @@ export function updatefsio(player: Player, currentRuns: MythicRun[]) {
 
   player.fsio = newio
   player.fsio = Math.round(player.fsio * 100) / 100
+}
+
+export function logInfo(msg: string) {
+  console.log(msg)
+  log(msg)
 }

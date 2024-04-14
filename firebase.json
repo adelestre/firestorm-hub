@@ -1,12 +1,16 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
+      {
+        "source": "/api/**",
+        "function": {
+          "functionId": "api",
+          "region": "us-central1",
+          "pinTag": true
+        }
+      },
       {
         "source": "**",
         "destination": "/index.html"
@@ -25,7 +29,9 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint",
-        "npm --prefix \"$RESOURCE_DIR\" run build"
+        "npm --prefix \"$RESOURCE_DIR\" run build",
+        "rm -rf .cache",
+        "node functions/node_modules/puppeteer/install.mjs"
       ]
     }
   ],

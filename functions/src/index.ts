@@ -1,16 +1,22 @@
-import { fetchNewRuns } from './fetchNewRuns'
-import { updatePlayers } from './updatePlayers'
-import { runsPath, playersPath } from './env'
-import * as fs from 'fs'
+import { onSchedule } from 'firebase-functions/v2/scheduler'
+import { daily } from './daily/daily'
+import { logInfo } from './utils'
+import express from 'express'
+import { onRequest } from 'firebase-functions/v2/https'
+import { paginate } from './api/paginate'
+import { limiter } from './api/limiter'
 
-async function daily() {
-  const newRuns = await fetchNewRuns()
-  const updatedPlayers = updatePlayers(newRuns)
+const api = express()
+api.use(limiter)
 
-  fs.writeFileSync(runsPath, JSON.stringify(newRuns, null, 2))
-  fs.writeFileSync(playersPath, JSON.stringify(updatedPlayers, null, 2))
+api.post('/api/leaderboard/paginate', paginate)
 
-  console.log('Daily update completed')
-}
+exports.api = onRequest(api)
 
-daily()
+exports.dailyUpdate = onSchedule(
+  { schedule: '0 0,12 * * *', memory: '512MiB' },
+  async () => {
+    await daily()
+    logInfo('All processes ended at :' + new Date().toISOString())
+  }
+)
