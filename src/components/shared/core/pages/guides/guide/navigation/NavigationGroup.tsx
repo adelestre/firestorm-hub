@@ -15,7 +15,7 @@ type Props = {
 function NavigationGroup({ id }: Readonly<Props>) {
   const sectionContext = useSectionContext()
   const contentContext = useContentContext()
-  const [textSize, setTextSize] = useState('text-size-4')
+  const [textSize, setTextSize] = useState('text-size-5')
   const [section, setSection] = useState<SectionData | undefined>(undefined)
   const [children, setChildren] = useState<SectionData[]>([])
   const getName = () => {

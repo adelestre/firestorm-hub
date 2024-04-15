@@ -4,7 +4,7 @@ import Header from './Header'
 function DefaultHeader() {
   return (
     <Header>
-      <div className="text-size-2 flex h-full w-full flex-row items-center justify-end gap-4 py-3 font-semibold">
+      <div className="text-size-3 flex h-full w-full flex-row items-center justify-end gap-4 py-3 font-semibold">
         <Link to={'/leaderboard'} className="anim hover:text-accent-2">
           M+ Leaderboard
         </Link>

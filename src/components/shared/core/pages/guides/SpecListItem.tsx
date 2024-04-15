@@ -26,7 +26,7 @@ function SpecListItem({ job, spec }: Readonly<Props>) {
       value={job_spec}
       spec-theme={job}
       onClick={() => navigateToSpec(navigate, job_spec, navigationContext)}
-      className="anim bg-accent-3 text-size-5 sm:text-size-2 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-1 rounded-md border-2 px-2 py-1 sm:px-4 sm:py-2 sm:hover:scale-110"
+      className="anim bg-accent-3 text-size-6 sm:text-size-3 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-1 rounded-md border-2 px-2 py-1 sm:px-4 sm:py-2 sm:hover:scale-110"
     >
       <img
         className="h-8 w-8 rounded-sm border border-zinc-900 sm:h-6 sm:w-6"

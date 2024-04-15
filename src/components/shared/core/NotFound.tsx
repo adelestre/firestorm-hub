@@ -17,12 +17,12 @@ function NotFound() {
               alt="Firestorm Hub Logo"
             />
             <div className="flex flex-col items-center gap-4">
-              <p className="text-size-5 text-accent-2 ">404 Not Found</p>
-              <p className="text-size-3 text-center font-bold">
+              <p className="text-size-6 text-accent-2 ">404 Not Found</p>
+              <p className="text-size-4 text-center font-bold">
                 The page you're trying to access doesn't exist or was removed
               </p>
               <Link to={'/'} className="group flex flex-col items-center">
-                <p className="text-size-2">{'> Go back to a safer place <'}</p>
+                <p className="text-size-3">{'> Go back to a safer place <'}</p>
                 <div className="anim bg-secondary-2 h-px w-0 -translate-y-[2px] group-hover:w-full"></div>
               </Link>
             </div>

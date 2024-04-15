@@ -10,7 +10,7 @@ function Specs() {
     <Suspense fallback={<Loading />}>
       <div className="min-h-0 w-full flex-1">
         <CustomScroll heightRelativeToParent="100%">
-          <div className="text-size-2 flex w-full flex-col items-center gap-3 p-4">
+          <div className="text-size-3 flex w-full flex-col items-center gap-3 p-4">
             {Object.keys(specs).map((job) => (
               <div
                 key={'home-specs-' + job}

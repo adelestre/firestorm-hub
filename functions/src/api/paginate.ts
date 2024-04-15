@@ -30,10 +30,7 @@ export async function paginate(req: Request, res: Response) {
       query = query
         .where('name', '>=', filterName)
         .where('name', '<=', filterName + '\uf8ff')
-    query =
-      order && order === 'desc'
-        ? query.orderBy('fsio', 'desc')
-        : query.orderBy('fsio', 'asc')
+    query = order ? query.orderBy('fsio', order) : query.orderBy('fsio', 'desc')
     query = query.orderBy('name')
     if (startPoint) query = query.startAfter(startPoint)
     const players = (await query.get()).docs.map((doc) => doc.data())

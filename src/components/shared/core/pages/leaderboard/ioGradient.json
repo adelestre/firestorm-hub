@@ -1,0 +1,157 @@
+[
+  {
+    "io": 3925,
+    "colorDark": "#ff8000",
+    "colorLight": "#ff8000"
+  },
+  {
+    "io": 3760,
+    "colorDark": "#fa7737",
+    "colorLight": "#fa7737"
+  },
+  {
+    "io": 3640,
+    "colorDark": "#f46d54",
+    "colorLight": "#f46d54"
+  },
+  {
+    "io": 3520,
+    "colorDark": "#ed646e",
+    "colorLight": "#ed646e"
+  },
+  {
+    "io": 3400,
+    "colorDark": "#e55b86",
+    "colorLight": "#e55b86"
+  },
+  {
+    "io": 3280,
+    "colorDark": "#da529d",
+    "colorLight": "#da529d"
+  },
+  {
+    "io": 3160,
+    "colorDark": "#ce49b5",
+    "colorLight": "#ce49b5"
+  },
+  {
+    "io": 3040,
+    "colorDark": "#bf40cd",
+    "colorLight": "#bf40cd"
+  },
+  {
+    "io": 2920,
+    "colorDark": "#ac38e4",
+    "colorLight": "#ac38e4"
+  },
+  {
+    "io": 2790,
+    "colorDark": "#8f49ea",
+    "colorLight": "#8f49ea"
+  },
+  {
+    "io": 2670,
+    "colorDark": "#695ee4",
+    "colorLight": "#695ee4"
+  },
+  {
+    "io": 2550,
+    "colorDark": "#286dde",
+    "colorLight": "#286dde"
+  },
+  {
+    "io": 2370,
+    "colorDark": "#2e79d3",
+    "colorLight": "#2e79d3"
+  },
+  {
+    "io": 2250,
+    "colorDark": "#4384c7",
+    "colorLight": "#4384c7"
+  },
+  {
+    "io": 2130,
+    "colorDark": "#5090bb",
+    "colorLight": "#5090bb"
+  },
+  {
+    "io": 2010,
+    "colorDark": "#589caf",
+    "colorLight": "#589caf"
+  },
+  {
+    "io": 1890,
+    "colorDark": "#5da8a2",
+    "colorLight": "#5da8a2"
+  },
+  {
+    "io": 1770,
+    "colorDark": "#5fb395",
+    "colorLight": "#5fb395"
+  },
+  {
+    "io": 1650,
+    "colorDark": "#5fbf87",
+    "colorLight": "#5fbf87"
+  },
+  {
+    "io": 1530,
+    "colorDark": "#5ccb78",
+    "colorLight": "#5ccb78"
+  },
+  {
+    "io": 1410,
+    "colorDark": "#57d868",
+    "colorLight": "#57d868"
+  },
+  {
+    "io": 1290,
+    "colorDark": "#4ee455",
+    "colorLight": "#4ee455"
+  },
+  {
+    "io": 1170,
+    "colorDark": "#40f03e",
+    "colorLight": "#40f03e"
+  },
+  {
+    "io": 1050,
+    "colorDark": "#27fd16",
+    "colorLight": "#27fd16"
+  },
+  {
+    "io": 925,
+    "colorDark": "#5cff41",
+    "colorLight": "#27de19"
+  },
+  {
+    "io": 800,
+    "colorDark": "#86ff69",
+    "colorLight": "#27c01c"
+  },
+  {
+    "io": 675,
+    "colorDark": "#a5ff8b",
+    "colorLight": "#27a11f"
+  },
+  {
+    "io": 550,
+    "colorDark": "#c0ffaa",
+    "colorLight": "#278321"
+  },
+  {
+    "io": 425,
+    "colorDark": "#d8ffc9",
+    "colorLight": "#276424"
+  },
+  {
+    "io": 300,
+    "colorDark": "#eeffe7",
+    "colorLight": "#274627"
+  },
+  {
+    "io": 200,
+    "colorDark": "#ffffff",
+    "colorLight": "#27272a"
+  }
+]
