@@ -10,11 +10,11 @@ function IntroductionTitle({ name, reference }: Readonly<TitleProps>) {
   const contentContext = useContentContext()
   return contentContext ? (
     <div>
-      <p className="eco text-size-2 text-secondary-4">
+      <p className="eco text-size-3 text-secondary-4">
         Updated for Season 1 Dragonflight (Firestorm)
       </p>
-      <h1 className="title-1 text-size-5">A Mistweaver guide</h1>
-      <h1 className="title-2 text-size-5">
+      <h1 className="title-1 text-size-6">A Mistweaver guide</h1>
+      <h1 className="title-2 text-size-6">
         From basics to advanced tips for{' '}
         {contentContext.content === 'mythic-plus' ? 'Mythic+' : 'Raid'}
       </h1>
@@ -26,7 +26,7 @@ function IntroductionTitle({ name, reference }: Readonly<TitleProps>) {
       />
       <h2
         ref={reference as React.Ref<HTMLHeadingElement>}
-        className="title-2 space-top text-size-4"
+        className="title-2 space-top text-size-5"
       >
         {name}
       </h2>

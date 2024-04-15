@@ -62,7 +62,7 @@ function Title({ level, name, reference }: Readonly<TitleProps>) {
       return (
         <h2
           ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-2 space-top text-size-4"
+          className="title-2 space-top text-size-5"
         >
           {name}
         </h2>
@@ -71,7 +71,7 @@ function Title({ level, name, reference }: Readonly<TitleProps>) {
       return (
         <h3
           ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-3 space-top text-size-3"
+          className="title-3 space-top text-size-4"
         >
           {name}
         </h3>
@@ -80,7 +80,7 @@ function Title({ level, name, reference }: Readonly<TitleProps>) {
       return (
         <h4
           ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-4 space-top text-size-2"
+          className="title-4 space-top text-size-3"
         >
           {name}
         </h4>

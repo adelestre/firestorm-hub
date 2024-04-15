@@ -73,4 +73,7 @@ export const plugins = [
     preferredStrategy: 'pseudoelements',
   }),
   'prettier-plugin-tailwindcss',
+  function ({ addVariant }) {
+    addVariant('not-last', '&:not(:last-child)')
+  },
 ]
