@@ -19,12 +19,12 @@ export const theme = {
       'light-secondary-2': '#27272a', // Zinc-800
       'light-secondary-3': '#3f3f46', // Zinc-700
       'light-secondary-4': '#52525b', // Zinc-600
-      'light-accent-1': 'var(--accent-1)',
-      'light-accent-2': 'var(--accent-2)',
-      'light-accent-3': 'var(--accent-3)',
-      'light-accent-4': 'var(--accent-4)',
-      'light-accent-5': 'var(--accent-5)',
-      'light-accent-6': 'var(--accent-6)',
+      'light-accent-1': 'var(--light-accent-1)',
+      'light-accent-2': 'var(--light-accent-2)',
+      'light-accent-3': 'var(--light-accent-3)',
+      'light-accent-4': 'var(--light-accent-4)',
+      'light-accent-5': 'var(--light-accent-5)',
+      'light-accent-6': 'var(--light-accent-6)',
       'light-green-1': '#16a34a', // Green-600
       'light-green-2': '#22c55e', // Green-500
       'light-green-3': '#4ade80', // Green-400
@@ -44,12 +44,12 @@ export const theme = {
       'dark-secondary-2': '#e4e4e7', // Zinc-200
       'dark-secondary-3': '#d4d4d8', // Zinc-300
       'dark-secondary-4': '#a1a1aa', // Zinc-400
-      'dark-accent-1': 'var(--accent-1)',
-      'dark-accent-2': 'var(--accent-2)',
-      'dark-accent-3': 'var(--accent-3)',
-      'dark-accent-4': 'var(--accent-4)',
-      'dark-accent-5': 'var(--accent-5)',
-      'dark-accent-6': 'var(--accent-6)',
+      'dark-accent-1': 'var(--dark-accent-1)',
+      'dark-accent-2': 'var(--dark-accent-2)',
+      'dark-accent-3': 'var(--dark-accent-3)',
+      'dark-accent-4': 'var(--dark-accent-4)',
+      'dark-accent-5': 'var(--dark-accent-5)',
+      'dark-accent-6': 'var(--dark-accent-6)',
       'dark-green-1': '#16a34a', // Green-600
       'dark-green-2': '#22c55e', // Green-500
       'dark-green-3': '#4ade80', // Green-400

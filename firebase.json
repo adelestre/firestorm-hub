@@ -29,9 +29,7 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint",
-        "npm --prefix \"$RESOURCE_DIR\" run build",
-        "rm -rf .cache",
-        "node functions/node_modules/puppeteer/install.mjs"
+        "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
     }
   ],

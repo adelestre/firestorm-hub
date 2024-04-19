@@ -6,7 +6,7 @@ type Props = {
 function Button({ children, active, ...props }: Readonly<Props>) {
   let classes =
     (props.className ? props.className + ' ' : '') +
-    'anim px-4 py-1 sm:py-2 border-2 text-2xl sm:text-3xl rounded-md font-eco font-semibold flex items-center justify-center'
+    'anim px-4 py-2 border-2 text-2xl sm:text-3xl rounded-md font-eco font-semibold flex items-center justify-center'
   classes +=
     ' ' +
     (active

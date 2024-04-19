@@ -40,7 +40,7 @@
     @apply text-base sm:text-lg md:text-xl;
   }
   .text-size-2 {
-    @apply text-lg sm:text-2xl md:text-xl;
+    @apply text-lg sm:text-xl md:text-2xl;
   }
   .text-size-3 {
     @apply text-xl sm:text-2xl md:text-3xl;
@@ -342,7 +342,7 @@
 }
 
 div.rcs-inner-handle {
-  @apply bg-light-accent-1 dark:bg-dark-accent-1;
+  @apply bg-light-accent-2 dark:bg-dark-accent-2;
 }
 
 div.rcs-inner-container {
@@ -388,115 +388,199 @@ p {
 
 @layer colors {
   [spec-theme='default'] {
-    --accent-1: #149360;
-    --accent-2: #0fc186;
-    --accent-3: #0ce991;
-    --accent-4: #76ffd4;
-    --accent-5: #b3ffe6;
-    --accent-6: #e0fff5;
+    --light-accent-1: #00b26b;
+    --light-accent-2: #00d680;
+    --light-accent-3: #00ff98;
+    --light-accent-4: #00ff98;
+    --light-accent-5: #76f9c5;
+    --light-accent-6: #baf7f0;
+    --dark-accent-1: #76f9c5;
+    --dark-accent-2: #46fcb3;
+    --dark-accent-3: #00ff98;
+    --dark-accent-4: #00d680;
+    --dark-accent-5: #00b26b;
+    --dark-accent-6: #008f56;
   }
   [spec-theme='deathknight'] {
-    --accent-1: #79091c;
-    --accent-2: #9c0f27;
-    --accent-3: #c41e3a;
-    --accent-4: #e3344f;
-    --accent-5: #f6687f;
-    --accent-6: #f9a3b0;
+    --light-accent-1: #79091c;
+    --light-accent-2: #9c0f27;
+    --light-accent-3: #c41e3a;
+    --light-accent-4: #e3344f;
+    --light-accent-5: #f6687f;
+    --light-accent-6: #f9a3b0;
+    --dark-accent-1: #f6687f;
+    --dark-accent-2: #f6687f;
+    --dark-accent-3: #c41e3a;
+    --dark-accent-4: #9c0f27;
+    --dark-accent-5: #79091c;
+    --dark-accent-6: #4f0610;
   }
   [spec-theme='demonhunter'] {
-    --accent-1: #650b83;
-    --accent-2: #8a0fba;
-    --accent-3: #a330c9;
-    --accent-4: #b44fd9;
-    --accent-5: #c77ff0;
-    --accent-6: #e0baf7;
+    --light-accent-1: #650b83;
+    --light-accent-2: #8a0fba;
+    --light-accent-3: #a330c9;
+    --light-accent-4: #b44fd9;
+    --light-accent-5: #c77ff0;
+    --light-accent-6: #e0baf7;
+    --dark-accent-1: #c77ff0;
+    --dark-accent-2: #b44fd9;
+    --dark-accent-3: #a330c9;
+    --dark-accent-4: #8a0fba;
+    --dark-accent-5: #650b83;
+    --dark-accent-6: #4f0763;
   }
   [spec-theme='druid'] {
-    --accent-1: #a54d00;
-    --accent-2: #d36600;
-    --accent-3: #ff7d0a;
-    --accent-4: #ff9e3d;
-    --accent-5: #ffb56b;
-    --accent-6: #ffcc99;
+    --light-accent-1: #a54d00;
+    --light-accent-2: #d36600;
+    --light-accent-3: #ff7d0a;
+    --light-accent-4: #ff9e3d;
+    --light-accent-5: #ffb56b;
+    --light-accent-6: #ffcc99;
+    --dark-accent-1: #ffb56b;
+    --dark-accent-2: #ff9e3d;
+    --dark-accent-3: #ff7d0a;
+    --dark-accent-4: #d36600;
+    --dark-accent-5: #a54d00;
+    --dark-accent-6: #7f3a00;
   }
   [spec-theme='evoker'] {
-    --accent-1: #0e6352;
-    --accent-2: #0f7f6e;
-    --accent-3: #33937f;
-    --accent-4: #4faa9a;
-    --accent-5: #7fcfc3;
-    --accent-6: #baf7f0;
+    --light-accent-1: #0e6352;
+    --light-accent-2: #0f7f6e;
+    --light-accent-3: #33937f;
+    --light-accent-4: #4faa9a;
+    --light-accent-5: #7fcfc3;
+    --light-accent-6: #baf7f0;
+    --dark-accent-1: #7fcfc3;
+    --dark-accent-2: #4faa9a;
+    --dark-accent-3: #33937f;
+    --dark-accent-4: #0f7f6e;
+    --dark-accent-5: #0e6352;
+    --dark-accent-6: #0c4f3f;
   }
   [spec-theme='hunter'] {
-    --accent-1: #5c8425;
-    --accent-2: #7fae3d;
-    --accent-3: #aad372;
-    --accent-4: #c5e08c;
-    --accent-5: #d9f0a3;
-    --accent-6: #eaf7b8;
+    --light-accent-1: #5c8425;
+    --light-accent-2: #7fae3d;
+    --light-accent-3: #aad372;
+    --light-accent-4: #c5e08c;
+    --light-accent-5: #d9f0a3;
+    --light-accent-6: #eaf7b8;
+    --dark-accent-1: #d9f0a3;
+    --dark-accent-2: #c5e08c;
+    --dark-accent-3: #aad372;
+    --dark-accent-4: #7fae3d;
+    --dark-accent-5: #5c8425;
+    --dark-accent-6: #3f5a18;
   }
   [spec-theme='mage'] {
-    --accent-1: #0e6f8a;
-    --accent-2: #0f8db0;
-    --accent-3: #3fc7eb;
-    --accent-4: #6fd9f0;
-    --accent-5: #9feaf7;
-    --accent-6: #baf7f9;
+    --light-accent-1: #0e6f8a;
+    --light-accent-2: #0f8db0;
+    --light-accent-3: #3fc7eb;
+    --light-accent-4: #6fd9f0;
+    --light-accent-5: #9feaf7;
+    --light-accent-6: #baf7f9;
+    --dark-accent-1: #9feaf7;
+    --dark-accent-2: #6fd9f0;
+    --dark-accent-3: #3fc7eb;
+    --dark-accent-4: #0f8db0;
+    --dark-accent-5: #0e6f8a;
+    --dark-accent-6: #0c4f6f;
   }
   [spec-theme='monk'] {
-    --accent-1: #149360;
-    --accent-2: #0fc186;
-    --accent-3: #0ce991;
-    --accent-4: #76ffd4;
-    --accent-5: #b3ffe6;
-    --accent-6: #e0fff5;
+    --light-accent-1: #00b26b;
+    --light-accent-2: #00d680;
+    --light-accent-3: #00ff98;
+    --light-accent-4: #00ff98;
+    --light-accent-5: #76f9c5;
+    --light-accent-6: #baf7f0;
+    --dark-accent-1: #76f9c5;
+    --dark-accent-2: #46fcb3;
+    --dark-accent-3: #00ff98;
+    --dark-accent-4: #00d680;
+    --dark-accent-5: #00b26b;
+    --dark-accent-6: #008f56;
   }
   [spec-theme='paladin'] {
-    --accent-1: #a03a68;
-    --accent-2: #c65c8c;
-    --accent-3: #f48cba;
-    --accent-4: #ff9eb5;
-    --accent-5: #ffccda;
-    --aacent-6: #fff5f7;
+    --light-accent-1: #a03a68;
+    --light-accent-2: #c65c8c;
+    --light-accent-3: #f48cba;
+    --light-accent-4: #ff9eb5;
+    --light-accent-5: #ffccda;
+    --light-accent-6: #fff5f7;
+    --dark-accent-1: #ffccda;
+    --dark-accent-2: #ff9eb5;
+    --dark-accent-3: #f48cba;
+    --dark-accent-4: #c65c8c;
+    --dark-accent-5: #a03a68;
+    --dark-accent-6: #7f1f4c;
   }
   [spec-theme='priest'] {
-    --accent-1: #8a8a8a;
-    --accent-2: #b1b1b1;
-    --accent-3: #ffffff;
-    --accent-4: #b1b1b1;
-    --accent-5: #8a8a8a;
-    --accent-6: #656565;
+    --light-accent-1: #ebebeb;
+    --light-accent-2: #f3f3f3;
+    --light-accent-3: #ffffff;
+    --light-accent-4: #f3f3f3;
+    --light-accent-5: #ebebeb;
+    --light-accent-6: #e3e3e3;
+    --dark-accent-1: #ebebeb;
+    --dark-accent-2: #f3f3f3;
+    --dark-accent-3: #ffffff;
+    --dark-accent-4: #f3f3f3;
+    --dark-accent-5: #ebebeb;
+    --dark-accent-6: #e3e3e3;
   }
   [spec-theme='rogue'] {
-    --accent-1: #aea41c;
-    --accent-2: #d6d00f;
-    --accent-3: #fff468;
-    --accent-4: #fff68f;
-    --accent-5: #fff6b5;
-    --accent-6: #fff6d9;
+    --light-accent-1: #c8bb00;
+    --light-accent-2: #e0d91a;
+    --light-accent-3: #fff468;
+    --light-accent-4: #fdf69a;
+    --light-accent-5: #eae5a8;
+    --light-accent-6: #f7f5e0;
+    --dark-accent-1: #eae5a8;
+    --dark-accent-2: #fdf69a;
+    --dark-accent-3: #fff468;
+    --dark-accent-4: #e0d91a;
+    --dark-accent-5: #c8bb00;
+    --dark-accent-6: #a69a00;
   }
   [spec-theme='shaman'] {
-    --accent-1: #003971;
-    --accent-2: #0052a1;
-    --accent-3: #0070dd;
-    --accent-4: #27a1f8;
-    --accent-5: #5cc2ff;
-    --accent-6: #8cd4ff;
+    --light-accent-1: #003971;
+    --light-accent-2: #0052a1;
+    --light-accent-3: #0070dd;
+    --light-accent-4: #27a1f8;
+    --light-accent-5: #5cc2ff;
+    --light-accent-6: #8cd4ff;
+    --dark-accent-1: #5cc2ff;
+    --dark-accent-2: #27a1f8;
+    --dark-accent-3: #0070dd;
+    --dark-accent-4: #0052a1;
+    --dark-accent-5: #003971;
+    --dark-accent-6: #002b58;
   }
   [spec-theme='warlock'] {
-    --accent-1: #3436a8;
-    --accent-2: #4d4ff0;
-    --accent-3: #8788ee;
-    --accent-4: #a3a3f9;
-    --accent-5: #b8b8ff;
-    --accent-6: #d1d1ff;
+    --light-accent-1: #3436a8;
+    --light-accent-2: #4d4ff0;
+    --light-accent-3: #8788ee;
+    --light-accent-4: #a3a3f9;
+    --light-accent-5: #b8b8ff;
+    --light-accent-6: #d1d1ff;
+    --dark-accent-1: #b8b8ff;
+    --dark-accent-2: #a3a3f9;
+    --dark-accent-3: #8788ee;
+    --dark-accent-4: #4d4ff0;
+    --dark-accent-5: #3436a8;
+    --dark-accent-6: #1f1f6f;
   }
   [spec-theme='warrior'] {
-    --accent-1: #855929;
-    --accent-2: #9a744c;
-    --accent-3: #c69b6d;
-    --accent-4: #d4b08a;
-    --accent-5: #e1c0a1;
-    --accent-6: #f0d9c5;
+    --light-accent-1: #855929;
+    --light-accent-2: #9a744c;
+    --light-accent-3: #c69b6d;
+    --light-accent-4: #d4b08a;
+    --light-accent-5: #e1c0a1;
+    --light-accent-6: #f0d9c5;
+    --dark-accent-1: #e1c0a1;
+    --dark-accent-2: #d4b08a;
+    --dark-accent-3: #c69b6d;
+    --dark-accent-4: #9a744c;
+    --dark-accent-5: #855929;
+    --dark-accent-6: #6b4318;
   }
 }

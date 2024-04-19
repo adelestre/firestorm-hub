@@ -1,3 +1,5 @@
+import { DocumentData } from 'firebase-admin/firestore'
+
 export type MythicRun = {
   rid: string
   pids: string[]
@@ -25,4 +27,17 @@ export type Player = {
   bruns: string[]
   runCount: number
   fsio: number
+}
+
+export type PaginateParameters = {
+  limit: number
+  order: 'asc' | 'desc' | undefined
+  lastElement: { fsio: number; pid: string } | undefined
+  filterName: string | undefined
+  filterClass: string | undefined
+}
+
+export type PaginateResponse = {
+  players: DocumentData[]
+  count: number
 }
