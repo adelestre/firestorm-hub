@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import DefaultHeader from './utilities/header/DefaultHeader'
+import DefaultHeader from './utilities/Header'
 import { useThemeContext } from './contexts/ThemeContext'
 import { CustomScroll } from 'react-custom-scroll'
 

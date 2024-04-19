@@ -3,16 +3,19 @@ import {
   useContentContext,
   useNavigationContext,
 } from '../../../contexts/Contexts'
-import Header from '../../../utilities/header/Header'
+import Header from '../../../utilities/Header'
 import IconButton from '../../../utilities/buttons/IconButton'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useThrottledEffect } from '../../../hooks/useThrottledEffect'
+import { MdLeaderboard } from 'react-icons/md'
+import { useNavigate } from 'react-router-dom'
 
 type Props = {
   reference: React.RefObject<HTMLDivElement>
 }
 
 function HeaderGuide({ reference }: Readonly<Props>) {
+  const navigate = useNavigate()
   const navigationContext = useNavigationContext()
   const contentContext = useContentContext()
   const [mythicLabel, setMythicLabel] = useState('Mythic +')
@@ -23,6 +26,9 @@ function HeaderGuide({ reference }: Readonly<Props>) {
       setMythicLabel('M+')
     }
   }, 'resize')
+  const navigateLeaderboard = useCallback(() => {
+    navigate('/leaderboard')
+  }, [navigate])
   return navigationContext && contentContext ? (
     <Header
       reference={reference}
@@ -51,6 +57,13 @@ function HeaderGuide({ reference }: Readonly<Props>) {
         >
           Raid
         </Button>
+      </div>
+      <div className="hidden h-full w-full flex-row items-center justify-end gap-8 py-3 lg:flex">
+        <Button onClick={navigateLeaderboard} className="gap-2">
+          <MdLeaderboard />
+          M+ Leaderboard
+        </Button>
+        <div className="bg-secondary-2 h-full w-[2px] rounded-sm sm:mr-1"></div>
       </div>
     </Header>
   ) : null

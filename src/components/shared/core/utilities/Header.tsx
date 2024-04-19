@@ -1,5 +1,5 @@
 import { ReactNode, useCallback } from 'react'
-import ThemeToggle from '../buttons/ThemeToggle'
+import ThemeToggle from './buttons/ThemeToggle'
 import { useThemeContext } from '@shared/core/contexts/ThemeContext'
 import { useNavigate } from 'react-router-dom'
 

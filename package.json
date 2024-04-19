@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "emulators": "tsc && vite build -m development && firebase emulators:start",
     "build": "tsc && vite build",
     "deploy": "tsc && vite build && firebase deploy",
+    "deployAll": "cd functions/ && npm run build && cd ../ && tsc && vite build && firebase deploy",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -19,9 +21,9 @@
     "react-custom-scroll": "^7.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-infinite-scroll-hook": "^4.1.1",
     "react-router-dom": "^6.22.3",
     "react-tooltip": "^5.26.3",
-    "swr": "^2.2.5",
     "typescript": "^4.9.5",
     "uuid": "^9.0.1"
   },

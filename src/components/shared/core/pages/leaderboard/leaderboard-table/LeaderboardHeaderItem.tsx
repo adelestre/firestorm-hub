@@ -4,10 +4,10 @@ type Props = {
   last?: boolean
 }
 
-function LeaderboardItemLabel({ title, secondLast, last }: Readonly<Props>) {
+function LeaderboardHeaderItem({ title, secondLast, last }: Readonly<Props>) {
   return (
     <th
-      className={`${last ? 'hidden sm:block' : ''} text-accent-2 text-size-2 relative justify-center p-4 font-bold`}
+      className={`${last ? 'hidden sm:block' : ''} text-accent-2 text-size-3 relative justify-center p-4 font-bold`}
     >
       {title}
       {!last && (
@@ -19,4 +19,4 @@ function LeaderboardItemLabel({ title, secondLast, last }: Readonly<Props>) {
   )
 }
 
-export default LeaderboardItemLabel
+export default LeaderboardHeaderItem

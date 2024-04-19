@@ -1,7 +1,7 @@
 import NavigationGroup from './NavigationGroup'
 import { useThrottledEffect } from '../../../../hooks/useThrottledEffect'
 import React, { useCallback, useState } from 'react'
-import { MdOutlineClose } from 'react-icons/md'
+import { MdLeaderboard, MdOutlineClose } from 'react-icons/md'
 import IconButton from '../../../../utilities/buttons/IconButton'
 import { CustomScroll } from 'react-custom-scroll'
 import {
@@ -58,16 +58,23 @@ function Navigation({ headerRef }: Readonly<Props>) {
           style={{ height: height }}
           className={`anim bg-primary-2 border-primary-3 pointer-events-auto absolute bottom-0 right-0 z-40 flex w-full max-w-72 flex-col border-l shadow-md-left sm:min-w-72 ${navigationContext.navigation ? 'translate-x-0' : 'translate-x-full'}`}
         >
+          <div className="group block px-4 py-2 lg:hidden">
+            <button className="anim group-hover:text-accent-2 flex w-full flex-row items-center justify-center gap-2 px-2 py-2 text-3xl font-semibold">
+              <MdLeaderboard />
+              M+ Leaderboard
+            </button>
+            <div className="anim bg-primary-3 group-hover:bg-accent-2 h-px w-full"></div>
+          </div>
           <div className="anim text-secondary-4 flex w-full flex-row justify-between gap-2 p-4 pb-0 text-3xl md:pt-2">
             <div className="spec-select flex w-full min-w-0 flex-1 font-eco text-3xl font-bold">
               {specContext && (
                 <Select
                   selected={getSelected}
                   placeholder={'Select a spec'}
-                  className="border-primary-3 focus:border-accent-2 flex flex-row items-center justify-between border-b-2 border-l-0 border-r-0 border-t-0 px-2 pb-2 outline-none"
+                  className="border-primary-3 focus:border-accent-2 flex flex-row items-center justify-between border-b-2 border-l-0 border-r-0 border-t-0 px-0 pb-2 outline-none"
                   menuProps={{
                     className:
-                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-4 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-2',
+                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-2',
                   }}
                 >
                   <div

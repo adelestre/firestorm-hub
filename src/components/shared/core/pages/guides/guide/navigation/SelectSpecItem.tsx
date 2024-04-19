@@ -22,7 +22,7 @@ function SelectSpecItem({ job, spec }: Readonly<Props>) {
       value={job_spec}
       spec-theme={job}
       onClick={() => navigateToSpec(navigate, job_spec, navigationContext)}
-      className="anim bg-accent-3 hover:bg-accent-4 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-2 rounded-md border-2 px-2 py-1"
+      className="anim bg-accent-3 hover:bg-accent-4 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-2 rounded-md border-2 px-[9px] py-1"
     >
       <img
         className="h-7 w-7 rounded-sm border border-zinc-900"
