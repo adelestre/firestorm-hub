@@ -21,7 +21,7 @@ function Leaderboard() {
             Firestorm Mythic+ Leaderboard
           </h1>
           <h2 className="text-size-2 px-4 text-center">
-            (Only runs made after the 04/12 are taken into account)
+            (Only runs made after the 04/20 are taken into account)
           </h2>
           {items.length == 0 && isLoading && (
             <div className="h-full *:-translate-y-12">

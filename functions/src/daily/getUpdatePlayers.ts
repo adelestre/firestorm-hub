@@ -12,7 +12,7 @@ export function getUpdatedPlayers(
   runs: MythicRun[],
   newRuns: MythicRun[],
   players: Player[]
-): Player[] {
+): { updatedPlayers: Player[]; playerCount: number } {
   let creationCounter = 0
   let updateCounter = 0
 
@@ -66,5 +66,8 @@ export function getUpdatedPlayers(
   logInfo(
     `created ${creationCounter} users and updated ${updateCounter - creationCounter}`
   )
-  return updatedPlayers
+  return {
+    updatedPlayers: updatedPlayers,
+    playerCount: players.length + creationCounter,
+  }
 }

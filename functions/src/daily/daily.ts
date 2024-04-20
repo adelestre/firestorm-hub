@@ -1,7 +1,7 @@
 import { getPlayers, getRuns, updateDb } from '../firebase/firestore'
 import { getUpdatedPlayers } from './getUpdatePlayers'
 import { fetchAffixes } from './fetchAffixes'
-import { weeklyUpdate } from '../weekly/weekly'
+import { weekly } from '../weekly/weekly'
 import { fetchNewRuns } from './fetchNewRuns'
 import { logInfo } from '../utils'
 import puppeteer from 'puppeteer'
@@ -25,14 +25,18 @@ export async function daily() {
 
   if (!sameAffixes) {
     updateWeekAffixes(affixes)
-    await weeklyUpdate(runs, players)
+    await weekly(runs, players)
     logInfo('Skipping daily update due to weekly update')
   } else {
     logInfo('Starting daily update...')
     const newRuns = await fetchNewRuns(page, runs, affixes)
-    const updatedPlayers = getUpdatedPlayers(runs, newRuns, players)
+    const { updatedPlayers, playerCount } = getUpdatedPlayers(
+      runs,
+      newRuns,
+      players
+    )
     await updateDb(newRuns, updatedPlayers)
-    await updateData()
+    await updateData(playerCount)
     logInfo('Daily update completed')
   }
   await browser.close()

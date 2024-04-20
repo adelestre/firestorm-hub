@@ -1,7 +1,7 @@
 import { PaginateResponse } from '../types'
 import { storage } from './firebase'
 import { getPagination } from '../api/paginate'
-import { mergePlayersAndCount } from '../utils'
+import { logInfo, mergePlayersAndCount } from '../utils'
 
 const bucket = storage.bucket('firestorm-hub.appspot.com')
 
@@ -32,7 +32,7 @@ export function updateFirstPage(response: PaginateResponse): Promise<void> {
   )
 }
 
-export async function updateData(): Promise<void> {
+export async function updateData(playerCount: number): Promise<void> {
   const data = await getPagination(
     {
       limit: 50,
@@ -45,7 +45,9 @@ export async function updateData(): Promise<void> {
   )
   if (!data) throw new Error('No data returned')
   updateFirstPage(data)
-  updatePlayerCount(data.players.length)
+  logInfo('Updated first page')
+  updatePlayerCount(playerCount)
+  logInfo('Updated player count')
 }
 
 async function saveFile(file: string, data: unknown): Promise<void> {

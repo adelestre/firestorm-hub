@@ -1,20 +1,21 @@
 import { MythicRun, Player } from '../types'
-import { getPlayer } from '../utils'
 
-export function getUnusedRuns(
-  runs: MythicRun[],
-  players: Player[]
-): MythicRun[] {
-  const unusedRuns: MythicRun[] = []
+export function getUnusedRuns(runs: MythicRun[], players: Player[]): string[] {
+  const usedRuns: string[] = []
 
-  runs.forEach((run) => {
-    const used = run.pids.every((pid) => {
-      const player = getPlayer(players, pid)
-      if (player && player.bruns.includes(run.rid)) return true
-      return false
+  players.forEach((player) => {
+    player.bruns.forEach((run) => {
+      if (!usedRuns.find((r) => r === run)) {
+        usedRuns.push(run)
+      }
     })
-    if (!used) unusedRuns.push(run)
   })
+
+  const unusedRuns = runs
+    .map((run) => run.rid)
+    .filter((run) => !usedRuns.find((r) => r === run))
+
+  console.log('Unused runs:', unusedRuns.length + '/' + runs.length)
 
   return unusedRuns
 }
