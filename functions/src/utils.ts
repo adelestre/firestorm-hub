@@ -89,7 +89,6 @@ export function updatefsio(player: Player, currentRuns: MythicRun[]) {
 }
 
 export function logInfo(msg: string) {
-  console.log(msg)
   log(msg)
 }
 

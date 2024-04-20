@@ -1,4 +1,5 @@
 import { MythicRun, Player } from '../types'
+import { logInfo } from '../utils'
 import { db } from './firebase'
 
 export const getRuns = async (): Promise<MythicRun[]> => {
@@ -15,6 +16,7 @@ export const updateDb = async (
   newRuns: MythicRun[],
   updatedPlayers: Player[]
 ) => {
+  logInfo('Updating database...')
   const batch = db.batch()
 
   newRuns.forEach((run) => {
@@ -28,15 +30,22 @@ export const updateDb = async (
   })
 
   await batch.commit()
+  logInfo('Database updated')
 }
 
-export async function removeUnusedRuns(unusedRuns: MythicRun[]) {
-  const batch = db.batch()
+export async function removeUnusedRuns(unusedRuns: string[]) {
+  try {
+    const batch = db.batch()
 
-  unusedRuns.forEach((run) => {
-    const runRef = db.collection('runs').doc(run.rid)
-    batch.delete(runRef)
-  })
+    unusedRuns.forEach((run) => {
+      const runRef = db.collection('runs').doc(run)
+      batch.delete(runRef)
+    })
 
-  await batch.commit()
+    await batch.commit()
+  } catch (error) {
+    console.error('Error removing unused runs:', error)
+  } finally {
+    console.log('Weekly update successful.')
+  }
 }
