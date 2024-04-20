@@ -92,3 +92,10 @@ export function logInfo(msg: string) {
   console.log(msg)
   log(msg)
 }
+
+export function mergePlayersAndCount(players: unknown[], count: number) {
+  return {
+    players,
+    count,
+  }
+}

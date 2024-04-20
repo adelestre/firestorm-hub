@@ -1,8 +1,9 @@
 import { Query, DocumentData } from 'firebase-admin/firestore'
 import { db } from '../firebase/firebase'
 import { Request, Response } from 'express'
-import { PaginateParameters } from '../types'
+import { PaginateParameters, PaginateResponse } from '../types'
 import { getFirstPage, getPlayerCount } from '../firebase/storage'
+import { mergePlayersAndCount } from '../utils'
 
 export async function paginate(req: Request, res: Response) {
   const {
@@ -60,16 +61,12 @@ function isFirstPageRequest(parameters: PaginateParameters) {
   )
 }
 
-function mergePlayersAndCount(players: DocumentData[], count: number) {
-  return {
-    players,
-    count,
-  }
-}
-
-export async function getPagination(parameters: PaginateParameters) {
+export async function getPagination(
+  parameters: PaginateParameters,
+  forceNew = false
+): Promise<PaginateResponse> {
   const count = await getPlayerCount()
-  if (isFirstPageRequest(parameters)) {
+  if (!forceNew && isFirstPageRequest(parameters)) {
     const data = await getFirstPage()
     if (data) return data
   }
@@ -90,5 +87,5 @@ export async function getPagination(parameters: PaginateParameters) {
       .where('name', '>=', parameters.filterName)
       .where('name', '<=', parameters.filterName + '\uf8ff')
   const players = (await query.get()).docs.map((doc) => doc.data())
-  return mergePlayersAndCount(players, count)
+  return mergePlayersAndCount(players, count) as PaginateResponse
 }
