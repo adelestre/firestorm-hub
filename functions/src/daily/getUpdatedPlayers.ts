@@ -1,12 +1,6 @@
+import { log } from 'firebase-functions/logger'
 import { MythicRun, Player } from '../types'
-import {
-  getDungeon,
-  getPlayer,
-  getRun,
-  logInfo,
-  scaleScore,
-  updatefsio,
-} from '../utils'
+import { getDungeon, getPlayer, getRun, scaleScore, updatefsio } from '../utils'
 
 export function getUpdatedPlayers(
   runs: MythicRun[],
@@ -20,7 +14,8 @@ export function getUpdatedPlayers(
 
   newRuns.forEach((run) => {
     const dungeon = getDungeon(run.dungeon)
-    if (!run.score && dungeon) scaleScore(run.time, dungeon.timer, run.lvl)
+    if (!run.score && dungeon)
+      run.score = scaleScore(run.time, dungeon.timer, run.lvl)
     run.pids.forEach((pid, pidx) => {
       const player = getPlayer(players.concat(updatedPlayers), pid)
 
@@ -54,8 +49,13 @@ export function getUpdatedPlayers(
               player.bruns[index] = run.rid
               updatedPlayers.push(player)
             }
+          } else {
+            player.bruns.push(run.rid)
+            updatedPlayers.push(player)
           }
         })
+        // Sanity Check, remove duplicates
+        player.bruns = [...new Set(player.bruns)]
       }
     })
   })
@@ -63,7 +63,19 @@ export function getUpdatedPlayers(
     updatefsio(player, runs.concat(newRuns))
     updateCounter++
   })
-  logInfo(
+
+  players.sort((a, b) => b.fsio - a.fsio)
+  players.forEach((player, idx) => {
+    const previousRank = player.rank
+    if (idx < 2000) {
+      player.rank = idx + 1
+    } else {
+      player.rank = undefined
+    }
+    if (player.rank !== previousRank) updatedPlayers.push(player)
+  })
+
+  log(
     `created ${creationCounter} users and updated ${updateCounter - creationCounter}`
   )
   return {

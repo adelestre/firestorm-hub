@@ -29,7 +29,7 @@ const Tds = ({ inifiniteRef }: Readonly<PropsTd>) => {
       {Array.from({ length: 4 }, (_, i) => (
         <td
           key={'leaderboard-loading-row' + i}
-          className="select-none px-8 py-6"
+          className={`select-none px-8 py-6 ${i === 3 ? 'hidden p-4 sm:block' : ''}`}
         >
           <p className="bg-primary-3 animate-pulse leading-4 text-transparent dark:!bg-opacity-50">
             .

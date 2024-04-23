@@ -5,15 +5,14 @@ import LeaderboardRow from './LeaderboardRow'
 
 type Props = {
   player: Player
-  index: number
 }
 
-function LeaderboardItem({ player, index }: Readonly<Props>) {
+function LeaderboardItem({ player }: Readonly<Props>) {
   const themeContext = useThemeContext()
   const ioColor = getIoColor(player.fsio, themeContext?.state)
   return (
     <LeaderboardRow pclass={player.pclass} key={player.pid}>
-      <td className="p-4">{index + 1}</td>
+      <td className="p-4">{player.rank ?? '> 2000'}</td>
       <td
         style={{
           textShadow:

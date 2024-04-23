@@ -1,12 +1,5 @@
 import { daily } from './daily/daily'
-import { getPlayers, getRuns } from './firebase/firestore'
 import { weekly } from './weekly/weekly'
-
-const runWeekly = async () => {
-  const runs = await getRuns()
-  const players = await getPlayers()
-  weekly(runs, players)
-}
 
 const main = async (task: string) => {
   switch (task) {
@@ -14,7 +7,7 @@ const main = async (task: string) => {
       daily()
       break
     case 'weekly':
-      runWeekly()
+      weekly()
       break
     default:
       console.error('Invalid task')
