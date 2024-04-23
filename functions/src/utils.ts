@@ -1,4 +1,3 @@
-import { log } from 'firebase-functions/logger'
 import dungeons from './dungeons/dungeonsS1.json'
 import { MythicRun, Player } from './types'
 
@@ -86,10 +85,6 @@ export function updatefsio(player: Player, currentRuns: MythicRun[]) {
 
   player.fsio = newio
   player.fsio = Math.round(player.fsio * 100) / 100
-}
-
-export function logInfo(msg: string) {
-  log(msg)
 }
 
 export function mergePlayersAndCount(players: unknown[], count: number) {

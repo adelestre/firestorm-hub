@@ -1,5 +1,6 @@
 import dungeons from '../dungeons/dungeonsS1.json'
-import { logInfo, scaleScore } from '../utils'
+import { scaleScore } from '../utils'
+import { log } from 'firebase-functions/logger'
 import { Dungeon, MythicRun } from '../types'
 import { ElementHandle, Page } from 'puppeteer'
 
@@ -8,7 +9,7 @@ export async function fetchNewRuns(
   runs: MythicRun[],
   affixes: string[]
 ): Promise<MythicRun[]> {
-  logInfo('Fetching runs...')
+  log('Fetching runs...')
   const newRuns: MythicRun[] = []
   for (const dungeon of dungeons) {
     let counter = 0
@@ -24,7 +25,7 @@ export async function fetchNewRuns(
     for (const run of runsTbody) {
       counter += await ParseRun(page, run, dungeon, runs, newRuns, affixes)
     }
-    logInfo(`${dungeon['abbr']}, ${counter} new runs added.`)
+    log(`${dungeon['abbr']}, ${counter} new runs added.`)
   }
   page.close()
   return newRuns

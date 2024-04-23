@@ -1,8 +1,8 @@
-import { Query, DocumentData } from 'firebase-admin/firestore'
-import { db } from '../firebase/firebase'
 import { Request, Response } from 'express'
+import { Query, DocumentData } from 'firebase-admin/firestore'
 import { PaginateParameters, PaginateResponse } from '../types'
-import { getFirstPage, getPlayerCount } from '../firebase/storage'
+import { db } from '../db/services/firebase'
+import { getFirstPage, getPlayerCount } from '../db/storage'
 import { mergePlayersAndCount } from '../utils'
 
 export async function paginate(req: Request, res: Response) {

@@ -10,7 +10,8 @@ typings/
 node_modules/
 
 # Key
-admin*
+*.secrets.json*
+
 
 # Puppeteer cache
 .cache

@@ -40,8 +40,8 @@ function LeaderboardTable({
         </thead>
         <Suspense>
           <tbody>
-            {items.map((player, index) => (
-              <LeaderboardItem key={player.pid} player={player} index={index} />
+            {items.map((player) => (
+              <LeaderboardItem key={player.pid} player={player} />
             ))}
             {items.length == 0 ? (
               <tr className="bg-primary-1">

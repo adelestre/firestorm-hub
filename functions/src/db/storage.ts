@@ -1,7 +1,8 @@
-import { PaginateResponse } from '../types'
-import { storage } from './firebase'
+import { MythicRun, PaginateResponse, Player } from '../types'
+import { storage } from './services/firebase'
+import { log } from 'firebase-functions/logger'
 import { getPagination } from '../api/paginate'
-import { logInfo, mergePlayersAndCount } from '../utils'
+import { mergePlayersAndCount } from '../utils'
 
 const bucket = storage.bucket('firestorm-hub.appspot.com')
 
@@ -32,6 +33,13 @@ export function updateFirstPage(response: PaginateResponse): Promise<void> {
   )
 }
 
+export async function backUpDB(runs: MythicRun[], players: Player[]) {
+  const date = new Date()
+  const dateString = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+  await saveFile('backup/players/' + dateString + '.json', players)
+  await saveFile('backup/runs/' + dateString + '.json', runs)
+}
+
 export async function updateData(playerCount: number): Promise<void> {
   const data = await getPagination(
     {
@@ -45,9 +53,9 @@ export async function updateData(playerCount: number): Promise<void> {
   )
   if (!data) throw new Error('No data returned')
   updateFirstPage(data)
-  logInfo('Updated first page')
+  log('Updated first page')
   updatePlayerCount(playerCount)
-  logInfo('Updated player count')
+  log('Updated player count')
 }
 
 async function saveFile(file: string, data: unknown): Promise<void> {

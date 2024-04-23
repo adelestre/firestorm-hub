@@ -27,6 +27,7 @@ export type Player = {
   bruns: string[]
   runCount: number
   fsio: number
+  rank?: number
 }
 
 export type PaginateParameters = {

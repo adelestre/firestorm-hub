@@ -7,8 +7,9 @@
     "dev": "vite",
     "emulators": "tsc && vite build -m development && firebase emulators:start",
     "build": "tsc && vite build",
-    "deploy": "tsc && vite build && firebase deploy",
-    "deployAll": "cd functions/ && npm run build && cd ../ && tsc && vite build && firebase deploy",
+    "buildAll": "cd functions/ && npm run build && cd ../ && tsc && vite build",
+    "deploy": "tsc && vite build && firebase deploy --only hosting",
+    "deployAll": "npm run buildAll && firebase deploy",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
