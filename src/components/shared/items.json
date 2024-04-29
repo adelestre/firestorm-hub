@@ -9,6 +9,11 @@
     "name": "Whispering Incarnate Icon",
     "link": "https://www.wowhead.com/item=194301/whispering-incarnate-icon"
   },
+  "alacritousAlchemistStone": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_alchemystone_color1.jpg",
+    "name": "Alacritous Alchemist Stone",
+    "link": "https://www.wowhead.com/item=191492/alacritous-alchemist-stone"
+  },
   "flaskSolemnNight": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_alchemy_crystalvial.jpg",
     "name": "Flask of the Solemn Night",
@@ -24,6 +29,11 @@
     "name": "Horn of Valor",
     "link": "https://www.wowhead.com/item=133642/horn-of-valor"
   },
+  "conjuredChillglobe": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_specialreagentfoozles_primalistrune_frost.jpg",
+    "name": "Conjured Chillglobe",
+    "link": "https://www.wowhead.com/item=194300/conjured-chillglobe"
+  },
   "deathsnare": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_web_01.jpg",
     "name": "Iceblood Deathsnare",
@@ -38,6 +48,11 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_blue.jpg",
     "name": "Energized Malygite",
     "link": "https://www.wowhead.com/item=192935/energized-malygite"
+  },
+  "radiantAlexstrazite": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_red.jpg",
+    "name": "Radiant Alexstraszite",
+    "link": "https://www.wowhead.com/item=192925/radiant-alexstraszite"
   },
   "craftyAlexstrazite": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_red.jpg",
@@ -58,6 +73,11 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_blue.jpg",
     "name": "Resplendent Illimited Diamond",
     "link": "https://www.wowhead.com/item=192991/resplendent-illimited-diamond"
+  },
+  "InsIlimitedDiam": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_red.jpg",
+    "name": "Inscribed Illimited Diamond",
+    "link": "https://www.wowhead.com/item=192982/inscribed-illimited-diamond"
   },
   "fortAvoidance": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
@@ -163,6 +183,11 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/trade_alchemy_dpotion_b20.jpg",
     "name": "Elemental Potion of Ultimate Power",
     "link": "https://www.wowhead.com/item=191383/elemental-potion-of-ultimate-power"
+  },
+  "aeratedManaPotion": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_bottle_shape1_blue.jpg",
+    "name": "Aerated Mana Potion",
+    "link": "https://www.wowhead.com/item=191386/aerated-mana-potion"
   },
   "toxicThornFootwraps": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_leather_dragondungeon_c_01_boot.jpg",

@@ -7,11 +7,12 @@ function FullBuild() {
   return (
     <Section name="Full Build Example">
       <Paragraph>
-        Below you will find a possible items build for raids. Keep in mind that
-        it's just an example of a combination of items and is not the only
-        possibility. It is very high on Haste and Critical Strike and therefore
-        aims for raw throughput instead of survavibility. Also, this is a raid
-        build only and will not be the most competitive build for Mythic+.
+        Below you will find a possible items build for high end M+. Keep in mind
+        that it's just an example of a combination of items and is not the only
+        possibility. It is very high on Versatility and low on Critical Strike
+        and therefore aims for survavibility instead of raw output. Also, this
+        is a M+ build only and will not be the most competitive build for
+        raiding.
       </Paragraph>
       <div className="space-top px-4 sm:grid sm:grid-cols-2">
         <div className="flex flex-col gap-1 ">
@@ -22,7 +23,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=200363/gaze-of-the-waking-fist?bonus=1498',
               ilvl: 424,
             }}
-            gems={[items['respIlimitedDiam']]}
+            gems={[items['InsIlimitedDiam']]}
           />
           <GearPiece
             item={{
@@ -32,9 +33,9 @@ function FullBuild() {
               ilvl: 418,
             }}
             gems={[
-              items['radiantMalygite'],
-              items['radiantMalygite'],
-              items['radiantMalygite'],
+              items['craftyAlexstrazite'],
+              items['craftyAlexstrazite'],
+              items['craftyAlexstrazite'],
             ]}
           />
           <GearPiece
@@ -47,9 +48,9 @@ function FullBuild() {
           />
           <GearPiece
             item={{
-              name: 'Potion-Stained Cloak',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_leather_dragondungeon_c_01_cape.jpg',
-              link: 'https://www.wowhead.com/item=193712/potion-stained-cloak?bonus=1594',
+              name: 'Cape of Entanglement',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_cape_pandaria_c_02.jpg',
+              link: 'https://www.wowhead.com/item=81084/cape-of-entanglement',
               ilvl: 421,
             }}
             enchant={items['gracefulAvoidance']}
@@ -65,56 +66,48 @@ function FullBuild() {
           />
           <GearPiece
             item={{
-              name: 'Life-Bound Bindings',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193419/life-bound-bindings?bonus=8846:8792',
-              ilvl: 418,
+              name: "Adorned Guardian's Bracers",
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_legiondungeon_c_01.jpg',
+              link: 'https://www.wowhead.com/item=133621/adorned-guardians-bracers',
+              ilvl: 421,
             }}
-            gems={[items['radiantMalygite']]}
-            enchant={items['devoAvoidance']}
+            gems={[items['craftyAlexstrazite']]}
+            enchant={items['devoLeech']}
           />
           <GearPiece
             item={{
-              name: 'Scepter of Drastic Measures',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_primalistraid_d_02.jpg',
-              link: 'https://www.wowhead.com/item=195481/scepter-of-drastic-measures',
+              name: "Portal Ripper's Staff",
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_draenordungeon_c_03.jpg',
+              link: 'https://www.wowhead.com/item=110039/portal-rippers-staff',
               ilvl: 421,
             }}
             enchant={items['sophicDevo']}
-          />
-          <GearPiece
-            item={{
-              name: 'Scripture of Primal Devotion',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_primalistraid_d_01.jpg',
-              link: 'https://www.wowhead.com/item=195513/scripture-of-primal-devotion',
-              ilvl: 421,
-            }}
           />
         </div>
         <div className="flex flex-col gap-1 ">
           <GearPiece
             item={{
-              name: 'Life-Bound Gloves',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193418/life-bound-gloves?bonus=8846:8792',
-              ilvl: 418,
+              name: 'Palms of the Waking Fist',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_raidmonkprimalist_d_01.jpg',
+              link: 'https://www.wowhead.com/item=200362/palms-of-the-waking-fist',
+              ilvl: 421,
             }}
           />
           <GearPiece
             item={{
-              name: 'Life-Bound Belt',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193407/life-bound-belt?bonus=8846:8792',
-              ilvl: 418,
+              name: 'Belt of Burning Focus',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_leather_draenordungeon_c_01belt.jpg',
+              link: 'https://www.wowhead.com/item=109829/belt-of-burning-focus',
+              ilvl: 421,
             }}
-            gems={[items['radiantMalygite']]}
+            gems={[items['craftyAlexstrazite']]}
           />
           <GearPiece
             item={{
-              name: 'Legguards of the Waking Fist',
+              name: 'Loathsome Thunderhosen',
               icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_pant_leather_raidmonkprimalist_d_01.jpg',
-              link: 'https://www.wowhead.com/item=200364/legguards-of-the-waking-fist?bonus=1498',
-              ilvl: 415,
+              link: 'https://www.wowhead.com/item=195530/loathsome-thunderhosen',
+              ilvl: 424,
             }}
             enchant={items['frozenSpellthread']}
           />
@@ -129,22 +122,22 @@ function FullBuild() {
           />
           <GearPiece
             item={{
+              name: 'Unstable Arcane Loop',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_tuskarr_ring_2_color4.jpg',
+              link: 'https://www.wowhead.com/item=193633/unstable-arcane-loop',
+              ilvl: 421,
+            }}
+            gems={[items['craftyAlexstrazite']]}
+            enchant={items['devoCrit']}
+          />
+          <GearPiece
+            item={{
               name: 'Crystallized Droplet',
               icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_131.jpg',
               link: 'https://www.wowhead.com/item=144112/crystallized-droplet',
               ilvl: 421,
             }}
-            gems={[items['radiantMalygite']]}
-            enchant={items['devoCrit']}
-          />
-          <GearPiece
-            item={{
-              name: "Emissary's Flamewrought Seal",
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_ring_1_fire.jpg',
-              link: 'https://www.wowhead.com/item=201992/emissarys-flamewrought-seal?bonus=1498',
-              ilvl: 421,
-            }}
-            gems={[items['radiantMalygite']]}
+            gems={[items['craftyAlexstrazite']]}
             enchant={items['devoCrit']}
           />
           <GearPiece

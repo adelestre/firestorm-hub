@@ -1,12 +1,12 @@
-import Button from '../../../utilities/buttons/Button'
+import Button from '@shared/core/utilities/buttons/Button'
 import {
   useContentContext,
   useNavigationContext,
-} from '../../../contexts/Contexts'
-import Header from '../../../utilities/Header'
-import IconButton from '../../../utilities/buttons/IconButton'
+} from '@shared/core/contexts/Contexts'
+import Header from '@shared/core/utilities/Header'
+import IconButton from '@shared/core/utilities/buttons/IconButton'
 import { useCallback, useEffect, useState } from 'react'
-import { useThrottledEffect } from '../../../hooks/useThrottledEffect'
+import { useThrottledEffect } from '@shared/core/hooks/useThrottledEffect'
 import { MdLeaderboard } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 

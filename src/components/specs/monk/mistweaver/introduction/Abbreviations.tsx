@@ -59,6 +59,7 @@ function Abbreviations() {
             ]}
           />
           <Definitions
+            className="mt-0 lg:mt-1"
             defs={[
               {
                 key: 'tft',

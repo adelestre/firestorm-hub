@@ -10,7 +10,7 @@ import spells from '@shared/spells.json'
 function Stats() {
   return (
     <Section name="Stats">
-      <Paragraph>In Mythic+, each stat has a use :</Paragraph>
+      <Paragraph>In raids, each stat has a use :</Paragraph>
       <Definitions
         defs={[
           {
@@ -18,9 +18,10 @@ function Stats() {
             abbreviation: 'Mastery',
             definition: (
               <span>
-                Increase significantly your ST healing output and{' '}
-                <ItemLink item={spells['mw-chiji']} />
-                's power.
+                Increase significantly your ST healing output. Please understand
+                that the only AoE gain from mastery is through{' '}
+                <ItemLink item={spells['mw-rev']} />. There are no other AoE
+                interactions with mastery.
               </span>
             ),
           },
@@ -44,19 +45,24 @@ function Stats() {
         ]}
       />
       <Paragraph>
-        For Mythic+ we look at 4 major things : damage output, healing ouput,
-        damage reduction and reactiveness. So your stats priority will logically
-        look like :
+        For raids, damage doesn't matter as much as in Mythic+ but AoE healing
+        do a lot more. Therefore mastery remains a lot worse than other stats.
+        Then, because Monk is a very tanky class, you can cut on damage
+        reduction, making vers less appealing than in Mythic+. Lastly, Critical
+        Strike helps increasing healing output without increasing mana
+        consumption. Even better, it increases the amount of stacks you get from{' '}
+        <ItemLink item={spells['mw-mt']} />. So your stats priority will
+        logically look like :
       </Paragraph>
       <List className="list-decimal">
         <ListElement>
           <span>Haste</span>
         </ListElement>
         <ListElement>
-          <span>Versatility</span>
+          <span>Critical Strike</span>
         </ListElement>
         <ListElement>
-          <span>Critical Strike</span>
+          <span>Versatility</span>
         </ListElement>
         <ListElement>
           <span>Mastery</span>
@@ -67,25 +73,7 @@ function Stats() {
         you need to remember is trying to max your stats more or less following
         the order above while never reaching the soft cap on any of them. Only
         mastery is really behind the others and should always be prioritized
-        last. Why is Mastery bad could you ask ? Well Mastery only works on your
-        current target or with <ItemLink item={spells['mw-rev']} /> and{' '}
-        <ItemLink item={spells['mw-chiji']} />. So basically it's not incredible
-        outside CDs since it will only increase your spot healing and unlike all
-        the other stats it doesn't amplify damage. So it is not a complete
-        waste, but definitely worse than the others.
-      </Paragraph>
-      <Paragraph>
-        Versatility increases in value the higher you go in keys, as it will
-        help you survive better. I think that a good rule of thumb is to have
-        around 1% per key level. So for +15 keys you should aim around 15%.
-      </Paragraph>
-      <Paragraph>
-        It is worth mentioning that Critical Strikes gets more value when mana
-        becomes an issue (which isn't really the case in M+ but it's good to
-        know), first because unlike haste, it doesn't increase your mana
-        consumption, and secondly because of its synergy with{' '}
-        <ItemLink item={spells['mw-mt']} />. It increases stack generation
-        depending on your crit chance.
+        last.
       </Paragraph>
       <Paragraph>
         Don't forget about{' '}
@@ -107,38 +95,38 @@ function Stats() {
           {
             key: 'my-ilvl',
             abbreviation: 'Item lvl',
-            definition: '420.1',
+            definition: '421',
           },
           {
             key: 'my-int',
             abbreviation: 'Intelligence ',
-            definition: '9120',
+            definition: '9273',
           },
           {
             key: 'my-crit',
             abbreviation: 'Critical Strike',
-            definition: '16% (2049 / 5400)',
+            definition: '26% (3838 / 5400)',
           },
           {
             key: 'my-haste',
             abbreviation: 'Haste',
-            definition: '31% (5013 / 5100)',
+            definition: '33% (5372 / 5100)',
           },
           {
             key: 'my-mast',
             abbreviation: 'Mastery',
-            definition: '44% (438 / 5400)',
+            definition: '48% (630 / 5400)',
           },
           {
             key: 'my-vers',
             abbreviation: 'Versatility',
-            definition: '27% | 12.24% (5542 / 6150)',
+            definition: '15% |7% (3045 / 6150)',
           },
         ]}
       />
       <Paragraph>
-        As you can see, I try not to reach any soft cap. Though my Lariat gives
-        me Versa procs (I wish I could change that) I won't hit the cap with it.
+        As you can see, I am losing a bit of haste from diminishing returns,
+        it's not optimal but it's very light.
       </Paragraph>
     </Section>
   )

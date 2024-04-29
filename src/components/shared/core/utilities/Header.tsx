@@ -32,16 +32,26 @@ function Header({
           className="anim hover:bg-primary-3 h-full rounded-md px-2 py-1"
           onClick={navigateHome}
         >
-          <img
-            className="hidden h-full lg:block"
-            src={`/assets/logo-name-horizontal${themeContext?.state ? '-light' : ''}.svg`}
-            alt="Firestorm Hub Logo"
-          />
-          <img
-            className="block h-2/3 sm:h-full lg:hidden"
-            src={`/assets/logo${themeContext?.state ? '-light' : ''}.svg`}
-            alt=""
-          />
+          {children ? (
+            <>
+              <img
+                className="hidden h-full lg:block"
+                src={`/assets/logo-name-horizontal${themeContext?.state ? '-light' : ''}.svg`}
+                alt="Firestorm Hub Logo"
+              />
+              <img
+                className="block h-2/3 sm:h-full lg:hidden"
+                src={`/assets/logo${themeContext?.state ? '-light' : ''}.svg`}
+                alt=""
+              />
+            </>
+          ) : (
+            <img
+              className="h-8 w-auto sm:h-full"
+              src={`/assets/logo-name-horizontal${themeContext?.state ? '-light' : ''}.svg`}
+              alt="Firestorm Hub Logo"
+            />
+          )}
         </button>
         {childrenLeft}
       </div>
