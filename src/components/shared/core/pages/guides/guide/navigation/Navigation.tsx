@@ -9,9 +9,9 @@ import {
   useSectionContext,
   useSpecContext,
 } from '@shared/core/contexts/Contexts'
-import SelectSpecItem from './SelectSpecItem'
 import specs from '../../../../data/specs.json'
 import { Select } from '@material-tailwind/react'
+import SpecSelectItem from '../../SpecSelectItem'
 
 type Props = {
   headerRef: React.RefObject<HTMLDivElement>
@@ -35,7 +35,11 @@ function Navigation({ headerRef }: Readonly<Props>) {
       specContext?.job &&
       specContext?.spec && (
         <div className="pointer-events-none w-full *:flex *:w-full">
-          <SelectSpecItem job={specContext.job} spec={specContext.spec} />
+          <SpecSelectItem
+            job={specContext.job}
+            spec={specContext.spec}
+            placeholder
+          />
         </div>
       )
     )
@@ -74,17 +78,17 @@ function Navigation({ headerRef }: Readonly<Props>) {
                   className="border-primary-3 focus:border-accent-2 flex flex-row items-center justify-between border-b-2 border-l-0 border-r-0 border-t-0 px-0 pb-2 outline-none"
                   menuProps={{
                     className:
-                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-2',
+                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-0',
                   }}
                 >
                   <div
                     onLoad={scrollToTopOnLoad}
-                    className="flex max-h-80 flex-col gap-1"
+                    className="flex max-h-80 flex-col gap-px"
                   >
                     {Object.keys(specs).map((job) =>
                       Object.keys(specs[job as keyof typeof specs]).map(
                         (spec) => (
-                          <SelectSpecItem
+                          <SpecSelectItem
                             key={`spec-${job}-${spec}`}
                             job={job}
                             spec={spec}

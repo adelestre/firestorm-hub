@@ -47,24 +47,15 @@ function Trinkets() {
               - Arguably the best stat on-use.
             </ListElement>
             <ListElement>
-              <ItemLink className="font-semibold" item={items['deathsnare']} />{' '}
-              - Very strong AoE damage on-use.
-            </ListElement>
-            <ListElement>
               <ItemLink
                 className="font-semibold"
-                item={items['moteOfSanctification']}
+                item={items['conjuredChillglobe']}
               />{' '}
-              - Strong on-use heal that can be viable in some keys with intense
-              and recurring AoE damage (Fortified Ruby Life Pools for example).
+              - A decent option if you mana management issues.
             </ListElement>
           </List>
         </ListElement>
       </List>
-      <Paragraph>
-        I usually run Icon + Horn but any combination can be played depending on
-        your needs.
-      </Paragraph>
     </Section>
   )
 }

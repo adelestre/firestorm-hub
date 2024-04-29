@@ -174,6 +174,11 @@
     "name": "Chi-Ji",
     "link": "https://www.wowhead.com/spell=325197/invoke-chi-ji-the-red-crane"
   },
+  "mw-yulon": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_dragonkick.jpg",
+    "name": "Yu'lon",
+    "link": "https://www.wowhead.com/spell=322118/invoke-yulon-the-jade-serpent"
+  },
   "mw-sheilun": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_artifactshaohao_d_01.jpg",
     "name": "Sheilun's Gift",
@@ -223,5 +228,15 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_pathofmists.jpg",
     "name": "Mist Wrap",
     "link": "https://www.wowhead.com/spell=197900/mist-wrap"
+  },
+  "mw-cf": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_monk_soothingmists.jpg",
+    "name": "Clouded Focus",
+    "link": "https://www.wowhead.com/spell=388047/clouded-focus"
+  },
+  "mw-uplifted": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_wiseserpent.jpg",
+    "name": "Uplifted Spirits",
+    "link": "https://www.wowhead.com/spell=388551/uplifted-spirits"
   }
 }

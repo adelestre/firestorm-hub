@@ -24,8 +24,8 @@ function NavigationGroup({ id }: Readonly<Props>) {
     switch (contentContext.content) {
       case 'mythic-plus':
         return 'Mythic+ Guide'
-      case 'raids':
-        return 'Raids Guide'
+      case 'raid':
+        return 'Raid Guide'
     }
     return ''
   }

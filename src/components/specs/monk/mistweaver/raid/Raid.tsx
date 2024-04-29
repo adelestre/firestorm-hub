@@ -1,10 +1,14 @@
-import Section from '@shared/Section'
+import Spells from './spells/Spells'
+import Gameplay from './gameplay/Gameplay'
+import Build from './build/Build'
 
 function Raid() {
   return (
-    <Section name="Work in progress">
-      <Section name="Come back later"></Section>
-    </Section>
+    <div>
+      <Build />
+      {/* <Gameplay />
+      <Spells /> */}
+    </div>
   )
 }
 
