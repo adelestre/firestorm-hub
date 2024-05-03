@@ -7,12 +7,11 @@ function FullBuild() {
   return (
     <Section name="Full Build Example">
       <Paragraph>
-        Below you will find a possible items build for high end M+. Keep in mind
-        that it's just an example of a combination of items and is not the only
-        possibility. It is very high on Versatility and low on Critical Strike
-        and therefore aims for survavibility instead of raw output. Also, this
-        is a M+ build only and will not be the most competitive build for
-        raiding.
+        Below you will find a possible items build for raids. Keep in mind that
+        it's just an example of a combination of items and is not the only
+        possibility. It is very high on Haste and Critical Strike and therefore
+        aims for raw throughput instead of survavibility. Also, this is a raid
+        build only and will not be the most competitive build for Mythic+.
       </Paragraph>
       <div className="space-top px-4 sm:grid sm:grid-cols-2">
         <div className="flex flex-col gap-1 ">
@@ -23,7 +22,7 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=200363/gaze-of-the-waking-fist?bonus=1498',
               ilvl: 424,
             }}
-            gems={[items['InsIlimitedDiam']]}
+            gems={[items['fierceIlimitedDiam']]}
           />
           <GearPiece
             item={{
@@ -122,9 +121,9 @@ function FullBuild() {
           />
           <GearPiece
             item={{
-              name: 'Unstable Arcane Loop',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_tuskarr_ring_2_color4.jpg',
-              link: 'https://www.wowhead.com/item=193633/unstable-arcane-loop',
+              name: 'Signet of Dancing Jade',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_154.jpg',
+              link: 'https://www.wowhead.com/item=144114/signet-of-dancing-jade',
               ilvl: 421,
             }}
             gems={[items['craftyAlexstrazite']]}
@@ -132,13 +131,16 @@ function FullBuild() {
           />
           <GearPiece
             item={{
-              name: 'Crystallized Droplet',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_131.jpg',
-              link: 'https://www.wowhead.com/item=144112/crystallized-droplet',
-              ilvl: 421,
+              name: 'Onyx Annulet',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_ring_4_omni.jpg',
+              link: 'https://www.wowhead.com/item=203460/onyx-annulet',
+              ilvl: 424,
             }}
-            gems={[items['craftyAlexstrazite']]}
-            enchant={items['devoCrit']}
+            gems={[
+              items['delugingWater'],
+              items['exudingSteam'],
+              items['wildSpirit'],
+            ]}
           />
           <GearPiece
             item={{

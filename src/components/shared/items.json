@@ -69,6 +69,11 @@
     "name": "Radiant Malygite",
     "link": "https://www.wowhead.com/item=192932/radiant-malygite"
   },
+  "fierceIlimitedDiam": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_green.jpg",
+    "name": "Fierce Illimited Diamond",
+    "link": "https://www.wowhead.com/item=192985/fierce-illimited-diamond"
+  },
   "respIlimitedDiam": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem3primal_cut_blue.jpg",
     "name": "Resplendent Illimited Diamond",
@@ -203,5 +208,35 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_cataclysmarmorkit_10.jpg",
     "name": "Toxified Armor Patch",
     "link": "https://www.wowhead.com/item=193555/toxified-armor-patch"
+  },
+  "delugingWater": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_elemental_primal_water.jpg",
+    "name": "Deluging Water Stone",
+    "link": "https://www.wowhead.com/item=204010/deluging-water-stone"
+  },
+  "exudingSteam": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_water.jpg",
+    "name": "Exuding Steam Stone",
+    "link": "https://www.wowhead.com/item=204013/exuding-steam-stone"
+  },
+  "wildSpirit": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_elemental_primal_life.jpg",
+    "name": "Wild Spirit Stone",
+    "link": "https://www.wowhead.com/item=204020/wild-spirit-stone"
+  },
+  "stormInfused": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_elementalcombinedfoozles_lightning.jpg",
+    "name": "Storm-Infused Stone",
+    "link": "https://www.wowhead.com/item=204000/storm-infused-stone"
+  },
+  "desirousBlood": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_gem_bloodstone_02.jpg",
+    "name": "Desirous Blood Stone",
+    "link": "https://www.wowhead.com/item=204027/desirous-blood-stone"
+  },
+  "propheticTwilight": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightfire.jpg",
+    "name": "Prophetic Twilight Stone",
+    "link": "https://www.wowhead.com/item=204029/prophetic-twilight-stone"
   }
 }
