@@ -4,8 +4,9 @@ import SpellRotation from '@shared/spell-rotation/SpellRotation'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
+import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
-function HighGroupDamageHealing() {
+function HighGroupHealing() {
   return (
     <Section name="Healing heavy group damage">
       <Paragraph>
@@ -57,22 +58,54 @@ function HighGroupDamageHealing() {
         cases, the rotation is the same and as follows:
       </Paragraph>
       <SpellRotation className="space-top">
-        <SpellRotationElement item={spells['mw-faeline']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['mw-chiji']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['mw-em']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['mw-em']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['mw-em']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['mw-em']} />
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-faeline']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-chiji']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-em']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-em']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-em']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['mw-em']} />
+        </SpellRotationElement>
       </SpellRotation>
       <Paragraph>
         It's probably hard to understand this rotation looking at it, but I can
@@ -145,4 +178,4 @@ function HighGroupDamageHealing() {
     </Section>
   )
 }
-export default HighGroupDamageHealing
+export default HighGroupHealing

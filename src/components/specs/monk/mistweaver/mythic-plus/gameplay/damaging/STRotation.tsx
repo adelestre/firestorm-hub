@@ -4,6 +4,7 @@ import SpellRotation from '@shared/spell-rotation/SpellRotation'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
+import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
 function STRotation() {
   return (
@@ -19,18 +20,36 @@ function STRotation() {
         comes off CD. The rotation will be as follow :
       </Paragraph>
       <SpellRotation className="space-top">
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
       </SpellRotation>
       <Paragraph>
         Now, this is an example where you get no reset before 2nd{' '}
@@ -42,16 +61,36 @@ function STRotation() {
         lucky, rotation will look like :
       </Paragraph>
       <SpellRotation className="space-top">
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
-        <SpellRotationElement item={spells['monk-tp']} />
-        <SpellRotationElement item={spells['monk-bok']} />
-        <SpellRotationElement item={spells['monk-rsk']} />
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-tp']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-bok']} />
+        </SpellRotationElement>
+        <SpellRotationElement>
+          <SpellRotationIcon item={spells['monk-rsk']} />
+        </SpellRotationElement>
       </SpellRotation>
       <Paragraph>
         It is very simple, but mastering this makes a lot of difference.

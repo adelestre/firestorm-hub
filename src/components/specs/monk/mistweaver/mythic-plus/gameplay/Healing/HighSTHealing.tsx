@@ -4,8 +4,9 @@ import SpellRotation from '@shared/spell-rotation/SpellRotation'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
+import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
-function HighSTDamageHealing() {
+function HighSTHealing() {
   return (
     <Section name="Healing high ST damage">
       <Paragraph>
@@ -21,11 +22,29 @@ function HighSTDamageHealing() {
         the following rotation :
       </Paragraph>
       <SpellRotation className="space-top">
-        <SpellRotationElement item={spells['monk-soom']} channeled />
-        <SpellRotationElement item={spells['mw-em']} channeled />
-        <SpellRotationElement item={spells['monk-viv']} channeled />
-        <SpellRotationElement item={spells['monk-viv']} channeled />
-        <SpellRotationElement item={spells['monk-viv']} />
+        <SpellRotationElement channeled>
+          <SpellRotationIcon item={spells['monk-soom']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled>
+          <SpellRotationIcon />
+          <SpellRotationIcon item={spells['mw-em']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled>
+          <SpellRotationIcon />
+          <SpellRotationIcon item={spells['monk-viv']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled>
+          <SpellRotationIcon />
+          <SpellRotationIcon item={spells['monk-viv']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled>
+          <SpellRotationIcon />
+          <SpellRotationIcon item={spells['monk-viv']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled duration={0}>
+          <SpellRotationIcon />
+          <SpellRotationIcon item={spells['monk-viv']} />
+        </SpellRotationElement>
       </SpellRotation>
       <Paragraph>
         But keep in mind, this is really last resort and is neither mana
@@ -35,4 +54,4 @@ function HighSTDamageHealing() {
     </Section>
   )
 }
-export default HighSTDamageHealing
+export default HighSTHealing

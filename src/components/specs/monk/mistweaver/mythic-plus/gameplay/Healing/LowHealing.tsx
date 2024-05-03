@@ -3,7 +3,7 @@ import ItemLink from '@shared/Links/ItemLink'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
 
-function LowDamageHealing() {
+function LowHealing() {
   return (
     <Section name="Healing low damage">
       <Paragraph>
@@ -16,4 +16,4 @@ function LowDamageHealing() {
   )
 }
 
-export default LowDamageHealing
+export default LowHealing

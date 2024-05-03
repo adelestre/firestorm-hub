@@ -1,27 +1,24 @@
 type Props = {
-  item: { icon: string; link: string; name: string }
+  children: React.ReactNode
   channeled?: boolean
   duration?: number
+  offset?: number
 }
 
-function SpellRotationElement({ item, channeled, duration }: Readonly<Props>) {
+function SpellRotationElement({
+  children,
+  channeled,
+  duration,
+}: Readonly<Props>) {
   return (
     <span
-      style={{ paddingRight: (duration ? 2 * duration : 2) + 'rem' }}
-      className={`${channeled ? 'bg-accent-3' : 'bg-secondary-4'} inline-flex ${!channeled ? 'last:!pr-0' : ''}`}
+      style={{ width: (duration !== undefined ? 2 * duration : 2) + 2 + 'rem' }}
+      className={`group relative inline-flex flex-col justify-start gap-0 ${!channeled ? 'last:!w-8' : ''}`}
     >
-      <a
-        href={item.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="h-8 w-8"
-      >
-        <img
-          className="border-primary-4 rounded-sm border"
-          src={item.icon}
-          alt={item.name}
-        />
-      </a>
+      {children}
+      <div
+        className={`absolute ${channeled ? 'bg-accent-3' : 'bg-primary-3'} h-8 w-full`}
+      ></div>
     </span>
   )
 }

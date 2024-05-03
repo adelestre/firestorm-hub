@@ -1,6 +1,5 @@
 import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
-import TextLink from '@shared/Links/TextLink'
 import Definitions from '@shared/list/Definitions'
 import List from '@shared/list/List'
 import ListElement from '@shared/list/ListElement'
@@ -65,7 +64,7 @@ function Stats() {
       <Paragraph>
         Our stats are really close in effectiveness, therefore while gearing all
         you need to remember is trying to max your stats more or less following
-        the order above while never reaching the soft cap on any of them. Only
+        the order above while maximizing your primary stat over all. Only
         mastery is really behind the others and should always be prioritized
         last. Why is Mastery bad could you ask ? Well Mastery only works on your
         current target or with <ItemLink item={spells['mw-rev']} /> and{' '}
@@ -88,18 +87,6 @@ function Stats() {
         depending on your crit chance.
       </Paragraph>
       <Paragraph>
-        Don't forget about{' '}
-        <TextLink
-          link={
-            'https://www.wowhead.com/fr/guide/diminishing-returns-on-secondary-stats-in-world-of-warcraft'
-          }
-          text="diminishing returns"
-        />
-        , you don't want to lose too many points as it is usually better to put
-        more points in another stat. As an example, after reaching the soft cap
-        on haste it's always better to get versatility or crit.
-      </Paragraph>
-      <Paragraph>
         As an example, here are my stats from gear and consummables :
       </Paragraph>
       <Definitions
@@ -107,39 +94,35 @@ function Stats() {
           {
             key: 'my-ilvl',
             abbreviation: 'Item lvl',
-            definition: '420.1',
+            definition: '420.6',
           },
           {
             key: 'my-int',
             abbreviation: 'Intelligence ',
-            definition: '9120',
+            definition: '9148',
           },
           {
             key: 'my-crit',
             abbreviation: 'Critical Strike',
-            definition: '16% (2049 / 5400)',
+            definition: '10% (811)',
           },
           {
             key: 'my-haste',
             abbreviation: 'Haste',
-            definition: '31% (5013 / 5100)',
+            definition: '29% (4967)',
           },
           {
             key: 'my-mast',
             abbreviation: 'Mastery',
-            definition: '44% (438 / 5400)',
+            definition: '44% (445)',
           },
           {
             key: 'my-vers',
             abbreviation: 'Versatility',
-            definition: '27% | 12.24% (5542 / 6150)',
+            definition: '25% | 12% (5116)',
           },
         ]}
       />
-      <Paragraph>
-        As you can see, I try not to reach any soft cap. Though my Lariat gives
-        me Versa procs (I wish I could change that) I won't hit the cap with it.
-      </Paragraph>
     </Section>
   )
 }
