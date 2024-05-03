@@ -4,6 +4,7 @@ import SpellRotation from '@shared/spell-rotation/SpellRotation'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
+import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
 function AOERotation() {
   return (
@@ -13,41 +14,24 @@ function AOERotation() {
         should looks something like :
       </Paragraph>
       <SpellRotation className="space-top">
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
-        <SpellRotationElement
-          item={spells['monk-sck']}
-          channeled
-          duration={2}
-        />
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>{' '}
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>{' '}
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>{' '}
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>{' '}
+        <SpellRotationElement channeled duration={2}>
+          <SpellRotationIcon item={spells['monk-sck']} />
+        </SpellRotationElement>
       </SpellRotation>
       <Paragraph>
         It is a damage gain to use <ItemLink item={spells['mw-zp']} /> on CD,

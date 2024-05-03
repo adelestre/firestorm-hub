@@ -1,16 +1,16 @@
-import LowDamageHealing from './LowDamageHealing'
+import LowHealing from './LowHealing'
 import HealingBasics from './HealingBasics'
-import HighSTDamageHealing from './HighSTDamageHealing'
-import HighGroupDamageHealing from './HighGroupDamageHealing'
+import HighSTHealing from './HighSTHealing'
+import HighGroupHealing from './HighGroupHealing'
 import Section from '@shared/Section'
 
 function Healing() {
   return (
     <Section name="Healing damage patterns">
       <HealingBasics />
-      <LowDamageHealing />
-      <HighSTDamageHealing />
-      <HighGroupDamageHealing />
+      <LowHealing />
+      <HighSTHealing />
+      <HighGroupHealing />
     </Section>
   )
 }
