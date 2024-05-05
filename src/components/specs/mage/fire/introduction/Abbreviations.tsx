@@ -35,6 +35,11 @@ function Abbreviations() {
                 abbreviation: 'SKB',
                 definition: <ItemLink item={spells['fm-skb']} />,
               },
+              {
+                key: 'gc',
+                abbreviation: 'GC',
+                definition: 'Guaranteed crit',
+              },
             ]}
           />
           <Definitions className="mt-0 lg:mt-1" defs={[]} />

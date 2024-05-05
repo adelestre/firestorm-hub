@@ -394,10 +394,20 @@
     "name": "Incendiary Eruptions",
     "link": "https://www.wowhead.com/spell=383665/incendiary-eruptions"
   },
+  "fm-searing_touch": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg",
+    "name": "Searing Touch",
+    "link": "https://www.wowhead.com/spell=269644/searing-touch"
+  },
   "fm-intensifying_flame": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg",
     "name": "Intensifying Flame",
     "link": "https://www.wowhead.com/spell=416714/intensifying-flame"
+  },
+  "fm-feelTheBurn": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball.jpg",
+    "name": "Feel the Burn",
+    "link": "https://www.wowhead.com/spell=383391/feel-the-burn"
   },
   "fm-hyperthermia": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_firenova.jpg",
@@ -409,9 +419,54 @@
     "name": "Deflagration",
     "link": "https://www.wowhead.com/fr/spell=205023/d%C3%A9flagration"
   },
+  "fm-cauterize": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_rune.jpg",
+    "name": "Cauterize",
+    "link": "https://www.wowhead.com/spell=86949/cauterize"
+  },
+  "fm-HotStreak": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_hotstreak.jpg",
+    "name": "Hot Streak",
+    "link": "https://www.wowhead.com/spell=195283/hot-streak"
+  },
+  "fm-heating": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_hotstreak.jpg",
+    "name": "Heating Up",
+    "link": "https://www.wowhead.com/spell=48107/heating-up"
+  },
+  "fm-phoenixReborn": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactfelomelorn_d_01.jpg",
+    "name": "Phoenix Reborn",
+    "link": "https://www.wowhead.com/spell=383476/phoenix-reborn"
+  },
+  "fm-alexstraszasFury": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_warrior_dragoncharge.jpg",
+    "name": "Alexstrasza's Fury",
+    "link": "https://www.wowhead.com/spell=235870/alexstraszas-fury"
+  },
+  "fm-scorch": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_soulburn.jpg",
+    "name": "Scorch",
+    "link": "https://www.wowhead.com/spell=2948/scorch"
+  },
+  "fm-pyrotechnics": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flamebolt.jpg",
+    "name": "Pyrotechnics",
+    "link": "https://www.wowhead.com/spell=157642/pyrotechnics"
+  },
   "mage-critical_mass": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_volcano.jpg",
     "name": "Time Manipulation",
     "link": "https://www.wowhead.com/spell=117216/critical-mass"
+  },
+  "mage-bl": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_timewarp.jpg",
+    "name": "Time Warp",
+    "link": "https://www.wowhead.com/spell=80353/time-warp"
+  },
+  "mage-2dbl": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmagistrix_timewarp2.jpg",
+    "name": "Temporal Warp",
+    "link": "https://www.wowhead.com/spell=386539/temporal-warp"
   }
 }
