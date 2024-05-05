@@ -238,5 +238,180 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/monk_stance_wiseserpent.jpg",
     "name": "Uplifted Spirits",
     "link": "https://www.wowhead.com/spell=388551/uplifted-spirits"
+  },
+  "fm-skb": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_firestarter.jpg",
+    "name": "Sun King's Blessing",
+    "link": "https://www.wowhead.com/spell=383886/sun-kings-blessing"
+  },
+  "fm-ignite": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg",
+    "name": "Ignite",
+    "link": "https://www.wowhead.com/spell=12654/ignite"
+  },
+  "fm-fireball": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_flamebolt.jpg",
+    "name": "Fireball",
+    "link": "https://www.wowhead.com/spell=133/fireball"
+  },
+  "fm-fireblast": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball.jpg",
+    "name": "Fireblast",
+    "link": "https://www.wowhead.com/spell=60871/fireblast"
+  },
+  "fm-pf": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/artifactability_firemage_phoenixbolt.jpg",
+    "name": "Phoenix Flames",
+    "link": "https://www.wowhead.com/spell=257541/phoenix-flames"
+  },
+  "fm-fs": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_selfdestruct.jpg",
+    "name": "Flamestrike",
+    "link": "https://www.wowhead.com/spell=2120/flamestrike"
+  },
+  "fm-pyro": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_fireball02.jpg",
+    "name": "Pyroblast",
+    "link": "https://www.wowhead.com/spell=11366/pyroblast"
+  },
+  "fm-combustion": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_sealoffire.jpg",
+    "name": "Combustion",
+    "link": "https://www.wowhead.com/spell=190319/combustion"
+  },
+  "fm-meteor": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_meteor.jpg",
+    "name": "Meteor",
+    "link": "https://www.wowhead.com/spell=153561/meteor"
+  },
+  "fm-kindling": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_kindling.jpg",
+    "name": "Kindling",
+    "link": "https://www.wowhead.com/spell=155148/kindling"
+  },
+  "fm-phoenix_reborn": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_artifactfelomelorn_d_01.jpg",
+    "name": "Phoenix Reborn",
+    "link": "https://www.wowhead.com/spell=383476/phoenix-reborn"
+  },
+  "fm-fervent_flickering": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembers.jpg",
+    "name": "Fervent Flickering",
+    "link": "https://www.wowhead.com/spell=387044/fervent-flickering"
+  },
+  "fm-critical_mass": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_volcano.jpg",
+    "name": "Critical Mass",
+    "link": "https://www.wowhead.com/spell=117216/critical-mass"
+  },
+  "mage-antonidas_tome": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_18.jpg",
+    "name": "Tome of Antonidas",
+    "link": "https://www.wowhead.com/spell=382490/tome-of-antonidas"
+  },
+  "mage-rhonins_tome": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_04.jpg",
+    "name": "Tome of Rhonin",
+    "link": "https://www.wowhead.com/spell=382493/tome-of-rhonin"
+  },
+  "mage-spell_steal": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane02.jpg",
+    "name": "Spellsteal",
+    "link": "https://www.wowhead.com/spell=30449/spellsteal"
+  },
+  "mage-remove_curse": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg",
+    "name": "Remove Curse",
+    "link": "https://www.wowhead.com/spell=475/remove-curse"
+  },
+  "mage-diverted_energy": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg",
+    "name": "Diverted Energy",
+    "link": "https://www.wowhead.com/spell=337136/diverted-energy"
+  },
+  "mage-dragons_breath": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_01.jpg",
+    "name": "Dragon's Breath",
+    "link": "https://www.wowhead.com/spell=31661/dragons-breath"
+  },
+  "mage-blast_wave": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_excorcism_02.jpg",
+    "name": "Blast Wave",
+    "link": "https://www.wowhead.com/spell=157981/blast-wave"
+  },
+  "mage-freezing_cold": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_glacier.jpg",
+    "name": "Freezing Cold",
+    "link": "https://www.wowhead.com/spell=386763/freezing-cold"
+  },
+  "mage-ice_ward": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostward.jpg",
+    "name": "Ice Ward",
+    "link": "https://www.wowhead.com/spell=205036/ice-ward"
+  },
+  "mage-time_manipulation": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_timestop.jpg",
+    "name": "Time Manipulation",
+    "link": "https://www.wowhead.com/spell=387807/time-manipulation"
+  },
+  "mage-ring_of_frost": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_ring-of-frost.jpg",
+    "name": "Ring Of Frost",
+    "link": "https://www.wowhead.com/spell=113724/ring-of-frost"
+  },
+  "mage-quick_witted": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_surgeofdarkness.jpg",
+    "name": "Quick Witted",
+    "link": "https://www.wowhead.com/spell=382297/quick-witted"
+  },
+  "mage-shifting_power": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_ardenweald_mage.jpg",
+    "name": "Shifting Power",
+    "link": "https://www.wowhead.com/spell=382440/shifting-power"
+  },
+  "mage-counterspell": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_iceshock.jpg",
+    "name": "Counterspell",
+    "link": "https://www.wowhead.com/spell=2139/counterspell"
+  },
+  "mage-greater_invis": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_greaterinvisibility.jpg",
+    "name": "Greater invisibility",
+    "link": "https://www.wowhead.com/spell=387807/time-manipulation"
+  },
+  "mage-ice_cold": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_bluefire.jpg",
+    "name": "Ice Cold",
+    "link": "https://www.wowhead.com/spell=414659/ice-cold"
+  },
+  "mage-alter_time": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_altertime.jpg",
+    "name": "Alter Time",
+    "link": "https://www.wowhead.com/spell=108978/alter-time"
+  },
+  "fm-incendiary_eruptions": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_moltenblood.jpg",
+    "name": "Incendiary Eruptions",
+    "link": "https://www.wowhead.com/spell=383665/incendiary-eruptions"
+  },
+  "fm-intensifying_flame": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg",
+    "name": "Intensifying Flame",
+    "link": "https://www.wowhead.com/spell=416714/intensifying-flame"
+  },
+  "fm-hyperthermia": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_firenova.jpg",
+    "name": "Hyperthermia",
+    "link": "https://www.wowhead.com/spell=383860/hyperthermia"
+  },
+  "fm-deflagration": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_firenova.jpg",
+    "name": "Deflagration",
+    "link": "https://www.wowhead.com/fr/spell=205023/d%C3%A9flagration"
+  },
+  "mage-critical_mass": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_volcano.jpg",
+    "name": "Time Manipulation",
+    "link": "https://www.wowhead.com/spell=117216/critical-mass"
   }
 }

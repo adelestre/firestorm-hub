@@ -238,5 +238,30 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_twilightfire.jpg",
     "name": "Prophetic Twilight Stone",
     "link": "https://www.wowhead.com/item=204029/prophetic-twilight-stone"
+  },
+  "plainsRunnerBreeze": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ui_profession_enchanting.jpg",
+    "name": "Plainsrunner's Breeze",
+    "link": "https://www.wowhead.com/spell=389479/plainsrunners-breeze"
+  },
+  "quickYsemerald": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_gem2standard_air_cut_green.jpg",
+    "name": "Quick Ysemerald",
+    "link": "https://www.wowhead.com/item=192955/quick-ysemerald"
+  },
+  "idolOfTheDreamer": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_trinket_stonedragon1_color2.jpg",
+    "name": "Idol of the Dreamer",
+    "link": "https://www.wowhead.com/item=193005/idol-of-the-dreamer"
+  },
+  "blueSilkenLining": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_tailoring_silkrare_color1.jpg",
+    "name": "Blue Silken Lining",
+    "link": "https://www.wowhead.com/item=193946/blue-silken-lining"
+  },
+  "potionAbsorptionInhibitor": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_legion_gooamber_drop.jpg",
+    "name": "Potion Absorption Inhibitor",
+    "link": "https://www.wowhead.com/item=191532/potion-absorption-inhibitor"
   }
 }
