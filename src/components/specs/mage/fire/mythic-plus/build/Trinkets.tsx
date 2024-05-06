@@ -86,7 +86,7 @@ function Trinkets() {
         />{' '}
         in most scenarios.
       </Paragraph>
-    </Section> //test
+    </Section>
   )
 }
 
