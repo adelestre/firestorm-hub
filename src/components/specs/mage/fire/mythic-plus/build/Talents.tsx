@@ -23,12 +23,12 @@ function Talents() {
       </div>
       <ClipboardCopyButton text="B8DArSxcnei16P8xFL3rzzOyRKRIFNk4AJpIgkQEJhkAAAAAAAAAgkEhElkUSSSSSSiGAAAIE" />
       <Paragraph>
-        Our general tree is up to personnal preference on some defensives, but i
+        Our general tree is up to personnal preference on some defensives, but I
         recommend taking every dps increase talents such as{' '}
         <ItemLink item={spells['mage-antonidas_tome']} /> or{' '}
         <ItemLink item={spells['mage-rhonins_tome']} /> etc. <br />
-        Please make sure to take <ItemLink item={spells['mage-2dbl']} /> as is
-        it what allows mages to have a double lust and greatly improves our dps.
+        Please make sure to take <ItemLink item={spells['mage-2dbl']} /> as it
+        is what allows mages to have a double lust and greatly improves our dps.
       </Paragraph>
       <Paragraph>
         My personnal take is to only change{' '}
@@ -40,7 +40,7 @@ function Talents() {
       </Paragraph>
       <Paragraph>
         What's pretty important on the tree outside of dps increase talents are
-        CC which are part of Mage's strenghts, luckely we have a ton of mass CC
+        CC which are part of Mage's strengths, luckily we have a ton of mass CC
         which is very strong for M+ scenarios. Our tools for that are{' '}
         <ItemLink item={spells['mage-dragons_breath']} /> which goes along with{' '}
         <ItemLink item={spells['mage-time_manipulation']} />,{' '}
@@ -51,7 +51,7 @@ function Talents() {
         also get <ItemLink item={spells['mage-quick_witted']} /> to have more
         interrupts.
         <ItemLink item={spells['mage-shifting_power']} /> can also be very
-        clutch for CC as it can allow you to get your CC or{' '}
+        clutch for CC as allows you to get your CC or{' '}
         <ItemLink item={spells['mage-counterspell']} /> back for an important
         interrupt your team may need.
       </Paragraph>
@@ -71,14 +71,14 @@ function Talents() {
       </div>
       <ClipboardCopyButton text="B8DArSxcnei16P8xFL3rzzOyRKRIFNk4AJpIgkQEJhkAAAAAAAAAgkEhElkUSSSSSSiGAAAIE" />
       <Paragraph>
-        Here we have to play different talents than on retail atleast for Season
-        1 as <ItemLink item={spells['fm-hyperthermia']} /> is different than in
-        retail. On Firestorm usually these kind of buffs proc right at the start
-        of a fight which increases it's value.
+        Here we have to play different talents than on Retail at least for
+        Season 1 as <ItemLink item={spells['fm-hyperthermia']} /> is different
+        than in Retail. On Firestorm usually these kind of buffs proc right at
+        the start of a fight which increases it's value.
         <br /> <ItemLink item={spells['fm-meteor']} /> isn't worth to take on
         most scenarios outside of Heavy AOE dungeons and fortified weeks.
         <br />
-        I basically run 3 different setups depending on the afflixes (mainly
+        I basically run 3 different setups depending on the affixes (mainly
         Tyranical or Fortified).
         <br />
         The page displayed above is an overall good page to run on Tyranical
@@ -88,8 +88,8 @@ function Talents() {
         What usually changes is that we drop a bit of our ST to grab{' '}
         <ItemLink item={spells['fm-incendiary_eruptions']} /> as this talent
         increases drastically our AOE, it gets exponentially stronger as the
-        number of target increases. The downside to it is that we drop ST to get
-        this point, by removing{' '}
+        number of targets increases. The downside to it is that we drop ST to
+        get this point, by removing{' '}
         <ItemLink item={spells['fm-intensifying_flame']} />.<br />
       </Paragraph>
       <Paragraph>

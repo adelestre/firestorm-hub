@@ -5,6 +5,7 @@ import spells from '@shared/spells.json'
 import items from '@shared/items.json'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
+import YoutubeEmbed from '@shared/YoutubeEmebed'
 
 function ST_opener() {
   return (
@@ -266,6 +267,20 @@ function ST_opener() {
       <SpellRotationElement>
         <SpellRotationIcon item={spells['fm-pyro']} />
       </SpellRotationElement>
+      <Paragraph>
+        Additionally, make sure to always move or be jumping whenever you are
+        bursting as if you stand still, you will sometimes hardcast pyros
+        instead of sending only instant pyros. Either you keep moving, or you
+        spam jump while doing your combo as most mages do. I suggest practicing
+        the combo while either moving or jumping depending on what suits you the
+        best.
+      </Paragraph>
+      <Paragraph>
+        Here is an exemple of what should look like your opener, you can see all
+        my casted spells just on top of my details on the right side if you want
+        to.
+      </Paragraph>
+      <YoutubeEmbed id="4HxGIO8vBqA" title="Fire mage opener.mp4" />
     </Section>
   )
 }

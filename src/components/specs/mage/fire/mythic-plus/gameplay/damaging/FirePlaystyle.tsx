@@ -21,11 +21,11 @@ function FireBasics() {
         important to crit twice in a row.
       </Paragraph>
       <Paragraph>
-        Thanksfully, fire has some spells that are guaranteed to crit. First,{' '}
+        Thankfully, fire has some spells that are guaranteed to crit. First,{' '}
         <ItemLink item={spells['fm-combustion']} /> gives us 100% crit chance
         which allows us to crit all our fire spells and build{' '}
-        <ItemLink item={spells['fm-HotStreak']} /> much easier. In addition to
-        it, we have spells that always crit even outside of combust, such as{' '}
+        <ItemLink item={spells['fm-HotStreak']} /> much easier. Additionally, we
+        have spells that always crit even outside of combust, such as{' '}
         <ItemLink item={spells['fm-fireblast']} /> which is a very important
         spell to fire and is part of the keys to master fire mage.<br></br>
         On top of <ItemLink item={spells['fm-fireblast']} />, we can use{' '}
@@ -45,8 +45,8 @@ function FireBasics() {
         need to space your <ItemLink item={spells['fm-fireblast']} /> and{' '}
         <ItemLink item={spells['fm-pf']} /> and manage their economy in order to
         always have either of those to refresh this buff. It will allow us to
-        increase our ignite damage and is even more valuable in AOE, but it
-        still is very good on ST.<br></br>
+        increase our ignite damage which is very valuable for ST but even more
+        in AoE.<br></br>
         For this reason we will switch between{' '}
         <ItemLink item={spells['fm-fireblast']} /> and{' '}
         <ItemLink item={spells['fm-pf']} /> to make sure we never waste a stack

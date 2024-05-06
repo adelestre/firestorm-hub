@@ -33,7 +33,7 @@ function Stats() {
                 <br />
                 Ignite will contribute both to your ST damage as it is a free
                 dot damage over your target, and even more on AOE as not only it
-                it free damage ST, it also spreads to nearby targets thoughout
+                is free damage ST, it also spreads to nearby targets thoughout
                 your rotation.
               </span>
             ),
@@ -49,9 +49,9 @@ function Stats() {
             abbreviation: 'Crit',
             definition: (
               <span>
-                Increase your crit chance, but also your mastery in a way, since{' '}
-                <ItemLink item={spells['fm-combustion']} /> 75% of your crit
-                stats is converted into mastery.
+                Increase your crit chance, but also your mastery in a way, since
+                while <ItemLink item={spells['fm-combustion']} /> is active, 75%
+                of your crit stats is converted into mastery.
               </span>
             ),
           },
@@ -125,7 +125,7 @@ function Stats() {
       <Paragraph>
         It is worth mentioning that Critical Strikes gets even weaker value as
         you get more haste and play better. Also the more target there is, the
-        least value it has. This can be explained because of some talents (ex{' '}
+        least value it has. This is mostly due to some talents (ex{' '}
         <ItemLink item={spells['fm-phoenix_reborn']} />, as on big AOE you get a
         ton of ignites and a ton of resets, you get a lot of{' '}
         <ItemLink item={spells['fm-pf']} /> refunds. Same goes for{' '}
@@ -155,7 +155,7 @@ function Stats() {
               <span>
                 12% (927), this is with 0 points into{' '}
                 <ItemLink item={spells['fm-critical_mass']} />, depending on
-                which talents i run it increases.
+                which talents I run it increases.
               </span>
             ),
           },

@@ -32,7 +32,7 @@ function AOERotation() {
       <Paragraph>
         I heavely suggest playing a macro to cast flamestrike instantly at your
         cursor position which will make you much faster especially during double
-        lust, as long as playing with a Weak Aura to help you track your mouse
+        lust, as well as playing with a Weak Aura to help you track your mouse
         position. I will provide some usefull macros and Weak auras in the end
         of this guide.<br></br>
         <br></br>
