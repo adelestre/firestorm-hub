@@ -47,7 +47,8 @@ function Trinkets() {
               Ysemerald gems. In my case I proc 8 stacks everytime as I'm fully
               socketed). So as soon as I pull, I will go from 0 to 8 stacks,
               this lasts until I reach 18 stacks. It won't fall off until you
-              reach 18 stacks, which means
+              reach 18 stacks, which means that if you have 8 stacks and stop
+              fighting for as long as you want, you will keep this buff.
               <br />
               This can be used to proc it first on a creature to reach 8 stacks,
               so on your next pull you will start pulling going from 8 to 16
