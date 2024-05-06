@@ -39,14 +39,15 @@ function Trinkets() {
               - This is in my opinion our bis fire mage trinket by far if you
               can get yourself a decent amount of gems. If you can get full gems
               this trinket has insane value. <br />
-              On top of this, it's use on Firestorm is even stronger as it has
-              infinite duration until you don't proc the max bonus.
+              On top of this, it's use on Firestorm is even stronger as it
+              always procs when you pull.
               <br />
               When you pull you will get X amount of stacks (each stack
               rewarding an amount of haste, and X is your number of socketed
               Ysemerald gems. In my case I proc 8 stacks everytime as I'm fully
               socketed). So as soon as I pull, I will go from 0 to 8 stacks,
-              this lasts infinitely until I reach 18 stacks.
+              this lasts until I reach 18 stacks. It won't fall off until you
+              reach 18 stacks, which means
               <br />
               This can be used to proc it first on a creature to reach 8 stacks,
               so on your next pull you will start pulling going from 8 to 16
