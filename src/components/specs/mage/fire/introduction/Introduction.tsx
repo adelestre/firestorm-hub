@@ -13,7 +13,7 @@ function Introduction() {
       <Paragraph>
         I have played a lot of mage since childhood across all expansions since
         WotLK. I'm doing all PVE content and part of Fanatic's main raiding
-        core, i also like to push high M+ keys, and train to get better
+        core, I also like to push high M+ keys, and train to get better
         everytime.
       </Paragraph>
       <Paragraph>

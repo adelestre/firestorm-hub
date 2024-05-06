@@ -84,7 +84,7 @@ function Cons() {
         <List className="list-disc font-semibold">
           <ListElement>
             <ItemLink item={items['phialVers']} /> - It is our best flask
-            damage-wise and makes ur tankier. It also makes our barriers
+            damage-wise and makes you tankier. It also makes our barriers
             stronger.
           </ListElement>
           <ListElement className="text-left">

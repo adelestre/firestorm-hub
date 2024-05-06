@@ -5,10 +5,8 @@ import spells from '@shared/spells.json'
 import items from '@shared/items.json'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
-import SpellRotation from '@shared/spell-rotation/SpellRotation'
-// import { HiOutlineChartSquareBar } from 'react-icons/hi'
 
-function FaelineStomp() {
+function ST_opener() {
   return (
     <Section name="ST Opener">
       <Paragraph>
@@ -272,4 +270,4 @@ function FaelineStomp() {
   )
 }
 
-export default FaelineStomp
+export default ST_opener

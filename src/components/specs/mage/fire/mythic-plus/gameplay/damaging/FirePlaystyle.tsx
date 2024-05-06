@@ -2,13 +2,8 @@ import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
-import items from '@shared/items.json'
-import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
-import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
-import SpellRotation from '@shared/spell-rotation/SpellRotation'
-// import { HiOutlineChartSquareBar } from 'react-icons/hi'
 
-function FaelineStomp() {
+function FireBasics() {
   return (
     <Section name="Fire basics">
       <Paragraph>
@@ -63,4 +58,4 @@ function FaelineStomp() {
   )
 }
 
-export default FaelineStomp
+export default FireBasics

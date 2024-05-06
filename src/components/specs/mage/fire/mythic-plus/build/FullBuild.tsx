@@ -7,10 +7,10 @@ function FullBuild() {
   return (
     <Section name="Full Build Example">
       <Paragraph>
-        Below you will find a possible items build for M+. Keep in mind that
-        it's just an example of a combination of items, my personal advices are
-        to go heavy on haste and versa either on Raid and M+. For crafted gear
-        (ex ring) we obviously go Haste & Vers.
+        Below you will find a possible item build for both raid and M+. Keep in
+        mind that it's just an example of a combination of items, my personal
+        advices are to go heavy on haste and versa for both raid and M+. On all
+        crafted gear (ex ring) we obviously go Haste & Vers.
       </Paragraph>
       <div className="space-top px-4 sm:grid sm:grid-cols-2">
         <div className="flex flex-col gap-1 ">

@@ -23,8 +23,8 @@ function Embellishments() {
           haste buff.
           <br></br>Again, on firestorm the buff procs as soon as you pull on
           most scenarios which makes it even more valuable as it makes your
-          burst stronger and also the damage that follows, are you will have
-          much more <ItemLink item={spells['fm-skb']} /> stacks and more{' '}
+          burst stronger and also the damage that follows, you will have much
+          more <ItemLink item={spells['fm-skb']} /> stacks and more{' '}
           <ItemLink item={spells['fm-combustion']} /> though{' '}
           <ItemLink item={spells['fm-kindling']} />.
         </Paragraph>
