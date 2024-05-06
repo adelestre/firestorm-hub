@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 
 .firebase/*
+
+# Include secondary git ignore
+.gitignore_mage
