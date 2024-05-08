@@ -2,6 +2,7 @@ import { ReactNode, useCallback } from 'react'
 import ThemeToggle from './buttons/ThemeToggle'
 import { useThemeContext } from '@shared/core/contexts/ThemeContext'
 import { useNavigate } from 'react-router-dom'
+import { routes } from '../routes'
 
 type Props = {
   reference?: React.RefObject<HTMLDivElement>
@@ -20,7 +21,7 @@ function Header({
   const themeContext = useThemeContext()
   const navigate = useNavigate()
   const navigateHome = useCallback(() => {
-    navigate('/')
+    navigate(routes.home)
   }, [navigate])
   return (
     <div

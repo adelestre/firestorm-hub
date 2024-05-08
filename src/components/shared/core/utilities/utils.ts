@@ -1,5 +1,6 @@
 import { NavigateFunction } from 'react-router-dom'
 import { NavigationContext } from '../types/contexts'
+import { routes } from '../routes'
 
 export function transformStringForUrl(str: string): string {
   return str
@@ -24,6 +25,6 @@ export function navigateToSpec(
     ) {
       navigationContext.toggleNavigation()
     }
-    navigate(`/guide/${job}/${spec}/mythic-plus`)
+    navigate(`${routes.guide}/${job}/${spec}/mythic-plus`)
   }
 }

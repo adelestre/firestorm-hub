@@ -9,6 +9,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { useThrottledEffect } from '@shared/core/hooks/useThrottledEffect'
 import { MdLeaderboard } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
+import { routes } from '@shared/core/routes'
 
 type Props = {
   reference: React.RefObject<HTMLDivElement>
@@ -27,7 +28,7 @@ function HeaderGuide({ reference }: Readonly<Props>) {
     }
   }, 'resize')
   const navigateLeaderboard = useCallback(() => {
-    navigate('/leaderboard')
+    navigate(routes.leaderboard)
   }, [navigate])
   return navigationContext && contentContext ? (
     <Header

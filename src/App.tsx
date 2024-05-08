@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { ThemeContext } from './components/shared/core/contexts/ThemeContext'
 import { Tooltip } from 'react-tooltip'
 import { lazy, Suspense } from 'react'
+import { routes } from '@shared/core/routes'
 
 const Home = lazy(() => import('@shared/core/pages/home/Home'))
 const Specs = lazy(() => import('@shared/core/pages/guides/SpecList'))
@@ -9,7 +10,7 @@ const Guide = lazy(() => import('@shared/core/pages/guides/guide/Guide'))
 const Leaderboard = lazy(
   () => import('@shared/core/pages/leaderboard/Leaderboard')
 )
-const NotFound = lazy(() => import('@shared/core/NotFound'))
+const NotFound = lazy(() => import('@shared/core/pages/NotFound'))
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <div className="anim bg-primary-2 text-secondary-2 h-full w-full text-base font-medium">
           <Routes>
             <Route
-              path="/"
+              path={routes.home}
               element={
                 <Suspense>
                   <Home />
@@ -26,7 +27,7 @@ function App() {
               }
             />
             <Route
-              path="/guide"
+              path={routes.guide}
               element={
                 <Suspense>
                   <Specs />
@@ -34,7 +35,7 @@ function App() {
               }
             />
             <Route
-              path="/guide/:job/:spec/:content?"
+              path={`${routes.guide}/:job/:spec/:content?`}
               element={
                 <Suspense>
                   <Guide />
@@ -42,7 +43,7 @@ function App() {
               }
             />
             <Route
-              path="/leaderboard"
+              path={routes.leaderboard}
               element={
                 <Suspense>
                   <Leaderboard />

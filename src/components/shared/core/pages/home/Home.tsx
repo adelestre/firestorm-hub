@@ -1,3 +1,4 @@
+import { routes } from '@shared/core/routes'
 import Button from '@shared/core/utilities/buttons/Button'
 import Header from '@shared/core/utilities/Header'
 import Loading from '@shared/core/utilities/Loading'
@@ -11,7 +12,7 @@ const Specs = lazy(() => import('../guides/SpecList'))
 function Home() {
   const navigate = useNavigate()
   const navigateLeaderboard = () => {
-    navigate('/leaderboard')
+    navigate(routes.leaderboard)
   }
   return (
     <div className="flex h-full w-full flex-col" spec-theme="default">

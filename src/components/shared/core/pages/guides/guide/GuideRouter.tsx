@@ -2,6 +2,7 @@ import { Navigate } from 'react-router-dom'
 import * as specs from '@specs/index'
 import { useSpecContext } from '../../../contexts/Contexts'
 import { Suspense, useMemo } from 'react'
+import { routes } from '@shared/core/routes'
 
 function GuideRouter() {
   const specContext = useSpecContext()
@@ -119,7 +120,7 @@ function GuideRouter() {
         element = <specs.ProtectionWarrior />
         break
       default:
-        return <Navigate to="/" />
+        return <Navigate to={routes.home} />
     }
     return <Suspense>{element}</Suspense>
   }, [specContext])
