@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import DefaultHeader from './utilities/Header'
-import { useThemeContext } from './contexts/ThemeContext'
+import DefaultHeader from '../utilities/Header'
+import { useThemeContext } from '../contexts/ThemeContext'
 import { CustomScroll } from 'react-custom-scroll'
+import { routes } from '../routes'
 
 function NotFound() {
   const themeContext = useThemeContext()
@@ -21,7 +22,10 @@ function NotFound() {
               <p className="text-size-4 text-center font-bold">
                 The page you're trying to access doesn't exist or was removed
               </p>
-              <Link to={'/'} className="group flex flex-col items-center">
+              <Link
+                to={routes.home}
+                className="group flex flex-col items-center"
+              >
                 <p className="text-size-3">{'> Go back to a safer place <'}</p>
                 <div className="anim bg-secondary-2 h-px w-0 -translate-y-[2px] group-hover:w-full"></div>
               </Link>
