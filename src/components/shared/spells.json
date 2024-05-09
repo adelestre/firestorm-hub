@@ -354,9 +354,14 @@
     "name": "Time Manipulation",
     "link": "https://www.wowhead.com/spell=387807/time-manipulation"
   },
+  "mage-volatile_detonation": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_burnout.jpg",
+    "name": "Volatile Detonation",
+    "link": "https://www.wowhead.com/spell=389627/volatile-detonation"
+  },
   "mage-ring_of_frost": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_ring-of-frost.jpg",
-    "name": "Ring Of Frost",
+    "name": "Ring of Frost",
     "link": "https://www.wowhead.com/spell=113724/ring-of-frost"
   },
   "mage-quick_witted": {
@@ -369,6 +374,21 @@
     "name": "Shifting Power",
     "link": "https://www.wowhead.com/spell=382440/shifting-power"
   },
+  "mage-shimmer": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blink.jpg",
+    "name": "Shimmer",
+    "link": "https://www.wowhead.com/spell=191738/shimmer"
+  },
+  "mage-arcane_intellect": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_magicalsentry.jpg",
+    "name": "Arcane Intellect",
+    "link": "https://www.wowhead.com/spell=1459/arcane-intellect"
+  },
+  "mage-slow_fall": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_magic_featherfall.jpg",
+    "name": "Slow Fall",
+    "link": "https://www.wowhead.com/spell=130/slow-fall"
+  },
   "mage-counterspell": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_iceshock.jpg",
     "name": "Counterspell",
@@ -377,17 +397,32 @@
   "mage-greater_invis": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_greaterinvisibility.jpg",
     "name": "Greater invisibility",
-    "link": "https://www.wowhead.com/spell=387807/time-manipulation"
+    "link": "https://www.wowhead.com/spell=110959/greater-invisibility"
   },
   "mage-ice_cold": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_bluefire.jpg",
     "name": "Ice Cold",
     "link": "https://www.wowhead.com/spell=414659/ice-cold"
   },
+  "mage-mass_invis": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_massinvisibility.jpg",
+    "name": "Mass Invisibility",
+    "link": "https://www.wowhead.com/spell=414664/mass-invisibility"
+  },
   "mage-alter_time": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_altertime.jpg",
     "name": "Alter Time",
     "link": "https://www.wowhead.com/spell=108978/alter-time"
+  },
+  "mage-polymorph": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_polymorph.jpg",
+    "name": "Polymorph",
+    "link": "https://www.wowhead.com/spell=118/polymorph"
+  },
+  "mage-mirror_images": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_magic_managain.jpg",
+    "name": "Mirror Image",
+    "link": "https://www.wowhead.com/spell=321686/mirror-image"
   },
   "fm-incendiary_eruptions": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_moltenblood.jpg",
@@ -398,6 +433,11 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_warlock_backdraft.jpg",
     "name": "Searing Touch",
     "link": "https://www.wowhead.com/spell=269644/searing-touch"
+  },
+  "fm-improved_scorch": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_fierypayback.jpg",
+    "name": "Improved Scorch",
+    "link": "https://www.wowhead.com/spell=383604/improved-scorch"
   },
   "fm-intensifying_flame": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_incinerate.jpg",
@@ -454,6 +494,11 @@
     "name": "Pyrotechnics",
     "link": "https://www.wowhead.com/spell=157642/pyrotechnics"
   },
+  "fm-fire_barrier": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_moltenarmor.jpg",
+    "name": "Blazing Barrier",
+    "link": "https://www.wowhead.com/spell=414660/mass-barrier"
+  },
   "mage-critical_mass": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_volcano.jpg",
     "name": "Time Manipulation",
@@ -463,6 +508,36 @@
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mage_timewarp.jpg",
     "name": "Time Warp",
     "link": "https://www.wowhead.com/spell=80353/time-warp"
+  },
+  "mage-mass_barrier": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_magicalresistance.jpg",
+    "name": "Mass barrier",
+    "link": "https://www.wowhead.com/spell=414660/mass-barrier"
+  },
+  "mage-cryofreeze": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_icefloes.jpg",
+    "name": "Cryo-Freeze",
+    "link": "https://www.wowhead.com/spell=382292/cryo-freeze"
+  },
+  "mage-frost_nova": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostnova.jpg",
+    "name": "Frost Nova",
+    "link": "https://www.wowhead.com/fr/spell=236601/frost-nova"
+  },
+  "mage-cone_of_cold": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_frost_glacier.jpg",
+    "name": "Cone of Cold",
+    "link": "https://www.wowhead.com/fr/spell=255360/cone-of-cold"
+  },
+  "mage-temporal_velocity": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_socererking_arcaneacceleration.jpg",
+    "name": "Temporal Velocity",
+    "link": "https://www.wowhead.com/spell=382826/temporal-velocity"
+  },
+  "mage-incantation_of_swiftness": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/rogue_burstofspeed.jpg",
+    "name": "Incantation of Swiftness",
+    "link": "https://www.wowhead.com/spell=382293/incantation-of-swiftness"
   },
   "mage-2dbl": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_bossmagistrix_timewarp2.jpg",
