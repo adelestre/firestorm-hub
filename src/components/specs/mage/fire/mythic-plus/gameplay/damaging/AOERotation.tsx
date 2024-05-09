@@ -4,7 +4,6 @@ import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
 import items from '@shared/items.json'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
-import SpellRotation from '@shared/spell-rotation/SpellRotation'
 import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
 function AOERotation() {
