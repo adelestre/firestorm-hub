@@ -32,7 +32,7 @@ function CC() {
       <Paragraph>
         Our last AOE interrupt to mention is{' '}
         <ItemLink item={spells['mage-ring_of_frost']} /> which you can spec into
-        if you teams need even more CC.
+        if your teams need even more CC.
       </Paragraph>
       <Paragraph>
         We also bring a ton of freezes though{' '}
