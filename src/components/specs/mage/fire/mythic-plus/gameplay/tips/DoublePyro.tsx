@@ -24,7 +24,7 @@ function DoublePyro() {
         For this reason, the double Pyro is pretty useful.
       </Paragraph>
       <Paragraph>
-        During SKBs or combustion, when you start to be low on GC ressources (
+        During SKBs or combustion, when you start to be low on GC resources (
         <ItemLink item={spells['fm-fireblast']} /> or{' '}
         <ItemLink item={spells['fm-pf']} />
         ), instead of doing GC, Pyro, GC, Pyro, GC, Pyro, etc. You will instead
