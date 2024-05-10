@@ -42,7 +42,7 @@ function CC() {
       </Paragraph>
       <Paragraph>
         Mage also have a spammable <ItemLink item={spells['mage-polymorph']} />,
-        take care as if you sheep a target or use{' '}
+       be aware though that using sheep on a target or using{' '}
         <ItemLink item={spells['mage-ring_of_frost']} />, you will get in
         combat. You can still pull out some skips using sheep and running when you
         need to so your group can safely follow you without being in combat,
