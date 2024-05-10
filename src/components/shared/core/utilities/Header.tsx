@@ -1,8 +1,8 @@
 import { ReactNode, useCallback } from 'react'
 import ThemeToggle from './buttons/ThemeToggle'
-import { useThemeContext } from '@shared/core/contexts/ThemeContext'
 import { useNavigate } from 'react-router-dom'
 import { routes } from '../routes'
+import { useThemeContext } from '../contexts/Contexts'
 
 type Props = {
   reference?: React.RefObject<HTMLDivElement>

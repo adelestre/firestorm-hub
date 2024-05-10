@@ -36,13 +36,13 @@ function Talents() {
         Then reduce the CD of <ItemLink item={spells['mw-rev']} /> with{' '}
         <ItemLink item={spells['mw-uplifted']} /> and select{' '}
         <ItemLink item={spells['mw-yulon']} />.
-        <Paragraph>
-          The last section of the tree will help us make better use of{' '}
-          <ItemLink item={spells['mw-yulon']} /> with stats buffs and also
-          improve our ramps with <ItemLink item={spells['mw-cf']} />. More
-          notably, we will select <ItemLink item={spells['mw-rm']} /> that will
-          be at the core of our playstyle.
-        </Paragraph>
+      </Paragraph>
+      <Paragraph>
+        The last section of the tree will help us make better use of{' '}
+        <ItemLink item={spells['mw-yulon']} /> with stats buffs and also improve
+        our ramps with <ItemLink item={spells['mw-cf']} />. More notably, we
+        will select <ItemLink item={spells['mw-rm']} /> that will be at the core
+        of our playstyle.
       </Paragraph>
       <Paragraph>
         Last part of the tree is very locked as there are a lot of very strong

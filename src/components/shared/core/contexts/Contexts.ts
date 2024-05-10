@@ -4,6 +4,8 @@ import {
   NavigationContext,
   ContentContext,
   SpecContext,
+  ThemeContext,
+  TabContext,
 } from '../types/contexts'
 
 export const SectionProvider = createContext<SectionContext>(undefined)
@@ -17,6 +19,12 @@ export const ContentProvider = createContext<ContentContext>({
 
 export const SpecProvider = createContext<SpecContext>(undefined)
 
+export const ThemeProvider = createContext<ThemeContext>({
+  state: false,
+  toggle: () => null,
+})
+export const TabProvider = createContext<TabContext>(false)
+
 export function useSectionContext() {
   return useContext(SectionProvider)
 }
@@ -28,4 +36,10 @@ export function useContentContext() {
 }
 export function useSpecContext() {
   return useContext(SpecProvider)
+}
+export function useThemeContext() {
+  return useContext(ThemeProvider)
+}
+export function useTabContext() {
+  return useContext(TabProvider)
 }

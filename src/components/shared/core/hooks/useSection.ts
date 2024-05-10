@@ -1,28 +1,17 @@
-import { useEffect, useMemo, useState } from 'react'
+/* eslint-disable react-hooks/rules-of-hooks */
 import { SectionData } from '../types/sectionData'
-import { SectionContext } from '../types/contexts'
-import { v4 } from 'uuid'
+import { SectionContext, TabContext } from '../types/contexts'
+import { useSectionWithoutNav } from './useSectionWithoutNav'
+import { useSectionWithNav } from './useSectionWithNav'
 
 export const useSection = (
+  tabContext: TabContext,
   sectionContext: SectionContext,
   name: string
 ): SectionData | null => {
-  const [section, setSection] = useState<SectionData | null>(null)
-  const id = useMemo(() => {
-    return v4()
-  }, [])
-  useEffect(() => {
-    if (sectionContext && !section) {
-      const init = sectionContext.initSection(sectionContext.parentId, id, name)
-      if (init) {
-        setSection(init)
-      }
-    }
-    return () => {
-      if (sectionContext) {
-        sectionContext.destroySection(id)
-      }
-    }
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
-  return section
+  if (tabContext === undefined) return null
+  else
+    return tabContext
+      ? useSectionWithoutNav(sectionContext, name)
+      : useSectionWithNav(sectionContext, name)
 }
