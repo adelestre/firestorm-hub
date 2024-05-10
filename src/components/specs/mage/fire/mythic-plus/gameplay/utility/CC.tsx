@@ -23,7 +23,7 @@ function CC() {
       </Paragraph>
       <Paragraph>
         <ItemLink item={spells['mage-blast_wave']} /> is another mass CC that is
-        pretty powerfull, also interesting for its positionning purposes as it
+        pretty powerful, also interesting for its positionning purposes as it
         allows you to remove adds from Sanguine affix for exemple, in these
         situation you can also bring the talent{' '}
         <ItemLink item={spells['mage-volatile_detonation']} /> to greatly
