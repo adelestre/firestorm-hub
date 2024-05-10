@@ -13,7 +13,7 @@ function DoublePyro() {
         In order to maximize your damage, you need to get the most uptime
         possible on <ItemLink item={spells['fm-feelTheBurn']} />. We also have
         to maintain <ItemLink item={spells['fm-improved_scorch']} /> debuff as
-        much as possible on our target in ST scenarios at it's a 12% rough
+        much as possible on our target in ST scenarios at it's a rough 12%
         damage buff.
       </Paragraph>
       <Paragraph>
