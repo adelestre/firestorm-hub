@@ -14,7 +14,7 @@ function CC() {
         Mage have access to a lot of CC which is a mandatory part to master if
         you want to perform in M+.<br></br>
         <ItemLink item={spells['mage-dragons_breath']} /> is probably our most
-        powerfull CC, especially in combination with our talent{' '}
+        powerful CC, especially in combination with our talent{' '}
         <ItemLink item={spells['mage-time_manipulation']} />. While we are
         bursting we manage to cast a very nice amount of{' '}
         <ItemLink item={spells['fm-fireblast']} /> which allows us to reduce{' '}
