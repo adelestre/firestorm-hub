@@ -5,6 +5,7 @@ import spells from '@shared/spells.json'
 import items from '@shared/items.json'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
+import YoutubeEmbed from '@shared/YoutubeEmebed'
 
 function AOERotation() {
   return (
@@ -174,6 +175,14 @@ function AOERotation() {
       <SpellRotationElement>
         <SpellRotationIcon item={spells['fm-fs']} />
       </SpellRotationElement>
+      <Paragraph>
+        Here is an exemple of what should look like your AOE opener, you can see
+        all my casted spells just on top of my details on the right side if you
+        want to. The most important thing is to make sure you don't sit on 3
+        stacks of either <ItemLink item={spells['fm-fireblast']} /> or{' '}
+        <ItemLink item={spells['fm-pf']} />.
+      </Paragraph>
+      <YoutubeEmbed id="12c-MbY4PRQ" title="Fire mage opener.mp4" />
     </Section>
   )
 }
