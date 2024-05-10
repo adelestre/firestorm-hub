@@ -2,9 +2,13 @@ import { useMemo } from 'react'
 import {
   SectionProvider,
   useSectionContext,
+  useTabContext,
 } from '@shared/core/contexts/Contexts'
 import { useSection } from './core/hooks/useSection'
 import { SectionContext } from './core/types/contexts'
+import SectionTitle, {
+  SectionTitleProps,
+} from './core/utilities/section/SectionTitle'
 
 type Props = {
   name: string
@@ -13,12 +17,13 @@ type Props = {
     level,
     name,
     reference,
-  }: Readonly<TitleProps>) => JSX.Element | null
+  }: Readonly<SectionTitleProps>) => JSX.Element | null
 }
 
 function Section({ name, children, CustomTitle }: Readonly<Props>) {
   const sectionContext = useSectionContext()
-  const section = useSection(sectionContext, name)
+  const tabContext = useTabContext()
+  const section = useSection(tabContext, sectionContext, name)
   const newContext: SectionContext = useMemo(() => {
     if (!sectionContext || !section) {
       return undefined
@@ -39,7 +44,7 @@ function Section({ name, children, CustomTitle }: Readonly<Props>) {
           reference={section.ref}
         />
       ) : (
-        <Title
+        <SectionTitle
           level={sectionContext.level}
           name={name}
           reference={section.ref}
@@ -48,54 +53,6 @@ function Section({ name, children, CustomTitle }: Readonly<Props>) {
       {children}
     </SectionProvider.Provider>
   ) : null
-}
-
-type TitleProps = {
-  level?: number
-  name: string
-  reference: React.Ref<HTMLElement> | null
-}
-
-function Title({ level, name, reference }: Readonly<TitleProps>) {
-  switch (level) {
-    case 0:
-      return (
-        <h2
-          ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-2 space-top text-size-5"
-        >
-          {name}
-        </h2>
-      )
-    case 1:
-      return (
-        <h3
-          ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-3 space-top text-size-4"
-        >
-          {name}
-        </h3>
-      )
-    case 2:
-      return (
-        <h4
-          ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-4 space-top text-size-3"
-        >
-          {name}
-        </h4>
-      )
-    case 3:
-    default:
-      return (
-        <h5
-          ref={reference as React.Ref<HTMLHeadingElement>}
-          className="title-5 space-top text-size-1"
-        >
-          {name}
-        </h5>
-      )
-  }
 }
 
 export default Section

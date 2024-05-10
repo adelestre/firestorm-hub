@@ -31,9 +31,11 @@ export type SpecContext =
       spec: string | undefined
     }
   | undefined
-export type ThemeContextType =
+export type ThemeContext =
   | {
       state: boolean
       toggle: () => void
     }
   | undefined
+
+export type TabContext = boolean | undefined

@@ -1,17 +1,6 @@
-import {
-  createContext,
-  ReactNode,
-  useCallback,
-  useContext,
-  useMemo,
-} from 'react'
-import { ThemeContextType } from '../types/contexts'
+import { ReactNode, useCallback, useMemo } from 'react'
 import { useLocalStorage } from '@uidotdev/usehooks'
-
-const ThemeProvider = createContext<ThemeContextType>({
-  state: false,
-  toggle: () => null,
-})
+import { ThemeProvider } from './Contexts'
 
 type Props = {
   children: ReactNode
@@ -37,8 +26,4 @@ export function ThemeContext({ children }: Readonly<Props>) {
       <div className={`h-full w-full ${theme ? 'dark' : ''}`}>{children}</div>
     </ThemeProvider.Provider>
   )
-}
-
-export function useThemeContext() {
-  return useContext(ThemeProvider)
 }

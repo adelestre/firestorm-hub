@@ -8,6 +8,7 @@ import {
   SectionProvider,
   NavigationProvider,
   ContentProvider,
+  TabProvider,
 } from './Contexts'
 
 type Props = {
@@ -89,18 +90,20 @@ function GuideContext({ children }: Readonly<Props>) {
   const specContext = useMemo(() => ({ job, spec }), [job, spec])
   return (
     <SpecProvider.Provider value={specContext}>
-      <SectionProvider.Provider value={sectionContext}>
-        <NavigationProvider.Provider value={navigationContext}>
-          <ContentProvider.Provider value={contentContext}>
-            <div
-              className="flex h-full w-full flex-col items-center"
-              spec-theme={job}
-            >
-              {children}
-            </div>
-          </ContentProvider.Provider>
-        </NavigationProvider.Provider>
-      </SectionProvider.Provider>
+      <TabProvider.Provider value={false}>
+        <SectionProvider.Provider value={sectionContext}>
+          <NavigationProvider.Provider value={navigationContext}>
+            <ContentProvider.Provider value={contentContext}>
+              <div
+                className="flex h-full w-full flex-col items-center"
+                spec-theme={job}
+              >
+                {children}
+              </div>
+            </ContentProvider.Provider>
+          </NavigationProvider.Provider>
+        </SectionProvider.Provider>
+      </TabProvider.Provider>
     </SpecProvider.Provider>
   )
 }
