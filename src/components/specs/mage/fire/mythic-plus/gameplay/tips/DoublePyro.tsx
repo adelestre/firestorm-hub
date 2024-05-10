@@ -27,7 +27,7 @@ function DoublePyro() {
         During SKBs or combustion, when you start to be low on GC resources (
         <ItemLink item={spells['fm-fireblast']} /> or{' '}
         <ItemLink item={spells['fm-pf']} />
-        ), instead of doing GC, Pyro, GC, Pyro, GC, Pyro, etc. You will instead
+        ), instead of doing GC, Pyro, GC, Pyro, GC, Pyro, etc. You should
         cast <ItemLink item={spells['fm-scorch']} /> +{' '}
         <ItemLink item={spells['fm-fireblast']} />
       </Paragraph>
