@@ -19,7 +19,7 @@ function DoublePyro() {
       <Paragraph>
         While it's easy to maintain <ItemLink item={spells['fm-feelTheBurn']} />{' '}
         during bursts as we have a lot of <ItemLink item={spells['fm-pf']} />{' '}
-        and <ItemLink item={spells['fm-fireblast']} />, it's harder to do it
+        and <ItemLink item={spells['fm-fireblast']} />, it's harder
         outside of these windows. <br></br>
         For this reason, the double Pyro is pretty usefull.
       </Paragraph>
