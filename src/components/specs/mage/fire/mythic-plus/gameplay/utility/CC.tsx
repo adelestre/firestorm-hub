@@ -44,7 +44,7 @@ function CC() {
         Mage also have a spammable <ItemLink item={spells['mage-polymorph']} />,
         take care as if you sheep a target or use{' '}
         <ItemLink item={spells['mage-ring_of_frost']} />, you will get in
-        combat. You can still pull some skips using sheep and running when you
+        combat. You can still pull out some skips using sheep and running when you
         need to so your group can safely follow you without beeing in combat,
         then invis to reset the add. You can also sheep casters if there is
         important casts you need to stop and you have your silence on CD and no
