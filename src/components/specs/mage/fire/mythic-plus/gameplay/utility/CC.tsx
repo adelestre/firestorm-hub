@@ -35,7 +35,7 @@ function CC() {
         if your teams need even more CC.
       </Paragraph>
       <Paragraph>
-        We also bring a ton of freezes though{' '}
+        We also bring a ton of freezes through{' '}
         <ItemLink item={spells['mage-frost_nova']} /> or{' '}
         <ItemLink item={spells['mage-cone_of_cold']} /> that AOE slows or
         freezes if spec into <ItemLink item={spells['mage-freezing_cold']} />.
