@@ -13,7 +13,7 @@ function Tips() {
     <Section name="Maximizing your damage">
       <Paragraph>
         This part will provide you with some advanced tips and tricks that will help
-        you reach higher DPS and/or uptime DPS. There is a lot to cover on here,
+        you reach higher DPS and/or uptime DPS. There is a lot to cover here,
         this part is for people that already got the basics and want to get
         better.
       </Paragraph>
