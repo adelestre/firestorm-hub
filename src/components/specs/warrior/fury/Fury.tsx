@@ -6,11 +6,11 @@ import Raid from './raid/Raid'
 function Fury() {
   const contentContext = useContentContext()
   return (
-    <div>
+    <>
       <Introduction />
       {contentContext?.content === 'mythic-plus' && <MythicPlus />}
       {contentContext?.content === 'raid' && <Raid />}
-    </div>
+    </>
   )
 }
 

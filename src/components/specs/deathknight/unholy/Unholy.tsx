@@ -6,11 +6,11 @@ import Raid from './raid/Raid'
 function Unholy() {
   const contentContext = useContentContext()
   return (
-    <div>
+    <>
       <Introduction />
       {contentContext?.content === 'mythic-plus' && <MythicPlus />}
       {contentContext?.content === 'raid' && <Raid />}
-    </div>
+    </>
   )
 }
 

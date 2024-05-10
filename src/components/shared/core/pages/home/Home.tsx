@@ -29,7 +29,7 @@ function Home() {
             </Button>
           </div>
           <div className="bg-primary-3 h-px w-full"></div>
-          <Suspense fallback={<Loading />}>
+          <Suspense fallback={<Loading className="pb-24" />}>
             <Specs />
           </Suspense>
         </div>

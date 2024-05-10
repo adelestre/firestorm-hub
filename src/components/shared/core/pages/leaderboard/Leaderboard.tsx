@@ -25,7 +25,7 @@ function Leaderboard() {
           </h2>
           {items.length == 0 && isLoading && (
             <div className="h-full *:-translate-y-12">
-              <Loading></Loading>
+              <Loading className="pb-24"></Loading>
             </div>
           )}
           {error && (

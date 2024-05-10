@@ -43,7 +43,7 @@ function Document() {
     setTranslateX(getTranslateX())
   }, 'resize')
   return loading ? (
-    <Loading />
+    <Loading className="pb-24" />
   ) : sectionContext ? (
     <div
       id="document"

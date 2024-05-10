@@ -1,6 +1,6 @@
 import { HiOutlineChevronUp } from 'react-icons/hi'
 import { useNavigationContext } from '@shared/core/contexts/Contexts'
-import useWindowIsScrolled from '../../hooks/useWindowIsScrolled'
+import useContainerIsScrolled from '../../hooks/useContainerIsScrolled'
 
 type Props = {
   docRef: React.RefObject<HTMLDivElement>
@@ -9,7 +9,10 @@ type Props = {
 
 function ScrollBack({ docRef, translateX }: Readonly<Props>) {
   const navigationContext = useNavigationContext()
-  const [windowIsScrolled, scrollToTop] = useWindowIsScrolled(docRef)
+  const [windowIsScrolled, scrollToTop] = useContainerIsScrolled({
+    container: docRef.current?.parentElement?.parentElement ?? undefined,
+    threshold: 200,
+  })
 
   return (
     <button
