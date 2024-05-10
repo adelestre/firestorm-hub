@@ -21,7 +21,7 @@ function DoublePyro() {
         during bursts as we have a lot of <ItemLink item={spells['fm-pf']} />{' '}
         and <ItemLink item={spells['fm-fireblast']} />, it's harder
         outside of these windows. <br></br>
-        For this reason, the double Pyro is pretty usefull.
+        For this reason, the double Pyro is pretty useful.
       </Paragraph>
       <Paragraph>
         During SKBs or combustion, when you start to be low on GC ressources (
