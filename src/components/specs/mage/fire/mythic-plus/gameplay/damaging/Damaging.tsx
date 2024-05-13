@@ -6,7 +6,7 @@ import ST_opener from './ST_opener'
 
 function Damaging() {
   return (
-    <Section name="Dealing damage as a fire mage">
+    <Section name="Dealing damage">
       <FirePlaystyle />
       <ST_rotation />
       <ST_opener />

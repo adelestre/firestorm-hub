@@ -31,14 +31,34 @@ function Abbreviations() {
                 definition: 'Crowd Control ',
               },
               {
-                key: 'skb',
-                abbreviation: 'SKB',
-                definition: <ItemLink item={spells['fm-skb']} />,
+                key: 'cd',
+                abbreviation: 'CD',
+                definition: 'Cooldown',
               },
               {
                 key: 'gc',
                 abbreviation: 'GC',
                 definition: 'Guaranteed crit',
+              },
+              {
+                key: 'dr',
+                abbreviation: 'DR',
+                definition: 'Damage reduction',
+              },
+              {
+                key: 'ms',
+                abbreviation: 'MS',
+                definition: 'Movement speed',
+              },
+              {
+                key: 'skb',
+                abbreviation: 'SKB',
+                definition: <ItemLink item={spells['fm-skb']} />,
+              },
+              {
+                key: 'pyro',
+                abbreviation: 'Pyro',
+                definition: <ItemLink item={spells['fm-pyro']} />,
               },
             ]}
           />
