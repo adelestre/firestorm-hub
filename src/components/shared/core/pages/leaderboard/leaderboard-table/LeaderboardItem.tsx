@@ -1,7 +1,7 @@
 import { Player } from '@shared/core/types/leaderboard'
 import ioGradient from '../ioGradient.json'
-import { useThemeContext } from '@shared/core/contexts/ThemeContext'
 import LeaderboardRow from './LeaderboardRow'
+import { useThemeContext } from '@shared/core/contexts/Contexts'
 
 type Props = {
   player: Player

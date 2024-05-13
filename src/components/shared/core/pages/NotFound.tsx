@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import DefaultHeader from '../utilities/Header'
-import { useThemeContext } from '../contexts/ThemeContext'
 import { CustomScroll } from 'react-custom-scroll'
 import { routes } from '../routes'
+import { useThemeContext } from '../contexts/Contexts'
 
 function NotFound() {
   const themeContext = useThemeContext()

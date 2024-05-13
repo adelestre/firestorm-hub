@@ -22,7 +22,7 @@ function Document() {
       sectionContext?.sections &&
       window.matchMedia('(min-width: 1024px)').matches
     ) {
-      const documentWidth = sectionContext.sections[0].ref.current?.clientWidth
+      const documentWidth = sectionContext.sections[0].ref?.current?.clientWidth
       if (documentWidth) {
         const rootFontSize = parseFloat(
           getComputedStyle(document.documentElement).fontSize
