@@ -281,6 +281,11 @@ function ST_opener() {
         to.
       </Paragraph>
       <YoutubeEmbed id="4HxGIO8vBqA" title="Fire mage opener.mp4" />
+      <Paragraph>
+        Note : scorch should be replaced by Fireball when you have over 104%
+        haste as Scorch will cast so fast that it ends before your next GCD,
+        it's better to send Fireballs in these scenarios.
+      </Paragraph>
     </Section>
   )
 }

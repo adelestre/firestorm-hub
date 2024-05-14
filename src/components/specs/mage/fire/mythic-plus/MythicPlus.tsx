@@ -1,13 +1,13 @@
 import Build from './build/Build'
 import Gameplay from './gameplay/Gameplay'
-// import Spells from './spells/Spells'
+import Macros_WAs from './macros&WAs/Macros&WAs'
 
 function MythicPlus() {
   return (
     <div>
       <Build />
       <Gameplay />
-      {/* <Spells /> */}
+      <Macros_WAs />
     </div>
   )
 }
