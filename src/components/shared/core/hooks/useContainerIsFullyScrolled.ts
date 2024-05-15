@@ -34,6 +34,7 @@ export default function useContainerIsFullyScrolled({
         behavior: 'smooth',
       })
     }
+    updatePosition()
     container.addEventListener('scroll', updatePosition)
     return () => container.removeEventListener('scroll', updatePosition)
   }, [container, orientation, threshold])

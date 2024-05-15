@@ -10,7 +10,7 @@ function Talents() {
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
           className="rounded-sm"
-          src="/assets/raid-class-talent-tree.png"
+          src="/assets/monk/mistweaver/raid-class-talent-tree.png"
           alt=""
         />
         <div className="absolute inset-0 rounded-sm shadow-img"></div>
@@ -24,7 +24,7 @@ function Talents() {
       <div className="space-top relative flex w-full flex-col items-center justify-center">
         <img
           className="rounded-sm"
-          src="/assets/raid-spec-talent-tree.png"
+          src="/assets/monk/mistweaver/raid-spec-talent-tree.png"
           alt=""
         />
         <div className="absolute inset-0 rounded-sm shadow-img"></div>
