@@ -2,19 +2,12 @@ import Abbreviations from './Abbreviations'
 import Section from '@shared/Section'
 import IntroductionTitle from './IntroductionTitle'
 import Paragraph from '@shared/Paragraph'
-import Code from '@shared/Code'
 import Tabs from '@shared/tabs/Tabs'
 import TabElement from '@shared/tabs/TabElement'
-import ClipboardCopyButton from '@shared/ClipboardCopyButton'
 
 function Introduction() {
   return (
     <Section name="Introduction" CustomTitle={IntroductionTitle}>
-      <Code
-        text={`/use [mod:ctrl,@focus] Explosion pyrotechnique; Explosion pyrotechnique
-        /use [@mouseover, exists] Explosion pyrotechnique; Explosion pyrotechnique`}
-      />
-      <ClipboardCopyButton file="/assets/cpy.txt" />
       <Tabs>
         <TabElement id="basic1" name="Basic 1">
           <Section name="test">
