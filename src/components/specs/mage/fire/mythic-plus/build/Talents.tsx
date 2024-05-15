@@ -16,7 +16,7 @@ function Talents() {
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
           className="rounded-sm"
-          src="/assets/fireMageGeneralTree.PNG"
+          src="/assets/mage/fire/fireMageGeneralTree.PNG"
           alt=""
         />
         <div className="absolute inset-0 rounded-sm shadow-img"></div>
@@ -64,7 +64,7 @@ function Talents() {
       <div className="space-top relative flex w-full flex-col items-center justify-center">
         <img
           className="rounded-sm"
-          src="/assets/FireMageTalentsM+.PNG"
+          src="/assets/mage/fire/FireMageTalentsM+.PNG"
           alt=""
         />
         <div className="absolute inset-0 rounded-sm shadow-img"></div>
@@ -113,7 +113,7 @@ function Talents() {
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
           className="rounded-sm"
-          src="/assets/FireTalentsMaxAoe.PNG"
+          src="/assets/mage/fire/FireTalentsMaxAoe.PNG"
           alt=""
         />
         <div className="absolute inset-0 rounded-sm shadow-img"></div>

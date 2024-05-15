@@ -8,7 +8,7 @@ import Loading from '../Loading'
 import useContainerIsScrolled from '@shared/core/hooks/useContainerIsScrolled'
 
 type Props = {
-  currentTab: string
+  currentTab: string | null
   setCurrentTab: (id: string) => void
   bgColor: string
   children: React.ReactNode
@@ -64,7 +64,7 @@ function TabHeader({
         className={`flex w-full flex-row ${isRefSet ? 'relative' : 'invisible absolute'}`}
       >
         <div
-          className={`anim ${!isScrolled ? 'opacity-0' : 'opacity-100'} absolute left-0 h-full bg-${bgColor}`}
+          className={`anim ${!isScrolled ? 'pointer-events-none opacity-0' : 'opacity-100'} absolute left-0 h-full bg-${bgColor}`}
         >
           <IconButton
             fullHeight
@@ -94,7 +94,7 @@ function TabHeader({
         </div>
         {!isFullyScrolled && (
           <div
-            className={`anim ${isFullyScrolled ? 'opacity-0' : 'opacity-100'} absolute right-0 h-full bg-${bgColor}`}
+            className={`anim ${isFullyScrolled ? 'pointer-events-none opacity-0' : 'opacity-100'} absolute right-0 h-full bg-${bgColor}`}
           >
             <IconButton
               fullHeight

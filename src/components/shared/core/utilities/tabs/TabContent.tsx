@@ -1,9 +1,9 @@
 type Props = {
-  currentTab: string
+  currentTab: string | null
   children: React.ReactNode
 }
 function TabContent({ currentTab, children }: Readonly<Props>) {
-  return (
+  return currentTab ? (
     <div className="text-size-1 w-full p-4 font-assistant">
       {(children as React.ReactElement[]).filter(
         (child: React.ReactElement) => {
@@ -11,7 +11,7 @@ function TabContent({ currentTab, children }: Readonly<Props>) {
         }
       )}
     </div>
-  )
+  ) : null
 }
 
 export default TabContent

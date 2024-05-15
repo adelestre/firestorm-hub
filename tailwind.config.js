@@ -5,6 +5,7 @@ export const theme = {
   fontFamily: {
     eco: ['Economica', 'sans-serif'],
     assistant: ['Assistant', 'sans-serif'],
+    mono: ['Roboto Mono', 'monospace'],
   },
   extend: {
     colors: {

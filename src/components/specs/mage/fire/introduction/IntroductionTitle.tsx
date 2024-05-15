@@ -21,7 +21,7 @@ function IntroductionTitle({ name, reference }: Readonly<TitleProps>) {
       <Separator />
       <img
         className="rounded-sm"
-        src="/assets/fire_mage_banner.webp"
+        src="/assets/mage/fire/fire_mage_banner.webp"
         alt="Fire Mage Guide"
       />
       <h2
