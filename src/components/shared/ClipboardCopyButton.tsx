@@ -1,16 +1,29 @@
 import { useState } from 'react'
 import { LuCopy } from 'react-icons/lu'
 
-type Props = {
-  text: string
-}
+type Props =
+  | {
+      text: string
+      file?: never
+    }
+  | {
+      text?: never
+      file: string
+    }
 
-function ClipboardCopyButton({ text }: Readonly<Props>) {
+function ClipboardCopyButton({ text, file }: Readonly<Props>) {
   const [copied, setCopied] = useState(false)
   let timeout: NodeJS.Timeout
-  const copyToClipboard = () => {
+  const copyToClipboard = async () => {
     if (copied) return
-    navigator.clipboard.writeText(text)
+    if (text) navigator.clipboard.writeText(text)
+    else if (file) {
+      console.log(file)
+      const response = await fetch(file)
+      const data = await response.text()
+      console.log(data)
+      navigator.clipboard.writeText(data)
+    }
     setCopied(true)
     clearTimeout(timeout)
     timeout = setTimeout(() => {

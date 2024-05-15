@@ -21,7 +21,7 @@ function IntroductionTitle({ name, reference }: Readonly<TitleProps>) {
       <Separator />
       <img
         className="rounded-sm"
-        src="/assets/monk-mistweaver.webp"
+        src="/assets/monk/mistweaver/monk-mistweaver.webp"
         alt="Mistweaver Monk Guide"
       />
       <h2
