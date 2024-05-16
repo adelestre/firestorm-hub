@@ -1,11 +1,10 @@
 import Paragraph from '@shared/Paragraph'
-import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
 
 function Hyperthermia() {
   return (
-    <Section name="Hyperthermia minmaxing">
+    <>
       <Paragraph>
         As for Shifting Power, make sure to use your a{' '}
         <ItemLink item={spells['fm-fireblast']} /> everytime you are about to
@@ -56,7 +55,7 @@ function Hyperthermia() {
         right clicking it but going for a macro instead, it can save you a
         bind).
       </Paragraph>
-    </Section>
+    </>
   )
 }
 

@@ -17,29 +17,21 @@ function Tips() {
         here, this part is for people that already got the basics and want to
         get better.
       </Paragraph>
-      <Tabs className="space-top">
+      <Tabs className="space-top" defaultTab={null}>
         <TabElement name="Double Pyro combo" id="section1">
           <DoublePyro />
         </TabElement>
         <TabElement name="Shifting Power" id="section2">
-          <Section name="Shifting Power">
-            <ShiftingPower />
-          </Section>
+          <ShiftingPower />
         </TabElement>
         <TabElement name="Hyperthermia" id="section3">
-          <Section name="Hyperthermia">
-            <Hyperthermia />
-          </Section>
+          <Hyperthermia />
         </TabElement>
         <TabElement name='Crit "cheat"' id="section4">
-          <Section name='Crit "cheat"'>
-            <CritCheat />
-          </Section>
+          <CritCheat />
         </TabElement>
         <TabElement name="Delayed Pyro" id="section5">
-          <Section name="Delayed Pyro">
-            <DelayedPyro />
-          </Section>
+          <DelayedPyro />
         </TabElement>
       </Tabs>
     </Section>

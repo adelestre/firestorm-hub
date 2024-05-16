@@ -1,5 +1,4 @@
 import Paragraph from '@shared/Paragraph'
-import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
 import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
@@ -8,7 +7,7 @@ import YoutubeEmbed from '@shared/YoutubeEmebed'
 
 function DoublePyro() {
   return (
-    <Section name="Double Pyro combo">
+    <>
       <Paragraph>
         In order to maximize your damage, you need to get the most uptime
         possible on <ItemLink item={spells['fm-feelTheBurn']} />. We also have
@@ -68,7 +67,7 @@ function DoublePyro() {
         Here is a video of this combo so you can see what it looks like.
       </Paragraph>
       <YoutubeEmbed id="aqszsySXU1E" title="Double Pyro combo" />
-    </Section>
+    </>
   )
 }
 

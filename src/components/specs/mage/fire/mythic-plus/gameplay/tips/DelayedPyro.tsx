@@ -1,11 +1,10 @@
 import Paragraph from '@shared/Paragraph'
-import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
 
 function DelayedPyro() {
   return (
-    <Section name="Delaying Pyros/FS to proc more Hyperthermias.">
+    <>
       <Paragraph>
         This trick aims to both proc more{' '}
         <ItemLink item={spells['fm-hyperthermia']} /> and at better timings to
@@ -38,7 +37,7 @@ function DelayedPyro() {
         which translates into reaching your next SKB faster and reducing your
         combust CD though <ItemLink item={spells['fm-kindling']} />.
       </Paragraph>
-    </Section>
+    </>
   )
 }
 

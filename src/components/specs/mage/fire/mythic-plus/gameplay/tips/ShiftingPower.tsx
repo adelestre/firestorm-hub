@@ -1,11 +1,10 @@
 import Paragraph from '@shared/Paragraph'
-import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
 
 function ShiftingPower() {
   return (
-    <Section name="Shifting Power minmaxing">
+    <>
       <Paragraph>
         Most of the times <ItemLink item={spells['mage-shifting_power']} /> is
         used to reduce our CDs. Try to cast it while you are in range to damage
@@ -33,7 +32,7 @@ function ShiftingPower() {
         contribute to our <ItemLink item={spells['fm-HotStreak']} /> generation,
         which means more SKBs and Combusts.
       </Paragraph>
-    </Section>
+    </>
   )
 }
 

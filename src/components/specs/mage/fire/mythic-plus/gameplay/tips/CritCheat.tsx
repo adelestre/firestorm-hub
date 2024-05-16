@@ -1,11 +1,10 @@
 import Paragraph from '@shared/Paragraph'
-import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
 
 function CritCheat() {
   return (
-    <Section name="Saving failed combos.">
+    <>
       <Paragraph>
         To use this trick you need to have a decent connexion as it requires
         fast reaction time. The trick is to send a spell (usually{' '}
@@ -50,7 +49,7 @@ function CritCheat() {
         If you are in melee or have a mob in melee range, you can also do this
         trick with <ItemLink item={spells['mage-dragons_breath']} />.
       </Paragraph>
-    </Section>
+    </>
   )
 }
 
