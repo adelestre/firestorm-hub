@@ -3,15 +3,16 @@ type Props = {
   children: React.ReactNode
 }
 function TabContent({ currentTab, children }: Readonly<Props>) {
-  return currentTab ? (
+  return (
     <div className="text-size-1 w-full p-4 font-assistant">
-      {(children as React.ReactElement[]).filter(
-        (child: React.ReactElement) => {
-          return child.props.id === currentTab
-        }
-      )}
+      {currentTab &&
+        (children as React.ReactElement[]).filter(
+          (child: React.ReactElement) => {
+            return child.props.id === currentTab
+          }
+        )}
     </div>
-  ) : null
+  )
 }
 
 export default TabContent
