@@ -92,7 +92,6 @@ function Talents() {
         get this point, by removing{' '}
         <ItemLink item={spells['fm-intensifying_flame']} />.<br />
       </Paragraph>
-      <Paragraph>Lastly,</Paragraph>
       <Paragraph>
         My last setup as a firemage for keys is a retail-like page to increase
         our AOE dps (especially burst AOE thanks to{' '}

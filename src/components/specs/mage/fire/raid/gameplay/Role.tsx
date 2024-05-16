@@ -17,8 +17,8 @@ function Role() {
       </Paragraph>
       <Paragraph>
         As a mage we also provide BL (<ItemLink item={spells['mage-bl']} />)
-        which needs to be used when it gives our group the most value which can
-        depend on which dungeon we run and also which afflixes are currently on.
+        which needs to be used when it gives our raid the most value which
+        usually depends on which phase we want to BL on.
       </Paragraph>
     </Section>
   )
