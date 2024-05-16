@@ -1,10 +1,7 @@
 import Section from '@shared/Section'
 import ItemLink from '@shared/Links/ItemLink'
-import SpellRotation from '@shared/spell-rotation/SpellRotation'
-import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
-import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 
 function STRotation() {
   return (

@@ -9,7 +9,7 @@ function Talents() {
     <Section name="Talents">
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/monk/mistweaver/raid-class-talent-tree.png"
           alt=""
         />
@@ -23,7 +23,7 @@ function Talents() {
       </Paragraph>
       <div className="space-top relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/monk/mistweaver/raid-spec-talent-tree.png"
           alt=""
         />

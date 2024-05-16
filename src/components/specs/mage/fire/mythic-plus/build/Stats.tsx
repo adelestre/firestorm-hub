@@ -5,7 +5,6 @@ import List from '@shared/list/List'
 import ListElement from '@shared/list/ListElement'
 import Paragraph from '@shared/Paragraph'
 import spells from '@shared/spells.json'
-//import TextLink from '@shared/Links/TextLink'
 
 function Stats() {
   return (

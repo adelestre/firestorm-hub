@@ -1,4 +1,3 @@
-import { FaStarOfLife } from 'react-icons/fa'
 import ItemLink from '@shared/Links/ItemLink'
 import ClipboardCopyButton from '@shared/ClipboardCopyButton'
 import Section from '@shared/Section'
@@ -13,7 +12,7 @@ function Talents() {
       </div>
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/mage/fire/FireMageGeneralTreeST.PNG"
           alt=""
         />
@@ -52,7 +51,7 @@ function Talents() {
       </Paragraph>
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/mage/fire/FireTalentsST.PNG"
           alt=""
         />

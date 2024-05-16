@@ -2,12 +2,8 @@ import Section from '@shared/Section'
 import Paragraph from '@shared/Paragraph'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
-// import ItemLink from '@shared/Links/ItemLink'
-// import spells from '@shared/spells.json'
-//import ItemLink from '@shared/Links/ItemLink'
-//import items from '@shared/items.json'
 
-function CC() {
+function Cc() {
   return (
     <Section name="Crowd Control">
       <Paragraph>
@@ -57,4 +53,4 @@ function CC() {
   )
 }
 
-export default CC
+export default Cc

@@ -15,7 +15,7 @@ function Talents() {
       </div>
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/monk/mistweaver/mythicplus-class-talent-tree.png"
           alt=""
         />
@@ -62,7 +62,7 @@ function Talents() {
       </Paragraph>
       <div className="space-top relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/monk/mistweaver/mythicplus-spec-talent-tree.png"
           alt=""
         />

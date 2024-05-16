@@ -2,8 +2,6 @@ import Section from '@shared/Section'
 import Paragraph from '@shared/Paragraph'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
-//import ItemLink from '@shared/Links/ItemLink'
-//import items from '@shared/items.json'
 
 function Mobility() {
   return (

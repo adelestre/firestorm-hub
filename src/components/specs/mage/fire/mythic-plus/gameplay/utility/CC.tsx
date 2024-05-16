@@ -2,12 +2,8 @@ import Section from '@shared/Section'
 import Paragraph from '@shared/Paragraph'
 import ItemLink from '@shared/Links/ItemLink'
 import spells from '@shared/spells.json'
-// import ItemLink from '@shared/Links/ItemLink'
-// import spells from '@shared/spells.json'
-//import ItemLink from '@shared/Links/ItemLink'
-//import items from '@shared/items.json'
 
-function CC() {
+function Cc() {
   return (
     <Section name="Crowd Control">
       <Paragraph>
@@ -42,10 +38,10 @@ function CC() {
       </Paragraph>
       <Paragraph>
         Mage also have a spammable <ItemLink item={spells['mage-polymorph']} />,
-       be aware though that using sheep on a target or using{' '}
+        be aware though that using sheep on a target or using{' '}
         <ItemLink item={spells['mage-ring_of_frost']} />, you will get in
-        combat. You can still pull out some skips using sheep and running when you
-        need to so your group can safely follow you without being in combat,
+        combat. You can still pull out some skips using sheep and running when
+        you need to so your group can safely follow you without being in combat,
         then invis to reset the add. You can also sheep casters if there is
         important casts you need to stop and you have your silence on CD and no
         way to interrupt it, and even use it when adds are casting in sanguine
@@ -66,4 +62,4 @@ function CC() {
   )
 }
 
-export default CC
+export default Cc

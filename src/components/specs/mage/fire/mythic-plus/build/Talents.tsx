@@ -1,4 +1,3 @@
-import { FaStarOfLife } from 'react-icons/fa'
 import ItemLink from '@shared/Links/ItemLink'
 import ClipboardCopyButton from '@shared/ClipboardCopyButton'
 import Section from '@shared/Section'
@@ -8,14 +7,9 @@ import spells from '@shared/spells.json'
 function Talents() {
   return (
     <Section name="Talents">
-      <div className="flex flex-row justify-end">
-        <p className="flex flex-row gap-1">
-          <FaStarOfLife /> = switchable nodes
-        </p>
-      </div>
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/mage/fire/fireMageGeneralTree.PNG"
           alt=""
         />
@@ -63,7 +57,7 @@ function Talents() {
       </Paragraph>
       <div className="space-top relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/mage/fire/FireMageTalentsM+.PNG"
           alt=""
         />
@@ -111,7 +105,7 @@ function Talents() {
       </Paragraph>
       <div className="relative flex w-full flex-col items-center justify-center">
         <img
-          className="rounded-sm"
+          className="w-full rounded-sm"
           src="/assets/mage/fire/FireTalentsMaxAoe.PNG"
           alt=""
         />

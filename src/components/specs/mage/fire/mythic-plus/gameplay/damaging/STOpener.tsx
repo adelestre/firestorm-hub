@@ -7,7 +7,7 @@ import SpellRotationElement from '@shared/spell-rotation/SpellRotationElement'
 import SpellRotationIcon from '@shared/spell-rotation/SpellRotationIcon'
 import YoutubeEmbed from '@shared/YoutubeEmebed'
 
-function ST_opener() {
+function STOpener() {
   return (
     <Section name="ST Opener">
       <Paragraph>
@@ -290,4 +290,4 @@ function ST_opener() {
   )
 }
 
-export default ST_opener
+export default STOpener
