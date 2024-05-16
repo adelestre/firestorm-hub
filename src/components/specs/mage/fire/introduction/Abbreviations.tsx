@@ -60,6 +60,11 @@ function Abbreviations() {
                 abbreviation: 'Pyro',
                 definition: <ItemLink item={spells['fm-pyro']} />,
               },
+              {
+                key: 'fs',
+                abbreviation: 'FS',
+                definition: <ItemLink item={spells['fm-fs']} />,
+              },
             ]}
           />
           <Definitions className="mt-0 lg:mt-1" defs={[]} />
