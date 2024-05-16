@@ -18,14 +18,14 @@ function Code({ text }: Readonly<Props>) {
     }, 2000)
   }
   return (
-    <div className="space-top group relative w-full rounded-md border border-light-primary-3 bg-light-primary-2 p-4 dark:border-black dark:bg-dark-primary-0">
+    <div className="space-top group relative w-full rounded-md border border-light-primary-3 bg-light-primary-2 p-2 dark:border-black dark:bg-dark-primary-0">
       <button
         className={`anim border-primary-4 absolute right-1 top-1 h-6 w-6 flex-row items-center justify-center gap-6 rounded-sm border p-2 py-1 transition-colors ${copied ? 'flex text-lg text-green-600' : 'hover:bg-primary-3 hidden text-xs group-hover:flex'}`}
         onClick={copyToClipboard}
       >
         <div>{copied ? <LuCheck /> : <LuCopy />}</div>
       </button>
-      <p className="font-mono whitespace-pre-line text-left">{text}</p>
+      <p className="whitespace-pre-line text-left font-mono text-sm">{text}</p>
     </div>
   )
 }
