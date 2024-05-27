@@ -1,5 +1,5 @@
 import { log } from 'firebase-functions/logger'
-import { MythicRun, Player } from '../types'
+import { MythicRun, Player, Role } from '../types'
 import { getDungeon, getPlayer, getRun, scaleScore, updatefsio } from '../utils'
 
 export function getUpdatedPlayers(
@@ -18,7 +18,7 @@ export function getUpdatedPlayers(
       run.score = scaleScore(run.time, dungeon.timer, run.lvl)
     run.pids.forEach((pid, pidx) => {
       const player = getPlayer(players.concat(updatedPlayers), pid)
-
+      const role = getRole(pidx)
       if (!player) {
         updatedPlayers.push({
           pid: pid,
@@ -27,6 +27,8 @@ export function getUpdatedPlayers(
           bruns: [run.rid],
           runCount: 1,
           fsio: run.score,
+          roles: [role],
+          rank: null,
         })
         creationCounter++
       } else {
@@ -35,27 +37,38 @@ export function getUpdatedPlayers(
 
         player.runCount++
 
+        let found = false
+        const roles: Role[] = []
         player.bruns.forEach((pbrid) => {
           const cbrun = getRun(runs, pbrid)
+          if (!cbrun) return
+          const brole = getRole(cbrun.pids.indexOf(pid))
+          if (!roles.includes(brole)) roles.push(brole)
           if (
-            cbrun &&
-            pbrid !== run.rid &&
             run.dungeon === cbrun.dungeon &&
-            run.affixes[1] === cbrun.affixes[1] &&
-            run.score >= cbrun.score
+            run.affixes[1] === cbrun.affixes[1]
           ) {
-            const index = player.bruns.indexOf(pbrid)
-            if (index > -1) {
-              player.bruns[index] = run.rid
-              updatedPlayers.push(player)
+            found = true
+            if (run.score >= cbrun.score) {
+              const index = player.bruns.indexOf(pbrid)
+              if (index > -1) {
+                player.bruns[index] = run.rid
+                updatedPlayers.push(player)
+              }
             }
-          } else {
-            player.bruns.push(run.rid)
-            updatedPlayers.push(player)
           }
         })
+        if (!found) {
+          player.bruns.push(run.rid)
+          updatedPlayers.push(player)
+        }
         // Sanity Check, remove duplicates
         player.bruns = [...new Set(player.bruns)]
+
+        if (roles !== player.roles) {
+          player.roles = roles
+          if (!updatedPlayers.includes(player)) updatedPlayers.push(player)
+        }
       }
     })
   })
@@ -70,7 +83,7 @@ export function getUpdatedPlayers(
     if (idx < 2000) {
       player.rank = idx + 1
     } else {
-      player.rank = undefined
+      player.rank = null
     }
     if (player.rank !== previousRank) updatedPlayers.push(player)
   })
@@ -82,4 +95,10 @@ export function getUpdatedPlayers(
     updatedPlayers: updatedPlayers,
     playerCount: players.length + creationCounter,
   }
+}
+
+function getRole(pidx: number): Role {
+  if (pidx === 0) return 'tank'
+  if (pidx === 1) return 'healer'
+  return 'dps'
 }

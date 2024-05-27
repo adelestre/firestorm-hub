@@ -10,7 +10,7 @@ function Button({ children, active, ...props }: Readonly<Props>) {
   classes +=
     ' ' +
     (active
-      ? 'bg-accent-3 border-accent-1 cursor-default text-zinc-900 font-extrabold'
+      ? 'bg-accent-3 border-accent-1 cursor-default text-light-secondary-2 font-extrabold'
       : 'bg-primary-1 hover:bg-primary-3 border-primary-4')
   return (
     <button {...props} className={classes}>

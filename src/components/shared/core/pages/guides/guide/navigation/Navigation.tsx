@@ -75,15 +75,16 @@ function Navigation({ headerRef }: Readonly<Props>) {
                 <Select
                   selected={getSelected}
                   placeholder={'Select a spec'}
-                  className="border-primary-3 focus:border-accent-2 flex flex-row items-center justify-between border-b-2 border-l-0 border-r-0 border-t-0 px-0 pb-2 outline-none"
+                  className="border-primary-3 *:text-secondary-4 focus:border-accent-2 flex flex-row items-center justify-between rounded-none border-b-2 border-l-0 border-r-0 border-t-0 px-0 pb-2 outline-none"
+                  containerProps={{ className: 'h-14' }}
                   menuProps={{
                     className:
-                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-0',
+                      'w-full p-2 pl-4 scrollbar-thin scrollbar-corner-transparent scrollbar-thumb-rounded-md scrollbar-thumb-light-accent-2 dark:scrollbar-thumb-dark-accent-3 scrollbar-track-transparent border-primary-4 bg-primary-1',
                   }}
                 >
                   <div
                     onLoad={scrollToTopOnLoad}
-                    className="flex max-h-80 flex-col gap-px"
+                    className="flex max-h-80 flex-col gap-1"
                   >
                     {Object.keys(specs).map((job) =>
                       Object.keys(specs[job as keyof typeof specs]).map(

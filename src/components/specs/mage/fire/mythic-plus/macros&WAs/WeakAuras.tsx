@@ -14,7 +14,7 @@ function WeakAuras() {
         faster but you can remove it if needed.
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/MainWA.PNG"
+          src="/assets/mage/fire/MainWA.png"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/mainWA.txt" />
@@ -26,7 +26,7 @@ function WeakAuras() {
         duration.
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/TrinketsWA.PNG"
+          src="/assets/mage/fire/TrinketsWA.png"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/trinkets.txt" />
@@ -36,7 +36,7 @@ function WeakAuras() {
         of range (40 yards).
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/OOR.PNG"
+          src="/assets/mage/fire/OOR.png"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/outOfRange.txt" />
@@ -46,7 +46,7 @@ function WeakAuras() {
         which allows you to plan both your lust easely.
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/BL.PNG"
+          src="/assets/mage/fire/BL.PNG"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/BL.txt" />
@@ -56,7 +56,7 @@ function WeakAuras() {
         position for Flamestrikes/Meteor casts especially.
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/Mouse.PNG"
+          src="/assets/mage/fire/Mouse.png"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/mouseCursor.txt" />
@@ -66,7 +66,7 @@ function WeakAuras() {
         timeline bar that will display bosses abilities.
         <img
           className="mx-auto my-auto mt-6 rounded-sm"
-          src="/assets/Timeline.PNG"
+          src="/assets/mage/fire/Timeline.png"
           alt=""
         />
         <ClipboardCopyButton file="/assets/mage/fire/timeline.txt" />

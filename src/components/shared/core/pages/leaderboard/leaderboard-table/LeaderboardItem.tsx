@@ -2,6 +2,7 @@ import { Player } from '@shared/core/types/leaderboard'
 import ioGradient from '../ioGradient.json'
 import LeaderboardRow from './LeaderboardRow'
 import { useThemeContext } from '@shared/core/contexts/Contexts'
+import MostPlayedRoles from './MostPlayedRoles'
 
 type Props = {
   player: Player
@@ -16,13 +17,17 @@ function LeaderboardItem({ player }: Readonly<Props>) {
       <td
         style={{
           textShadow:
-            player.pclass === 'priest' && !themeContext?.state
+            player.pclass === 'priest' ||
+            (player.pclass === 'rogue' && !themeContext?.state)
               ? '0px 1px 2px black'
               : 'none',
         }}
-        className="text-accent-2 p-4 font-assistant"
+        className="text-accent-3 p-4 font-assistant"
       >
-        {player.name}
+        <div className="flex flex-row items-center justify-center">
+          {player.name}
+          <MostPlayedRoles player={player} />
+        </div>
       </td>
       <td className="p-4" style={{ color: ioColor }}>
         {player.fsio}

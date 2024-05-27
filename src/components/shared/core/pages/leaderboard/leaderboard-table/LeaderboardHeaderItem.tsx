@@ -7,7 +7,7 @@ type Props = {
 function LeaderboardHeaderItem({ title, secondLast, last }: Readonly<Props>) {
   return (
     <th
-      className={`${last ? 'hidden sm:block' : ''} text-accent-2 text-size-3 relative justify-center p-4 font-bold`}
+      className={`${last ? 'hidden sm:block' : ''} text-secondary-2 text-size-3 relative justify-center p-4 font-bold`}
     >
       {title}
       {!last && (

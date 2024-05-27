@@ -25,5 +25,8 @@ export type Player = {
   bruns: string[]
   runCount: number
   fsio: number
-  rank?: number
+  tank: number | null
+  healer: number | null
+  dps: number | null
+  rank: number | null
 }

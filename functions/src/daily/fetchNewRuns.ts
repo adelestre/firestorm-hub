@@ -1,4 +1,4 @@
-import dungeons from '../dungeons/dungeonsS1.json'
+import dungeons from '../dungeons/dungeonsS2.json'
 import { scaleScore } from '../utils'
 import { log } from 'firebase-functions/logger'
 import { Dungeon, MythicRun } from '../types'

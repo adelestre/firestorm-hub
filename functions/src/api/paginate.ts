@@ -10,9 +10,11 @@ export async function paginate(req: Request, res: Response) {
     body: {
       limit,
       order = null,
+      season = null,
       lastElement = null,
       filterName = null,
       filterClass = null,
+      filterRole = null,
     },
   } = req
   if (!limit)
@@ -34,9 +36,11 @@ export async function paginate(req: Request, res: Response) {
     const data = await getPagination({
       limit,
       order,
+      season,
       lastElement,
       filterName,
       filterClass,
+      filterRole,
     })
     return res.status(200).json(data)
   } catch (error) {
@@ -65,27 +69,33 @@ export async function getPagination(
   parameters: PaginateParameters,
   forceNew = false
 ): Promise<PaginateResponse> {
-  const count = await getPlayerCount()
+  const count = await getPlayerCount(parameters.season ?? '2')
   if (!forceNew && isFirstPageRequest(parameters)) {
-    const data = await getFirstPage()
+    const data = await getFirstPage(parameters.season ?? '2')
     if (data) return data
   }
-  let query = db.collection('players') as Query<DocumentData, DocumentData>
+  let collectionName = 'players'
+  if (parameters.season) {
+    if (parameters.season !== '1') collectionName += `_${parameters.season}`
+  } else collectionName += '_2'
+  let query = db.collection(collectionName) as Query<DocumentData, DocumentData>
   query = query.limit(parameters.limit)
   const order = parameters.order ?? 'desc'
   query = query.orderBy('fsio', order)
   query = query.orderBy('pid')
+  if (parameters.filterClass)
+    query = query.where('pclass', '==', parameters.filterClass)
+  if (parameters.filterRole)
+    query = query.where('roles', 'array-contains', parameters.filterRole)
+  if (parameters.filterName)
+    query = query
+      .where('name', '>=', parameters.filterName)
+      .where('name', '<=', parameters.filterName + '\uf8ff')
   if (parameters.lastElement)
     query = query.startAfter(
       parameters.lastElement.fsio,
       parameters.lastElement.pid
     )
-  if (parameters.filterClass)
-    query = query.where('pclass', '==', parameters.filterClass)
-  if (parameters.filterName)
-    query = query
-      .where('name', '>=', parameters.filterName)
-      .where('name', '<=', parameters.filterName + '\uf8ff')
   const players = (await query.get()).docs.map((doc) => doc.data())
   return mergePlayersAndCount(players, count) as PaginateResponse
 }

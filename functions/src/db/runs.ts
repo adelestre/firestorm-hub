@@ -2,7 +2,7 @@ import { MythicRun } from '../types'
 import { db } from './services/firebase'
 
 export const getRuns = async (): Promise<MythicRun[]> => {
-  const runs = await db.collection('runs').get()
+  const runs = await db.collection('runs_2').get()
   return runs.docs.map((doc) => doc.data() as MythicRun)
 }
 
@@ -11,7 +11,7 @@ export const updateRuns = async (runs: MythicRun[]) => {
     const batch = db.batch()
 
     runs.forEach((run) => {
-      const runRef = db.collection('runs').doc(run.rid)
+      const runRef = db.collection('runs_2').doc(run.rid)
       batch.set(runRef, run)
     })
 
@@ -26,7 +26,7 @@ export async function removeUnusedRuns(unusedRuns: string[]) {
     const batch = db.batch()
 
     unusedRuns.forEach((run) => {
-      const runRef = db.collection('runs').doc(run)
+      const runRef = db.collection('runs_2').doc(run)
       batch.delete(runRef)
     })
 

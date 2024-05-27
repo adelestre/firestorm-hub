@@ -116,13 +116,9 @@ function HighGroupHealing() {
         We first cast <ItemLink item={spells['mw-faeline']} /> but it is
         important to hit as many allies as possible with it. The reason is that
         we want the <ItemLink item={spells['mw-ef']} /> on them so our Chi-Ji
-        gets his heals doubled on those targets (actually it is for the moment
-        bugged on FS and doesn't work, but it's reported and hopefully hotfixed
-        very soon). Optionally we can use <ItemLink item={spells['mw-ef']} />{' '}
-        itself if the allies are not grouped and won't all get hit by the{' '}
-        <ItemLink item={spells['mw-faeline']} />. The second reason is to make
-        sure we will have <ItemLink item={spells['mw-at']} /> for the whole
-        duration of <ItemLink item={spells['mw-chiji']} />.
+        gets his heals doubled on those targets. Optionally we can use{' '}
+        <ItemLink item={spells['mw-ef']} /> itself if the allies are not grouped
+        and won't all get hit by the <ItemLink item={spells['mw-faeline']} />.
       </Paragraph>{' '}
       <Paragraph>
         Then we cast a <ItemLink item={spells['monk-tp']} /> to build 2{' '}

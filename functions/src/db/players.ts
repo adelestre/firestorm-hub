@@ -7,7 +7,7 @@ export const updatePlayers = async (players: Player[]) => {
     const batch = db.batch()
 
     players.forEach((player) => {
-      const playerRef = db.collection('players').doc(player.pid)
+      const playerRef = db.collection('players_2').doc(player.pid)
       batch.set(playerRef, player)
     })
 
@@ -20,6 +20,6 @@ export const updatePlayers = async (players: Player[]) => {
 }
 
 export const getPlayers = async (): Promise<Player[]> => {
-  const runs = await db.collection('players').get()
+  const runs = await db.collection('players_2').get()
   return runs.docs.map((doc) => doc.data() as Player)
 }

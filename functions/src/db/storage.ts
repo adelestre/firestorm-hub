@@ -7,28 +7,35 @@ import { mergePlayersAndCount } from '../utils'
 const bucket = storage.bucket('firestorm-hub.appspot.com')
 
 export async function getLastAffixes(): Promise<string[]> {
-  return ((await getFile('weekAffixes.json')) as { affixes: string[] }).affixes
+  return ((await getFile('season2/weekAffixes.json')) as { affixes: string[] })
+    .affixes
 }
 
 export function updateWeekAffixes(affixes: string[]): Promise<void> {
-  return saveFile('weekAffixes.json', { affixes })
+  return saveFile('season2/weekAffixes.json', { affixes })
 }
 
-export async function getPlayerCount(): Promise<number> {
-  return ((await getFile('playerCount.json')) as { count: number }).count
+export async function getPlayerCount(season: string): Promise<number> {
+  return (
+    (await getFile('season' + season + '/playerCount.json')) as {
+      count: number
+    }
+  ).count
 }
 
 export async function updatePlayerCount(count: number): Promise<void> {
-  return saveFile('playerCount.json', { count })
+  return saveFile('season2/playerCount.json', { count })
 }
 
-export async function getFirstPage(): Promise<PaginateResponse> {
-  return getFile('firstPage.json') as Promise<PaginateResponse>
+export async function getFirstPage(season: string): Promise<PaginateResponse> {
+  return getFile(
+    'season' + season + '/firstPage.json'
+  ) as Promise<PaginateResponse>
 }
 
 export function updateFirstPage(response: PaginateResponse): Promise<void> {
   return saveFile(
-    'firstPage.json',
+    'season2/firstPage.json',
     mergePlayersAndCount(response.players, response.count)
   )
 }
@@ -44,10 +51,12 @@ export async function updateData(playerCount: number): Promise<void> {
   const data = await getPagination(
     {
       limit: 50,
+      season: '2',
       order: undefined,
       lastElement: undefined,
       filterName: undefined,
       filterClass: undefined,
+      filterRole: undefined,
     },
     true
   )

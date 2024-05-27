@@ -1,4 +1,4 @@
-import dungeons from './dungeons/dungeonsS1.json'
+import dungeons from './dungeons/dungeonsS2.json'
 import { MythicRun, Player } from './types'
 
 export function scaleScore(

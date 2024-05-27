@@ -25,12 +25,14 @@ function SpecSelectItem({ job, spec, placeholder }: Readonly<Props>) {
   const InnerElements = (
     <>
       <img
-        className="h-4 w-4 rounded-sm border border-zinc-900 sm:h-6 sm:w-6"
+        className="h-4 w-4 rounded-sm border border-light-secondary-2 sm:h-6 sm:w-6"
         src={icon}
         alt={job_spec}
       />
-      <div className="hidden font-bold text-zinc-900 lg:block">{name}</div>
-      <div className="flex-1 font-bold capitalize text-zinc-900 lg:hidden">
+      <div className="hidden font-eco font-bold text-light-secondary-2 lg:block">
+        {name}
+      </div>
+      <div className="flex-1 font-eco font-bold capitalize text-light-secondary-2 lg:hidden">
         {spec}
       </div>
       <div className="h-4 w-4 sm:hidden"></div>

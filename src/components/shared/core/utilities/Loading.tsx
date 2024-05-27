@@ -1,20 +1,11 @@
-import { useEffect, useState } from 'react'
-
 type Props = {
   size?: number
   className?: string
 }
 
 function Loading({ size = 12, className }: Readonly<Props>) {
-  const [isTakingTooLong, setIsTakingTooLong] = useState(false)
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsTakingTooLong(true)
-    }, 1000)
-    return () => clearTimeout(timeout)
-  }, [])
   const sizeInRem = `${size / 4}rem`
-  return isTakingTooLong ? (
+  return (
     <div
       className={`flex h-full w-full flex-col items-center justify-center ${className}`}
     >
@@ -27,7 +18,7 @@ function Loading({ size = 12, className }: Readonly<Props>) {
         </span>
       </output>
     </div>
-  ) : null
+  )
 }
 
 export default Loading

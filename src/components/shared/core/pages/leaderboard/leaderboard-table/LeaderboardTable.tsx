@@ -3,6 +3,7 @@ import LeaderboardHeaderItem from './LeaderboardHeaderItem'
 import { Player } from '@shared/core/types/leaderboard'
 import useInfiniteScroll from 'react-infinite-scroll-hook'
 import LeaderboardLoadingRows from './LeaderboardLoadingRows'
+import Loading from '@shared/core/utilities/Loading'
 
 const LeaderboardItem = lazy(() => import('./LeaderboardItem'))
 
@@ -26,38 +27,42 @@ function LeaderboardTable({
     rootMargin: '0px 0px 1200px 0px',
   })
   return (
-    <div className="flex w-full max-w-6xl flex-col items-center gap-2 p-4 pt-4 sm:p-12 sm:pt-4">
-      <table className="w-full overflow-hidden rounded-md">
-        <thead>
-          <tr className="border-secondary-4 bg-primary-1 border-b !bg-opacity-60">
-            <Suspense>
-              <LeaderboardHeaderItem title={'Rank'} />
-              <LeaderboardHeaderItem title={'Name'} />
-              <LeaderboardHeaderItem title={'FSIO'} secondLast />
-              <LeaderboardHeaderItem title={'Number of runs'} last />
-            </Suspense>
-          </tr>
-        </thead>
-        <Suspense>
-          <tbody>
-            {items.map((player) => (
-              <LeaderboardItem key={player.pid} player={player} />
-            ))}
-            {items.length == 0 ? (
-              <tr className="bg-primary-1">
-                <td colSpan={4}>
-                  <p className="text-size-4 p-4  text-center">
-                    No player found
-                  </p>
-                </td>
-              </tr>
-            ) : (
-              hasMore && <LeaderboardLoadingRows inifiniteRef={inifiniteRef} />
-            )}
-          </tbody>
-        </Suspense>
-      </table>
-    </div>
+    <table className="w-full overflow-hidden rounded-md">
+      <thead>
+        <tr className="border-secondary-4 bg-primary-1 border-b !bg-opacity-60">
+          <Suspense>
+            <LeaderboardHeaderItem title={'Rank'} />
+            <LeaderboardHeaderItem title={'Name'} />
+            <LeaderboardHeaderItem title={'FSIO'} secondLast />
+            <LeaderboardHeaderItem title={'Number of runs'} last />
+          </Suspense>
+        </tr>
+      </thead>
+      <Suspense>
+        {isLoading && (
+          <div className="fixed left-0 top-0 h-screen w-screen">
+            <Loading />
+          </div>
+        )}
+        <tbody>
+          {items.map((player) => (
+            <LeaderboardItem key={player.pid} player={player} />
+          ))}
+          {!isLoading && items.length == 0 ? (
+            <tr className="bg-primary-1">
+              <td colSpan={4}>
+                <p className="text-size-4 p-4  text-center">No player found</p>
+              </td>
+            </tr>
+          ) : (
+            hasMore &&
+            items.length >= 50 && (
+              <LeaderboardLoadingRows inifiniteRef={inifiniteRef} />
+            )
+          )}
+        </tbody>
+      </Suspense>
+    </table>
   )
 }
 

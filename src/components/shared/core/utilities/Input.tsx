@@ -22,6 +22,7 @@ const Input = forwardRef(function Input(
     noLabel,
     disabled,
     important,
+    sideAction,
   }: Readonly<Props>,
   ref: ForwardedRef<HTMLInputElement>
 ) {
@@ -30,20 +31,17 @@ const Input = forwardRef(function Input(
     let containerClasses =
       'border relative flex w-full flex-row items-center rounded-sm bg-transparent py-3'
     if (disabled) {
-      containerClasses +=
-        ' border-light-secondary-4 dark:border-dark-secondary-4'
+      containerClasses += ' border-secondary-4'
     } else if (important) {
-      containerClasses +=
-        ' border-2 border-light-accent-3 dark:border-dark-accent-3'
+      containerClasses += ' border-2 border-accent-3'
     } else {
-      containerClasses +=
-        ' border-light-secondary-4 focus-within:border-light-accent-3 dark:border-dark-secondary-4 dark:focus-within:border-dark-accent-3'
+      containerClasses += ' border-secondary-4 focus-within:border-accent-3'
     }
     return containerClasses
   }, [disabled, important])
   const placeholderClasses = useMemo(() => {
     let placeholderClasses =
-      'pointer-events-none absolute -translate-y-1/2 bg-light-primary-1 px-1 duration-200 text-light-secondary-4 first-letter:uppercase dark:bg-dark-primary-1 dark:text-dark-secondary-4'
+      'pointer-events-none absolute -translate-y-1/2 bg-primary-2 px-1 duration-200 text-secondary-4 first-letter:uppercase'
     if (fontSize) {
       placeholderClasses += fontSize[0] ? ' text-' + fontSize[0] : ' text-lg '
       placeholderClasses += fontSize[1] && ' sm:text-' + fontSize[1]
@@ -57,8 +55,8 @@ const Input = forwardRef(function Input(
     } else {
       placeholderClasses +=
         value?.length > 0
-          ? ' peer-focus:text-light-accent-2 dark:peer-focus:text-dark-accent-2 left-2 top-0 peer-focus:text-sm'
-          : ' peer-focus:text-light-accent-2 dark:peer-focus:text-dark-accent-2 left-4 top-1/2 peer-focus:left-2 peer-focus:top-0 peer-focus:text-sm'
+          ? ' peer-focus:text-accent-2 left-2 top-0 text-sm'
+          : ' peer-focus:text-accent-2 left-4 top-1/2 peer-focus:left-2 peer-focus:top-0 peer-focus:text-sm'
     }
     return placeholderClasses
   }, [value, noLabel, fontSize])
@@ -69,7 +67,7 @@ const Input = forwardRef(function Input(
         type={type}
         placeholder={placeholder}
         className={
-          'peer w-full bg-transparent px-4 text-light-secondary-0 outline-none duration-200 placeholder:opacity-0 dark:text-dark-secondary-0' +
+          'text-secondary-0 peer w-full bg-transparent px-4 outline-none duration-200 placeholder:opacity-0' +
           (disabled ? ' pointer-events-none select-none' : '') +
           (fontSize?.[0] ? ' text-' + fontSize[0] : ' text-lg') +
           (fontSize?.[1] ? ' sm:text-' + fontSize[1] : ' text-lg') +
@@ -86,6 +84,14 @@ const Input = forwardRef(function Input(
       <div style={{ lineHeight: '1.1' }} className={placeholderClasses}>
         {placeholder}
       </div>
+      {sideAction && (
+        <div
+          ref={actionRef}
+          className="anim absolute right-0 mr-2 flex h-full flex-row items-center justify-center gap-1 py-2"
+        >
+          {sideAction}
+        </div>
+      )}
     </div>
   )
 })

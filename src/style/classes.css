@@ -365,7 +365,7 @@ div.rcs-inner-container {
 }
 
 .spec-select > div > button > div {
-  @apply anim relative right-0 flex-shrink-0;
+  @apply anim relative right-0 flex-shrink-0 -translate-y-full;
 }
 .spec-select > div:has(> ul) > button > div {
   @apply rotate-180;
@@ -388,26 +388,26 @@ p {
 
 @layer colors {
   [spec-theme='default'] {
-    --light-accent-1: #00b26b;
-    --light-accent-2: #00d680;
-    --light-accent-3: #00ff98;
-    --light-accent-4: #00ff98;
-    --light-accent-5: #76f9c5;
-    --light-accent-6: #baf7f0;
-    --dark-accent-1: #76f9c5;
-    --dark-accent-2: #46fcb3;
-    --dark-accent-3: #00ff98;
-    --dark-accent-4: #00d680;
-    --dark-accent-5: #00b26b;
-    --dark-accent-6: #008f56;
+    --light-accent-1: #3f3f46;
+    --light-accent-2: #52525b;
+    --light-accent-3: #6b6b72;
+    --light-accent-4: #87878b;
+    --light-accent-5: #a1a1aa;
+    --light-accent-6: #c7c7cc;
+    --dark-accent-1: #d4d4d8;
+    --dark-accent-2: #a1a1aa;
+    --dark-accent-3: #71717a;
+    --dark-accent-4: #52525b;
+    --dark-accent-5: #3f3f46;
+    --dark-accent-6: #2c2c33;
   }
   [spec-theme='deathknight'] {
-    --light-accent-1: #79091c;
-    --light-accent-2: #9c0f27;
-    --light-accent-3: #c41e3a;
-    --light-accent-4: #e3344f;
-    --light-accent-5: #f6687f;
-    --light-accent-6: #f9a3b0;
+    --light-accent-1: #4f0610;
+    --light-accent-2: #79091c;
+    --light-accent-3: #9c0f27;
+    --light-accent-4: #c41e3a;
+    --light-accent-5: #e3344f;
+    --light-accent-6: #f6687f;
     --dark-accent-1: #f6687f;
     --dark-accent-2: #f6687f;
     --dark-accent-3: #c41e3a;
@@ -416,12 +416,12 @@ p {
     --dark-accent-6: #4f0610;
   }
   [spec-theme='demonhunter'] {
-    --light-accent-1: #650b83;
-    --light-accent-2: #8a0fba;
-    --light-accent-3: #a330c9;
-    --light-accent-4: #b44fd9;
-    --light-accent-5: #c77ff0;
-    --light-accent-6: #e0baf7;
+    --light-accent-1: #4f0763;
+    --light-accent-2: #650b83;
+    --light-accent-3: #8a0fba;
+    --light-accent-4: #a330c9;
+    --light-accent-5: #b44fd9;
+    --light-accent-6: #c77ff0;
     --dark-accent-1: #c77ff0;
     --dark-accent-2: #b44fd9;
     --dark-accent-3: #a330c9;
@@ -430,12 +430,12 @@ p {
     --dark-accent-6: #4f0763;
   }
   [spec-theme='druid'] {
-    --light-accent-1: #a54d00;
-    --light-accent-2: #d36600;
-    --light-accent-3: #ff7d0a;
-    --light-accent-4: #ff9e3d;
-    --light-accent-5: #ffb56b;
-    --light-accent-6: #ffcc99;
+    --light-accent-1: #7f3a00;
+    --light-accent-2: #a54d00;
+    --light-accent-3: #d36600;
+    --light-accent-4: #ff7d0a;
+    --light-accent-5: #ff9e3d;
+    --light-accent-6: #ffb56b;
     --dark-accent-1: #ffb56b;
     --dark-accent-2: #ff9e3d;
     --dark-accent-3: #ff7d0a;
@@ -444,12 +444,12 @@ p {
     --dark-accent-6: #7f3a00;
   }
   [spec-theme='evoker'] {
-    --light-accent-1: #0e6352;
-    --light-accent-2: #0f7f6e;
-    --light-accent-3: #33937f;
-    --light-accent-4: #4faa9a;
-    --light-accent-5: #7fcfc3;
-    --light-accent-6: #baf7f0;
+    --light-accent-1: #0c4f3f;
+    --light-accent-2: #0e6352;
+    --light-accent-3: #0f7f6e;
+    --light-accent-4: #33937f;
+    --light-accent-5: #4faa9a;
+    --light-accent-6: #7fcfc3;
     --dark-accent-1: #7fcfc3;
     --dark-accent-2: #4faa9a;
     --dark-accent-3: #33937f;
@@ -458,12 +458,12 @@ p {
     --dark-accent-6: #0c4f3f;
   }
   [spec-theme='hunter'] {
-    --light-accent-1: #5c8425;
-    --light-accent-2: #7fae3d;
-    --light-accent-3: #aad372;
-    --light-accent-4: #c5e08c;
-    --light-accent-5: #d9f0a3;
-    --light-accent-6: #eaf7b8;
+    --light-accent-1: #3f5a18;
+    --light-accent-2: #5c8425;
+    --light-accent-3: #7fae3d;
+    --light-accent-4: #aad372;
+    --light-accent-5: #c5e08c;
+    --light-accent-6: #d9f0a3;
     --dark-accent-1: #d9f0a3;
     --dark-accent-2: #c5e08c;
     --dark-accent-3: #aad372;
@@ -472,26 +472,26 @@ p {
     --dark-accent-6: #3f5a18;
   }
   [spec-theme='mage'] {
-    --light-accent-1: #0e6f8a;
-    --light-accent-2: #0f8db0;
-    --light-accent-3: #3fc7eb;
-    --light-accent-4: #6fd9f0;
-    --light-accent-5: #9feaf7;
-    --light-accent-6: #baf7f9;
+    --light-accent-1: #008eb5;
+    --light-accent-2: #079dc7;
+    --light-accent-3: #0ea8d2;
+    --light-accent-4: #3fc7eb;
+    --light-accent-5: #6fd9f0;
+    --light-accent-6: #9feaf7;
     --dark-accent-1: #9feaf7;
     --dark-accent-2: #6fd9f0;
     --dark-accent-3: #3fc7eb;
-    --dark-accent-4: #0f8db0;
-    --dark-accent-5: #0e6f8a;
-    --dark-accent-6: #0c4f6f;
+    --dark-accent-4: #0ea8d2;
+    --dark-accent-5: #079dc7;
+    --dark-accent-6: #008eb5;
   }
   [spec-theme='monk'] {
-    --light-accent-1: #00b26b;
-    --light-accent-2: #00d680;
-    --light-accent-3: #00ff98;
+    --light-accent-1: #008f56;
+    --light-accent-2: #00b26b;
+    --light-accent-3: #00d680;
     --light-accent-4: #00ff98;
-    --light-accent-5: #76f9c5;
-    --light-accent-6: #baf7f0;
+    --light-accent-5: #00ff98;
+    --light-accent-6: #76f9c5;
     --dark-accent-1: #76f9c5;
     --dark-accent-2: #46fcb3;
     --dark-accent-3: #00ff98;
@@ -500,12 +500,12 @@ p {
     --dark-accent-6: #008f56;
   }
   [spec-theme='paladin'] {
-    --light-accent-1: #a03a68;
-    --light-accent-2: #c65c8c;
-    --light-accent-3: #f48cba;
-    --light-accent-4: #ff9eb5;
-    --light-accent-5: #ffccda;
-    --light-accent-6: #fff5f7;
+    --light-accent-1: #7f1f4c;
+    --light-accent-2: #a03a68;
+    --light-accent-3: #c65c8c;
+    --light-accent-4: #f48cba;
+    --light-accent-5: #ff9eb5;
+    --light-accent-6: #ffccda;
     --dark-accent-1: #ffccda;
     --dark-accent-2: #ff9eb5;
     --dark-accent-3: #f48cba;
@@ -528,26 +528,26 @@ p {
     --dark-accent-6: #e3e3e3;
   }
   [spec-theme='rogue'] {
-    --light-accent-1: #c8bb00;
-    --light-accent-2: #e0d91a;
-    --light-accent-3: #fff468;
-    --light-accent-4: #fdf69a;
-    --light-accent-5: #eae5a8;
-    --light-accent-6: #f7f5e0;
+    --light-accent-1: #efe11b;
+    --light-accent-2: #efe11b;
+    --light-accent-3: #fff23d;
+    --light-accent-4: #fff468;
+    --light-accent-5: #fdf69a;
+    --light-accent-6: #eae5a8;
     --dark-accent-1: #eae5a8;
     --dark-accent-2: #fdf69a;
     --dark-accent-3: #fff468;
-    --dark-accent-4: #e0d91a;
-    --dark-accent-5: #c8bb00;
-    --dark-accent-6: #a69a00;
+    --dark-accent-4: #fff23d;
+    --dark-accent-5: #efe11b;
+    --dark-accent-6: #efe11b;
   }
   [spec-theme='shaman'] {
-    --light-accent-1: #003971;
-    --light-accent-2: #0052a1;
-    --light-accent-3: #0070dd;
-    --light-accent-4: #27a1f8;
-    --light-accent-5: #5cc2ff;
-    --light-accent-6: #8cd4ff;
+    --light-accent-1: #002b58;
+    --light-accent-2: #003971;
+    --light-accent-3: #0052a1;
+    --light-accent-4: #0070dd;
+    --light-accent-5: #27a1f8;
+    --light-accent-6: #5cc2ff;
     --dark-accent-1: #5cc2ff;
     --dark-accent-2: #27a1f8;
     --dark-accent-3: #0070dd;
@@ -556,12 +556,12 @@ p {
     --dark-accent-6: #002b58;
   }
   [spec-theme='warlock'] {
-    --light-accent-1: #3436a8;
-    --light-accent-2: #4d4ff0;
-    --light-accent-3: #8788ee;
-    --light-accent-4: #a3a3f9;
-    --light-accent-5: #b8b8ff;
-    --light-accent-6: #d1d1ff;
+    --light-accent-1: #1f1f6f;
+    --light-accent-2: #3436a8;
+    --light-accent-3: #4d4ff0;
+    --light-accent-4: #8788ee;
+    --light-accent-5: #a3a3f9;
+    --light-accent-6: #b8b8ff;
     --dark-accent-1: #b8b8ff;
     --dark-accent-2: #a3a3f9;
     --dark-accent-3: #8788ee;
@@ -570,12 +570,12 @@ p {
     --dark-accent-6: #1f1f6f;
   }
   [spec-theme='warrior'] {
-    --light-accent-1: #855929;
-    --light-accent-2: #9a744c;
-    --light-accent-3: #c69b6d;
-    --light-accent-4: #d4b08a;
-    --light-accent-5: #e1c0a1;
-    --light-accent-6: #f0d9c5;
+    --light-accent-1: #6b4318;
+    --light-accent-2: #855929;
+    --light-accent-3: #9a744c;
+    --light-accent-4: #c69b6d;
+    --light-accent-5: #d4b08a;
+    --light-accent-6: #e1c0a1;
     --dark-accent-1: #e1c0a1;
     --dark-accent-2: #d4b08a;
     --dark-accent-3: #c69b6d;

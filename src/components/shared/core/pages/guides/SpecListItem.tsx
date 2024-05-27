@@ -29,12 +29,14 @@ function SpecListItem({ job, spec }: Readonly<Props>) {
       className="anim bg-accent-3 text-size-4 sm:text-size-2 border-accent-1 line-clamp-1 flex flex-none flex-row items-center gap-1 rounded-md border-2 px-2 py-1 sm:px-4 sm:py-2 sm:hover:scale-[107%]"
     >
       <img
-        className="h-8 w-8 rounded-sm border border-zinc-900 sm:h-6 sm:w-6"
+        className="h-8 w-8 rounded-sm border border-light-secondary-2 sm:h-6 sm:w-6"
         src={icon}
         alt={job_spec}
       />
-      <div className="hidden font-bold text-zinc-900 lg:block">{name}</div>
-      <div className="flex-1 font-bold capitalize text-zinc-900 lg:hidden">
+      <div className="hidden overflow-hidden text-ellipsis text-nowrap font-bold text-light-secondary-2 lg:block">
+        {name}
+      </div>
+      <div className="flex-1 font-bold capitalize text-light-secondary-2 lg:hidden">
         {spec}
       </div>
       <div className="h-8 w-8 sm:hidden"></div>
