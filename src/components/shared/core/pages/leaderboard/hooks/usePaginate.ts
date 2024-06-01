@@ -1,7 +1,7 @@
 import { Player } from '@shared/core/types/leaderboard'
 import { PaginateParameters, Role } from '@shared/core/types/requests'
 import { PaginateResponse } from '@shared/core/types/response'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 import {
   Dispatch,
   SetStateAction,
@@ -99,7 +99,11 @@ export function usePaginate(): [
           } else setHasMore(true)
           setItems((currentItems) => {
             if (refresh) return response.players
-            return [...currentItems, ...response.players]
+            const newItems = [...currentItems, ...response.players]
+            return newItems.filter(
+              (item, index, self) =>
+                index === self.findIndex((t) => t.pid === item.pid)
+            )
           })
           setCount(response.count)
           if (response.players.length > 0)
@@ -110,6 +114,15 @@ export function usePaginate(): [
         }
       } catch (error) {
         console.error(error)
+        if (
+          error instanceof AxiosError &&
+          error?.response?.data.startsWith(
+            'Error getting documents: Error: 9 FAILED_PRECONDITION'
+          )
+        ) {
+          console.log(error?.response?.data.slice(108))
+        }
+
         setError(error as Error)
       } finally {
         handleLoading(false)
@@ -127,8 +140,11 @@ export function usePaginate(): [
   }, [loadMore, handleLoading])
 
   useEffect(() => {
-    loadMore()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    setFilterClass(undefined)
+    setFilterName(undefined)
+    setFilterRole(undefined)
+    setOrder(undefined)
+  }, [season])
 
   useEffect(() => {
     setItems([])
@@ -136,6 +152,10 @@ export function usePaginate(): [
       if (filterName !== undefined) setHasMore(false)
     })
   }, [season, filterName, filterClass, filterRole, order]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    loadMore()
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return [
     { items, count, error, isLoading, loadMore, hasMore },

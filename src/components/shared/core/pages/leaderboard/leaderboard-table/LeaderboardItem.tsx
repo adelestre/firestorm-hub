@@ -8,9 +8,10 @@ import { useCallback } from 'react'
 type Props = {
   player: Player
   handleClickPlayer: (player: Player) => void
+  idx: number | undefined
 }
 
-function LeaderboardItem({ player, handleClickPlayer }: Readonly<Props>) {
+function LeaderboardItem({ player, handleClickPlayer, idx }: Readonly<Props>) {
   const themeContext = useThemeContext()
   const ioColor = getIoColor(player.fsio, themeContext?.state)
   const handleClick = useCallback(() => {
@@ -22,7 +23,15 @@ function LeaderboardItem({ player, handleClickPlayer }: Readonly<Props>) {
       key={player.pid}
       handleClickPlayer={handleClick}
     >
-      <td className="p-4">{player.rank ?? '> 2000'}</td>
+      <td className={`relative p-4${idx !== undefined ? ' pr-4' : ''}`}>
+        {idx !== undefined ? idx : player.rank ?? '> 2000'}
+        {idx !== undefined && (
+          <span className="text-primary-4 absolute pl-1">
+            {' '}
+            ({player.rank ?? '> 2000'})
+          </span>
+        )}
+      </td>
       <td
         style={{
           textShadow:

@@ -65,7 +65,7 @@ function PlayerRuns({ isOpen, setIsOpen, player, season }: Readonly<Props>) {
                 <th>Affixes</th>
                 <th>Time</th>
                 <th>Players</th>
-                <th className="!pr-12">Score</th>
+                <th className="!pr-12">Time</th>
               </tr>
               {runs.map((run) => {
                 const dungeon = dungeons.find(
@@ -87,7 +87,7 @@ function PlayerRuns({ isOpen, setIsOpen, player, season }: Readonly<Props>) {
                           )
                         )}
                       </td>
-                      <td className="flex flex-row justify-center gap-1">
+                      <td className="flex h-full flex-row justify-center gap-1">
                         {run.affixes.map((affixId) => {
                           const affix = affixes.find((a) => a.id === affixId)
                           return (

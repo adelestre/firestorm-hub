@@ -22,6 +22,11 @@ function Leaderboard() {
     setPlayer(player)
   }
 
+  const isFiltered =
+    filterName.value !== undefined ||
+    filterClass.value !== undefined ||
+    filterRole.value !== undefined
+
   return (
     <div className="flex h-full w-full flex-col" spec-theme="default">
       <PlayerRuns
@@ -78,6 +83,7 @@ function Leaderboard() {
                     loadMore={loadMore}
                     hasMore={hasMore}
                     isLoading={isLoading}
+                    isFiltered={isFiltered}
                   />
                 </Suspense>
               }

@@ -13,6 +13,7 @@ type Props = {
   hasMore: boolean
   isLoading: boolean
   loadMore: () => void
+  isFiltered: boolean
 }
 
 function LeaderboardTable({
@@ -21,6 +22,7 @@ function LeaderboardTable({
   hasMore,
   isLoading,
   loadMore,
+  isFiltered,
 }: Readonly<Props>) {
   const [inifiniteRef] = useInfiniteScroll({
     loading: isLoading,
@@ -29,46 +31,51 @@ function LeaderboardTable({
     rootMargin: '0px 0px 1200px 0px',
   })
   return (
-    <table className="w-full overflow-hidden rounded-md">
-      <thead>
-        <tr className="border-secondary-4 bg-primary-1 border-b !bg-opacity-60">
-          <Suspense>
-            <LeaderboardHeaderItem title={'Rank'} />
-            <LeaderboardHeaderItem title={'Name'} />
-            <LeaderboardHeaderItem title={'FSIO'} secondLast />
-            <LeaderboardHeaderItem title={'Number of runs'} last />
-          </Suspense>
-        </tr>
-      </thead>
-      <Suspense>
-        {isLoading && (
-          <div className="fixed left-0 top-0 h-screen w-screen">
-            <Loading />
-          </div>
-        )}
-        <tbody>
-          {items.map((player) => (
-            <LeaderboardItem
-              key={player.pid}
-              player={player}
-              handleClickPlayer={handleClickPlayer}
-            />
-          ))}
-          {!isLoading && items.length == 0 ? (
-            <tr className="bg-primary-1">
-              <td colSpan={4}>
-                <p className="text-size-4 p-4  text-center">No player found</p>
-              </td>
-            </tr>
-          ) : (
-            hasMore &&
-            items.length >= 50 && (
-              <LeaderboardLoadingRows inifiniteRef={inifiniteRef} />
-            )
-          )}
-        </tbody>
-      </Suspense>
-    </table>
+    <>
+      {isLoading && (
+        <div className="fixed left-0 top-0 h-screen w-screen">
+          <Loading />
+        </div>
+      )}
+      <table className="w-full overflow-hidden rounded-md">
+        <thead>
+          <tr className="border-secondary-4 bg-primary-1 border-b !bg-opacity-60">
+            <Suspense>
+              <LeaderboardHeaderItem title={'Rank'} />
+              <LeaderboardHeaderItem title={'Name'} />
+              <LeaderboardHeaderItem title={'FSIO'} secondLast />
+              <LeaderboardHeaderItem title={'Number of runs'} last />
+            </Suspense>
+          </tr>
+        </thead>
+        <Suspense>
+          <tbody>
+            {items.map((player, idx) => (
+              <LeaderboardItem
+                key={player.pid}
+                player={player}
+                idx={isFiltered ? idx + 1 : undefined}
+                handleClickPlayer={handleClickPlayer}
+              />
+            ))}
+            {!isLoading && items.length == 0 ? (
+              <tr className="bg-primary-1">
+                <td colSpan={4}>
+                  <p className="text-size-4 p-4  text-center">
+                    No player found
+                  </p>
+                </td>
+              </tr>
+            ) : (
+              hasMore &&
+              items.length >= 50 && (
+                <LeaderboardLoadingRows inifiniteRef={inifiniteRef} />
+              )
+            )}
+          </tbody>
+        </Suspense>
+      </table>
+    </>
   )
 }
 

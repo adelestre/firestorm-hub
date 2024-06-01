@@ -55,12 +55,14 @@ function isFirstPageRequest(parameters: PaginateParameters) {
     !parameters.filterName || parameters.filterName === ''
   const isCorrectFilterClass =
     !parameters.filterClass || parameters.filterClass === ''
+  const isCorrectRole = !parameters.filterRole
   const isCorrectOrder = !parameters.order || parameters.order === 'desc'
   return (
     isCorrectLimit &&
     isCorrectAnchor &&
     isCorrectFilterName &&
     isCorrectFilterClass &&
+    isCorrectRole &&
     isCorrectOrder
   )
 }
@@ -80,9 +82,9 @@ export async function getPagination(
   } else collectionName += '_2'
   let query = db.collection(collectionName) as Query<DocumentData, DocumentData>
   query = query.limit(parameters.limit)
-  const order = parameters.order ?? 'desc'
-  query = query.orderBy('fsio', order)
-  query = query.orderBy('pid')
+  const order = parameters.order ?? 'asc'
+  query = query.orderBy('rank', order)
+  query = query.orderBy('fsio', 'desc')
   if (parameters.filterClass)
     query = query.where('pclass', '==', parameters.filterClass)
   if (parameters.filterRole)
