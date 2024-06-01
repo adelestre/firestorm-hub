@@ -1,3 +1,5 @@
+import { Role } from './requests'
+
 export type MythicRun = {
   rid: string
   pids: string[]
@@ -25,8 +27,6 @@ export type Player = {
   bruns: string[]
   runCount: number
   fsio: number
-  tank: number | null
-  healer: number | null
-  dps: number | null
+  roles: Role[]
   rank: number | null
 }

@@ -1,10 +1,12 @@
 import { CustomScroll } from 'react-custom-scroll'
 import Header from '@shared/core/utilities/Header'
 import { MdError } from 'react-icons/md'
-import { usePaginate } from '../../hooks/usePaginate'
+import { usePaginate } from './hooks/usePaginate'
 import LeaderboardTable from './leaderboard-table/LeaderboardTable'
 import LeaderboardForm from './LeaderboardForm'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
+import PlayerRuns from './PlayerRuns'
+import { Player } from '@shared/core/types/leaderboard'
 
 function Leaderboard() {
   const [
@@ -12,8 +14,22 @@ function Leaderboard() {
     { season, filterName, filterClass, filterRole, order },
   ] = usePaginate()
 
+  const [isPlayerRunsOpen, setIsPlayerRunsOpen] = useState(false)
+  const [player, setPlayer] = useState<Player | null>(null)
+
+  const handleClickPlayer = (player: Player) => {
+    setIsPlayerRunsOpen(true)
+    setPlayer(player)
+  }
+
   return (
     <div className="flex h-full w-full flex-col" spec-theme="default">
+      <PlayerRuns
+        isOpen={isPlayerRunsOpen}
+        setIsOpen={setIsPlayerRunsOpen}
+        player={player}
+        season={season.value ?? '2'}
+      />
       <Header />
       <CustomScroll heightRelativeToParent="100%">
         <div className="flex h-full w-full flex-col items-center gap-3">
@@ -47,7 +63,7 @@ function Leaderboard() {
             </div>
           )}
           {!error && (
-            <div className="flex w-full max-w-6xl flex-col items-center gap-2 p-4 pt-4 sm:p-12 sm:pt-4">
+            <div className="flex w-full max-w-6xl flex-col items-center gap-4 p-4 pt-4 sm:p-12 sm:pt-4">
               <LeaderboardForm
                 season={season}
                 filterClass={filterClass}
@@ -58,6 +74,7 @@ function Leaderboard() {
                 <Suspense>
                   <LeaderboardTable
                     items={items}
+                    handleClickPlayer={handleClickPlayer}
                     loadMore={loadMore}
                     hasMore={hasMore}
                     isLoading={isLoading}

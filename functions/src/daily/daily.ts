@@ -34,6 +34,8 @@ export async function daily() {
       players
     )
     await updateDb(newRuns, updatedPlayers)
+    log('Waiting 10s for changes to take effect...')
+    await new Promise((resolve) => setTimeout(resolve, 10000))
     await updateData(playerCount)
     log('Daily update completed')
   }

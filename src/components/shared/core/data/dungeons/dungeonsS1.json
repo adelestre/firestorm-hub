@@ -1,0 +1,50 @@
+[
+  {
+    "abbr": "TJS",
+    "id": "960_2",
+    "name": "Temple of the Jade Serpent",
+    "timer": [1800, 1440, 1080]
+  },
+  {
+    "abbr": "SBG",
+    "id": "1176_165",
+    "name": "Shadowmoon Burial Grounds",
+    "timer": [1980, 1584, 1404]
+  },
+  {
+    "abbr": "HOV",
+    "id": "1477_200",
+    "name": "Halls of Valor",
+    "timer": [2280, 1824, 1368]
+  },
+  {
+    "abbr": "COS",
+    "id": "1571_210",
+    "name": "Court of Stars",
+    "timer": [1800, 1440, 1080]
+  },
+  {
+    "abbr": "AV",
+    "id": "2515_401",
+    "name": "Azure Vault",
+    "timer": [2040, 1632, 1224]
+  },
+  {
+    "abbr": "NO",
+    "id": "2516_400",
+    "name": "Nokhud Offensive",
+    "timer": [2400, 1920, 1440]
+  },
+  {
+    "abbr": "RLP",
+    "id": "2521_399",
+    "name": "Ruby Life Pools",
+    "timer": [1800, 1440, 1080]
+  },
+  {
+    "abbr": "AA",
+    "id": "2526_402",
+    "name": "Algeth'ar Academy",
+    "timer": [1920, 1536, 1152]
+  }
+]

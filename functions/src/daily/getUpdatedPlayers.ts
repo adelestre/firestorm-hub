@@ -8,19 +8,37 @@ export function getUpdatedPlayers(
   players: Player[]
 ): { updatedPlayers: Player[]; playerCount: number } {
   let creationCounter = 0
-  let updateCounter = 0
 
   const updatedPlayers: Player[] = []
+
+  const addNewPlayer = (player: Player) => {
+    updatedPlayers.push(player)
+    players.push(player)
+    creationCounter++
+  }
+
+  const updatePlayer = (player: Player) => {
+    const p = players.find((p) => p.pid === player.pid)
+    if (!p) return
+    const idx = players.indexOf(p)
+    players[idx] = player
+    const updatedPlayer = updatedPlayers.find((up) => up.pid === player.pid)
+    if (!updatedPlayer) updatedPlayers.push(player)
+    else {
+      const upidx = updatedPlayers.indexOf(updatedPlayer)
+      updatedPlayers[upidx] = player
+    }
+  }
 
   newRuns.forEach((run) => {
     const dungeon = getDungeon(run.dungeon)
     if (!run.score && dungeon)
       run.score = scaleScore(run.time, dungeon.timer, run.lvl)
     run.pids.forEach((pid, pidx) => {
-      const player = getPlayer(players.concat(updatedPlayers), pid)
+      const player = getPlayer(players, pid)
       const role = getRole(pidx)
       if (!player) {
-        updatedPlayers.push({
+        addNewPlayer({
           pid: pid,
           name: run.pnames[pidx],
           pclass: run.pclasses[pidx],
@@ -30,7 +48,6 @@ export function getUpdatedPlayers(
           roles: [role],
           rank: null,
         })
-        creationCounter++
       } else {
         // Update player name if it has changed
         if (player.name !== run.pnames[pidx]) player.name = run.pnames[pidx]
@@ -39,42 +56,42 @@ export function getUpdatedPlayers(
 
         let found = false
         const roles: Role[] = []
-        player.bruns.forEach((pbrid) => {
-          const cbrun = getRun(runs, pbrid)
-          if (!cbrun) return
+        player.bruns.forEach((pbrid, pbidx) => {
+          const cbrun = getRun(runs.concat(newRuns), pbrid)
+          if (!cbrun) {
+            console.log('could not find run', pbrid)
+            return
+          }
           const brole = getRole(cbrun.pids.indexOf(pid))
           if (!roles.includes(brole)) roles.push(brole)
           if (
             run.dungeon === cbrun.dungeon &&
-            run.affixes[1] === cbrun.affixes[1]
+            run.affixes[0] === cbrun.affixes[0]
           ) {
             found = true
             if (run.score >= cbrun.score) {
-              const index = player.bruns.indexOf(pbrid)
-              if (index > -1) {
-                player.bruns[index] = run.rid
-                updatedPlayers.push(player)
-              }
+              player.bruns[pbidx] = run.rid
             }
           }
         })
         if (!found) {
           player.bruns.push(run.rid)
-          updatedPlayers.push(player)
         }
-        // Sanity Check, remove duplicates
-        player.bruns = [...new Set(player.bruns)]
+        // Make sure there are no duplicates
+        player.bruns.filter((value, index, self) => {
+          return self.indexOf(value) === index
+        })
 
         if (roles !== player.roles) {
           player.roles = roles
-          if (!updatedPlayers.includes(player)) updatedPlayers.push(player)
         }
+
+        updatePlayer(player)
       }
     })
   })
   updatedPlayers.forEach((player) => {
     updatefsio(player, runs.concat(newRuns))
-    updateCounter++
   })
 
   players.sort((a, b) => b.fsio - a.fsio)
@@ -85,11 +102,13 @@ export function getUpdatedPlayers(
     } else {
       player.rank = null
     }
-    if (player.rank !== previousRank) updatedPlayers.push(player)
+    if (previousRank !== player.rank) {
+      updatePlayer(player)
+    }
   })
 
   log(
-    `created ${creationCounter} users and updated ${updateCounter - creationCounter}`
+    `created ${creationCounter} users and updated ${updatedPlayers.length - creationCounter}`
   )
   return {
     updatedPlayers: updatedPlayers,

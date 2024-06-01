@@ -1,18 +1,27 @@
 import { Player } from '@shared/core/types/leaderboard'
-import ioGradient from '../ioGradient.json'
 import LeaderboardRow from './LeaderboardRow'
 import { useThemeContext } from '@shared/core/contexts/Contexts'
 import MostPlayedRoles from './MostPlayedRoles'
+import { getIoColor } from '../ioColor'
+import { useCallback } from 'react'
 
 type Props = {
   player: Player
+  handleClickPlayer: (player: Player) => void
 }
 
-function LeaderboardItem({ player }: Readonly<Props>) {
+function LeaderboardItem({ player, handleClickPlayer }: Readonly<Props>) {
   const themeContext = useThemeContext()
   const ioColor = getIoColor(player.fsio, themeContext?.state)
+  const handleClick = useCallback(() => {
+    handleClickPlayer(player)
+  }, [handleClickPlayer, player])
   return (
-    <LeaderboardRow pclass={player.pclass} key={player.pid}>
+    <LeaderboardRow
+      pclass={player.pclass}
+      key={player.pid}
+      handleClickPlayer={handleClick}
+    >
       <td className="p-4">{player.rank ?? '> 2000'}</td>
       <td
         style={{
@@ -38,10 +47,3 @@ function LeaderboardItem({ player }: Readonly<Props>) {
 }
 
 export default LeaderboardItem
-
-function getIoColor(fsio: number, theme: boolean | undefined) {
-  for (const value of ioGradient) {
-    if (fsio >= value.io) return theme ? value.colorDark : value.colorLight
-  }
-  return theme ? ioGradient[-1].colorDark : ioGradient[-1].colorLight
-}

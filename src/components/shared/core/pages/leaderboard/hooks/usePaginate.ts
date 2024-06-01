@@ -9,10 +9,7 @@ import {
   useEffect,
   useState,
 } from 'react'
-
-const baseUrl = window.location.origin + '/api/leaderboard'
-// const baseUrl =
-//   'http://127.0.0.1:5001/firestorm-hub/us-central1/api/api/leaderboard'
+import { apiBaseUrl } from '../api'
 
 export function usePaginate(): [
   {
@@ -75,7 +72,7 @@ export function usePaginate(): [
 
   const sendPaginateRequest = useCallback(
     async (refresh: boolean = false): Promise<PaginateResponse> => {
-      const response = await axios.post(baseUrl + '/paginate', {
+      const response = await axios.post(apiBaseUrl + '/paginate', {
         limit: limit,
         order: order,
         season: season,
@@ -122,15 +119,19 @@ export function usePaginate(): [
   )
 
   const reload = useCallback(async () => {
+    setItems([])
     handleLoading(true)
     setLastElement(undefined)
+    setHasMore(true)
     await loadMore(true)
   }, [loadMore, handleLoading])
 
   useEffect(() => {
     loadMore()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
   useEffect(() => {
+    setItems([])
     reload().then(() => {
       if (filterName !== undefined) setHasMore(false)
     })

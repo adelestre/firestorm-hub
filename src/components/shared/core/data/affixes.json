@@ -1,0 +1,188 @@
+[
+  {
+    "id": "11",
+    "name": "Bursting",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_whirlofblood.jpg",
+    "link": "https://www.wowhead.com/affix=11/bursting"
+  },
+  {
+    "id": "124",
+    "name": "Storming",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_cyclone.jpg",
+    "link": "https://www.wowhead.com/affix=124/storming"
+  },
+  {
+    "id": "10",
+    "name": "Fortified",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_toughness.jpg",
+    "link": "https://www.wowhead.com/affix=10/fortified"
+  },
+  {
+    "id": "135",
+    "name": "Afflicted",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_misc_emotionsad.jpg",
+    "link": "https://www.wowhead.com/affix=135/afflicted"
+  },
+  {
+    "id": "9",
+    "name": "Tyrannical",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_archaedas.jpg",
+    "link": "https://www.wowhead.com/affix=9/tyrannical"
+  },
+  {
+    "id": "136",
+    "name": "Incorporeal",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/achievement_boss_anomalus.jpg",
+    "link": "https://www.wowhead.com/affix=136/incorporeal"
+  },
+  {
+    "id": "8",
+    "name": "Sanguine",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_bloodboil.jpg",
+    "link": "https://www.wowhead.com/affix=8/sanguine"
+  },
+  {
+    "id": "6",
+    "name": "Raging",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_focusedrage.jpg",
+    "link": "https://www.wowhead.com/affix=6/raging"
+  },
+  {
+    "id": "7",
+    "name": "Bolstering",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_battleshout.jpg",
+    "link": "https://www.wowhead.com/affix=7/bolstering"
+  },
+  {
+    "id": "3",
+    "name": "Volcanic",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shaman_lavasurge.jpg",
+    "link": "https://www.wowhead.com/affix=3/volcanic"
+  },
+  {
+    "id": "123",
+    "name": "Spiteful",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofshadowprotection.jpg",
+    "link": "https://www.wowhead.com/affix=123/spiteful"
+  },
+  {
+    "id": "120",
+    "name": "Awakened",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/trade_archaeology_nerubian_obelisk.jpg",
+    "link": "https://www.wowhead.com/affix=120/awakened"
+  },
+  {
+    "id": "4",
+    "name": "Necrotic",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_necroticplague.jpg",
+    "link": "https://www.wowhead.com/affix=4/necrotic"
+  },
+  {
+    "id": "12",
+    "name": "Grievous",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_backstab.jpg",
+    "link": "https://www.wowhead.com/affix=12/grievous"
+  },
+  {
+    "id": "5",
+    "name": "Teeming",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_massteleport.jpg",
+    "link": "https://www.wowhead.com/affix=5/teeming"
+  },
+  {
+    "id": "2",
+    "name": "Skittish",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_magic_lesserinvisibilty.jpg",
+    "link": "https://www.wowhead.com/affix=2/skittish"
+  },
+  {
+    "id": "134",
+    "name": "Entangling",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_root_01.jpg",
+    "link": "https://www.wowhead.com/affix=134/entangling"
+  },
+  {
+    "id": "122",
+    "name": "Inspiring",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofspirit.jpg",
+    "link": "https://www.wowhead.com/affix=122/inspiring"
+  },
+  {
+    "id": "132",
+    "name": "Thundering",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/shaman_pvp_leaderclan.jpg",
+    "link": "https://www.wowhead.com/affix=132/thundering"
+  },
+  {
+    "id": "1",
+    "name": "Overflowing",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_volatilewater.jpg",
+    "link": "https://www.wowhead.com/affix=1/overflowing"
+  },
+  {
+    "id": "121",
+    "name": "Prideful",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_animarevendreth_buff.jpg",
+    "link": "https://www.wowhead.com/affix=121/prideful"
+  },
+  {
+    "id": "14",
+    "name": "Quaking",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_earthquake.jpg",
+    "link": "https://www.wowhead.com/affix=14/quaking"
+  },
+  {
+    "id": "13",
+    "name": "Explosive",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamering_red.jpg",
+    "link": "https://www.wowhead.com/affix=13/explosive"
+  },
+  {
+    "id": "119",
+    "name": "Beguiling",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_mindshear.jpg",
+    "link": "https://www.wowhead.com/affix=119/beguiling"
+  },
+  {
+    "id": "128",
+    "name": "Tormented",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_animamaw_orb.jpg",
+    "link": "https://www.wowhead.com/affix=128/tormented"
+  },
+  {
+    "id": "117",
+    "name": "Reaping",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_racial_embraceoftheloa_bwonsomdi.jpg",
+    "link": "https://www.wowhead.com/affix=117/reaping"
+  },
+  {
+    "id": "131",
+    "name": "Shrouded",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_nethercloak.jpg",
+    "link": "https://www.wowhead.com/affix=131/shrouded"
+  },
+  {
+    "id": "129",
+    "name": "Infernal",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_infernalbrimstone.jpg",
+    "link": "https://www.wowhead.com/affix=129/infernal"
+  },
+  {
+    "id": "16",
+    "name": "Infested",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/achievement_nazmir_boss_ghuun.jpg",
+    "link": "https://www.wowhead.com/affix=16/infested"
+  },
+  {
+    "id": "137",
+    "name": "Shielding",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/paladin_holy.jpg",
+    "link": "https://www.wowhead.com/affix=137/shielding"
+  },
+  {
+    "id": "130",
+    "name": "Encrypted",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_progenitor_orb.jpg",
+    "link": "https://www.wowhead.com/affix=130/encrypted"
+  }
+]

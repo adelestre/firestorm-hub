@@ -9,6 +9,7 @@ const LeaderboardItem = lazy(() => import('./LeaderboardItem'))
 
 type Props = {
   items: Player[]
+  handleClickPlayer: (player: Player) => void
   hasMore: boolean
   isLoading: boolean
   loadMore: () => void
@@ -16,6 +17,7 @@ type Props = {
 
 function LeaderboardTable({
   items,
+  handleClickPlayer,
   hasMore,
   isLoading,
   loadMore,
@@ -46,7 +48,11 @@ function LeaderboardTable({
         )}
         <tbody>
           {items.map((player) => (
-            <LeaderboardItem key={player.pid} player={player} />
+            <LeaderboardItem
+              key={player.pid}
+              player={player}
+              handleClickPlayer={handleClickPlayer}
+            />
           ))}
           {!isLoading && items.length == 0 ? (
             <tr className="bg-primary-1">

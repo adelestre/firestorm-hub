@@ -38,6 +38,7 @@ async function goToNextDungeon(page: Page, dungeon: Dungeon) {
   const dungSelector = `#pve_carousel > div > div.item.active > div.img_slider.dungeon_${dungeon['id']} > img`
   await page.waitForSelector(dungSelector)
   await page.click(dungSelector)
+  await page.waitForTimeout(3000)
 }
 
 async function ParseRun(

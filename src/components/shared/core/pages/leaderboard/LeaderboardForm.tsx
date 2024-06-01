@@ -239,7 +239,7 @@ function LeaderboardForm({
           sideAction={
             <button
               type="submit"
-              className="anim-slow bg-primary-4 hover:bg-secondary-2 hover:text-primary-2 text-md h-full rounded-sm px-2 sm:text-lg lg:text-xl"
+              className="anim-slow bg-primary-3 hover:bg-primary-4 text-md h-full rounded-sm px-2 font-semibold sm:text-lg lg:text-xl"
               onClick={() => filterName.setter(name === '' ? undefined : name)}
             >
               Search

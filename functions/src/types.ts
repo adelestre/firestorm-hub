@@ -47,3 +47,12 @@ export type PaginateResponse = {
   players: DocumentData[]
   count: number
 }
+
+export type PlayerRunsParameters = {
+  playerId: string
+  season: string
+}
+
+export type PlayerRunsResponse = {
+  runs: MythicRun[]
+}

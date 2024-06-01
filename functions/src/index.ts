@@ -4,10 +4,13 @@ import { log } from 'firebase-functions/logger'
 import { daily } from './daily/daily'
 import { paginate } from './api/paginate'
 import express from 'express'
+import { playerRuns } from './api/playerRuns'
 
 const api = express()
 
 api.post('/api/leaderboard/paginate', paginate)
+
+api.post('/api/leaderboard/runs', playerRuns)
 
 exports.api = onRequest(api)
 
