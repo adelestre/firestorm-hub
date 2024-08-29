@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import Loading from '@shared/core/utilities/Loading'
 
 const SpecListItem = lazy(() => import('./SpecListItem'))
+const specsWithGuide: string[] = ['monk-mistweaver', 'mage-fire']
 
 function Specs() {
   return (
@@ -21,6 +22,9 @@ function Specs() {
                     key={'home-specs-' + job + '-' + spec}
                     job={job}
                     spec={spec}
+                    hasGuide={specsWithGuide.includes(
+                      `${job}-${spec}`.toLowerCase()
+                    )}
                   />
                 ))}
               </div>

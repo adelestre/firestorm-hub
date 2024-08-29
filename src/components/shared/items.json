@@ -4,6 +4,36 @@
     "name": "Elemental Lariat",
     "link": "https://www.wowhead.com/item=193001/elemental-lariat"
   },
+  "sporecloak": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/3752753.jpg",
+    "name": "Undulating Sporecloak",
+    "link": "https://www.wowhead.com/item=205025/undulating-sporecloak?bonus=9366:9405:9376"
+  },
+  "oce": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_blue.jpg",
+    "name": "Ominous Chromatic Essence",
+    "link": "https://www.wowhead.com/item=203729/ominous-chromatic-essence?bonus=1501"
+  },
+  "rashok": {
+    "name": "Rashok's Molten Heart",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_trinket6oih_orb4.jpg",
+    "link": "https://www.wowhead.com/item=202614/rashoks-molten-heart?bonus=1501"
+  },
+  "neltCallDom": {
+    "name": "Neltharion's Call to Dominance",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_dragon_trinket_5_bronze.jpg",
+    "link": "wowhead.com/item=204202/neltharions-call-to-dominance"
+  },
+  "talisman": {
+    "name": "Talisman of the Cragshaper",
+    "link": "https://www.wowhead.com/item=137344/talisman-of-the-cragshaper?bonus=3310",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_7_0raid_trinket_06a.jpg"
+  },
+  "ward": {
+    "name": "Ward of Faceless Ire",
+    "link": "https://www.wowhead.com/item=203714/ward-of-faceless-ire?bonus=1498",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_dragon_trinket_2arcanemagical_green.jpg"
+  },
   "whisperingIcon": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_necklace_1_omni.jpg",
     "name": "Whispering Incarnate Icon",
@@ -12,7 +42,7 @@
   "alacritousAlchemistStone": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_10_alchemy_alchemystone_color1.jpg",
     "name": "Alacritous Alchemist Stone",
-    "link": "https://www.wowhead.com/item=191492/alacritous-alchemist-stone"
+    "link": "https://www.wowhead.com/item=191492/alacritous-alchemist-stone?bonus=9376:9405"
   },
   "flaskSolemnNight": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_alchemy_crystalvial.jpg",
@@ -99,10 +129,20 @@
     "name": "Regenerative Leech",
     "link": "https://www.wowhead.com/item=200033/enchant-cloak-regenerative-leech"
   },
+  "writOfLeech": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Writ of Leech",
+    "link": "https://www.wowhead.com/item=200035/enchant-cloak-writ-of-leech"
+  },
   "gracefulAvoidance": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
     "name": "Graceful Avoidance",
     "link": "https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance"
+  },
+  "writOfAvoidance": {
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
+    "name": "Writ of Avoidance",
+    "link": "https://www.wowhead.com/item=200034/enchant-cloak-writ-of-avoidance"
   },
   "devoLeech": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
@@ -126,7 +166,7 @@
   },
   "watchersLoam": {
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg",
-    "name": "Watchers' Loam",
+    "name": "Watcher's Loam",
     "link": "https://www.wowhead.com/item=200020/enchant-boots-watchers-loam"
   },
   "devoHaste": {

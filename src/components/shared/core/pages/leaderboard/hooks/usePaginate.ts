@@ -93,7 +93,10 @@ export function usePaginate(): [
         if (refresh || hasMore) {
           const response = await sendPaginateRequest(refresh)
           if (!response.players) throw new Error('No data returned')
-          if (items.length + response.players.length >= response.count) {
+          if (
+            response.players.length == 0 ||
+            items.length + response.players.length >= response.count
+          ) {
             setHasMore(false)
             console.log('No more data to load')
           } else setHasMore(true)
@@ -144,6 +147,7 @@ export function usePaginate(): [
     setFilterName(undefined)
     setFilterRole(undefined)
     setOrder(undefined)
+    setHasMore(true)
   }, [season])
 
   useEffect(() => {

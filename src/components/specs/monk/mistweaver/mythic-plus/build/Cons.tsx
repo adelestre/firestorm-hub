@@ -14,9 +14,10 @@ function Cons() {
           As seen with Lariat, it is advised to run either{' '}
           <ItemLink item={items['energizedMalygite']} /> or{' '}
           <ItemLink item={items['craftyAlexstrazite']} /> to get haste procs
-          with <ItemLink item={items['lariat']} />. If you don't have this
-          embellishment, you can equip gems for their stats depending on your
-          needs.
+          with <ItemLink item={items['lariat']} /> (
+          <ItemLink item={items['craftyYsemerald']} /> can also be good in you
+          reached Haste soft cap). If you don't have this embellishment, you can
+          equip gems for their stats depending on your needs.
         </Paragraph>
         <Paragraph>
           You should also consider equipping 1 Primalist gem (the{' '}
@@ -28,12 +29,10 @@ function Cons() {
           make you lose uptime on Lariat compared to a normal gem.
         </Paragraph>
         <Paragraph>
-          I personnaly run 7 <ItemLink item={items['energizedMalygite']} /> and
-          1 <ItemLink item={items['respIlimitedDiam']} /> (so instead of having
-          Lariat proc last 13 sec (5 sec baseline + 1 sec per gem) it only lasts
-          12 sec). I also think that since I reached the soft cap on haste, it
-          would be best to swap to <ItemLink item={items['radiantMalygite']} />{' '}
-          to get more stats overall.
+          I personnaly run 8 <ItemLink item={items['craftyYsemerald']} /> so my
+          Lariat procs last 13 sec (5 sec baseline + 1 sec per gem). But Running{' '}
+          <ItemLink item={items['fierceIlimitedDiam']} /> is also a very good
+          option (maybe even better).
         </Paragraph>
       </Section>
       <Section name="Back / Wrists">
@@ -43,7 +42,7 @@ function Cons() {
           <ItemLink item={items['fortAvoidance']} /> and your bracers with{' '}
           <ItemLink item={items['devoAvoidance']} />. If you hit the hard cap,
           you should enchant your cloak with{' '}
-          <ItemLink item={items['regenLeech']} /> and your bracers with{' '}
+          <ItemLink item={items['writOfLeech']} /> and your bracers with{' '}
           <ItemLink item={items['devoLeech']} />
         </Paragraph>
       </Section>

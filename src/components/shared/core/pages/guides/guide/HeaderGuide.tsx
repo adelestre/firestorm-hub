@@ -59,13 +59,6 @@ function HeaderGuide({ reference }: Readonly<Props>) {
           Raid
         </Button>
       </div>
-      <div className="hidden h-full w-full flex-row items-center justify-end gap-8 py-3 lg:flex">
-        <Button onClick={navigateLeaderboard} className="gap-2">
-          <MdLeaderboard />
-          M+ Leaderboard
-        </Button>
-        <div className="bg-secondary-2 h-full w-[2px] rounded-sm sm:mr-1"></div>
-      </div>
     </Header>
   ) : null
 }

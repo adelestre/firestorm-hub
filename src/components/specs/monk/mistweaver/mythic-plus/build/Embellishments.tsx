@@ -22,12 +22,9 @@ function Embellishments() {
         are viable options if you hit the haste diminishing returns soft cap.
       </Paragraph>
       <Paragraph>
-        To pair with Lariat, options are not huge for Mistweavers so you can
-        choose between <ItemLink item={items['toxicThornFootwraps']} /> or{' '}
-        <ItemLink item={items['magazineHealingDarts']} />. First one is better
-        for damage (1-2% increase to both damage and heal without{' '}
-        <ItemLink item={items['toxifiedArmorPatch']} />) and second is better
-        for healing.
+        To pair with Lariat, the very best by far is{' '}
+        <ItemLink item={items['sporecloak']} />. It's an insane cheat death that
+        will come in handy in M+
       </Paragraph>
     </Section>
   )

@@ -50,11 +50,10 @@ export async function getPlayerRuns(
   if (!player) return { runs: [] }
   const runs = []
   for (const run of player.bruns) {
-    runs.push(
-      (
-        await db.collection(RunCollectionName).doc(run).get()
-      ).data() as MythicRun
-    )
+    const r = (
+      await db.collection(RunCollectionName).doc(run).get()
+    ).data() as MythicRun
+    if (r) runs.push(r)
   }
   return { runs: runs }
 }

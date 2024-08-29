@@ -94,32 +94,32 @@ function Stats() {
           {
             key: 'my-ilvl',
             abbreviation: 'Item lvl',
-            definition: '420.6',
+            definition: '447.4',
           },
           {
             key: 'my-int',
             abbreviation: 'Intelligence ',
-            definition: '9148',
+            definition: '11066',
           },
           {
             key: 'my-crit',
             abbreviation: 'Critical Strike',
-            definition: '10% (811)',
+            definition: '16.11% (2000)',
           },
           {
             key: 'my-haste',
             abbreviation: 'Haste',
-            definition: '29% (4967)',
+            definition: '37.44% (6029)',
           },
           {
             key: 'my-mast',
             abbreviation: 'Mastery',
-            definition: '44% (445)',
+            definition: '57.75% (1035)',
           },
           {
             key: 'my-vers',
             abbreviation: 'Versatility',
-            definition: '25% | 12% (5116)',
+            definition: '23.88% | 12% (4895)',
           },
         ]}
       />

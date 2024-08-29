@@ -18,10 +18,10 @@ function FullBuild() {
         <div className="flex flex-col gap-1 ">
           <GearPiece
             item={{
-              name: 'Gaze of the Waking Fist',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_helm_leather_raidmonkprimalist_d_01.jpg',
-              link: 'https://www.wowhead.com/item=200363/gaze-of-the-waking-fist?bonus=1498',
-              ilvl: 424,
+              name: 'Steelgazer Hide Hood',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_helm_leather_legionendgame_c_01.jpg',
+              link: 'https://www.wowhead.com/item=134152/steelgazer-hide-hood?bonus=9021',
+              ilvl: 447,
             }}
             gems={[items['fierceIlimitedDiam']]}
           />
@@ -29,121 +29,113 @@ function FullBuild() {
             item={{
               name: 'Elemental Lariat',
               icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_necklace_necklace1_color3.jpg',
-              link: 'https://www.wowhead.com/item=193001/elemental-lariat?bonus=8792:9365:8846:9404',
-              ilvl: 418,
+              link: 'https://www.wowhead.com/item=193001/elemental-lariat?bonus=8792:9365:9376:9405',
+              ilvl: 447,
             }}
             gems={[
-              items['radiantMalygite'],
-              items['radiantMalygite'],
-              items['radiantMalygite'],
+              items['craftyYsemerald'],
+              items['craftyYsemerald'],
+              items['craftyYsemerald'],
             ]}
           />
           <GearPiece
             item={{
-              name: 'Mantle of the Waking Fist',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_leather_raidmonkprimalist_d_01.jpg',
-              link: 'https://www.wowhead.com/item=203539/mantle-of-the-waking-fist?bonus=1498',
-              ilvl: 424,
+              name: 'Spines of the Vermillion Forge',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_shoulder_leather_raidmonkdragon_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202504/spines-of-the-vermillion-forge?bonus=9382:1507',
+              ilvl: 450,
             }}
           />
           <GearPiece
             item={{
-              name: 'Potion-Stained Cloak',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_leather_dragondungeon_c_01_cape.jpg',
-              link: 'https://www.wowhead.com/item=193712/potion-stained-cloak?bonus=1594',
-              ilvl: 421,
+              name: 'Undulating Sporecloak',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/3752753.jpg',
+              link: 'https://www.wowhead.com/item=205025/undulating-sporecloak?bonus=9366:9405:9376',
+              ilvl: 447,
             }}
-            enchant={items['gracefulAvoidance']}
+            enchant={items['writOfAvoidance']}
           />
           <GearPiece
             item={{
-              name: 'Chestwrap of the Waking Fist',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_raidmonkprimalist_d_01.jpg',
-              link: 'https://www.wowhead.com/item=200360/chestwrap-of-the-waking-fist?bonus=1498',
-              ilvl: 421,
+              name: 'Cuirass of the Vermillion Forge',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_chest_leather_raidmonkdragon_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202509/cuirass-of-the-vermillion-forge?bonus=1501',
+              ilvl: 450,
             }}
             enchant={items['wakingStats']}
           />
           <GearPiece
             item={{
-              name: 'Life-Bound Bindings',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193419/life-bound-bindings?bonus=8846:8792',
-              ilvl: 418,
+              name: "Sea Dog's Cuffs",
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_bracer_leather_kultirasdungeon_c_01.jpg',
+              link: 'https://www.wowhead.com/item=158305/sea-dogs-cuffs?bonus=9024',
+              ilvl: 447,
             }}
-            gems={[items['radiantMalygite']]}
+            gems={[items['craftyYsemerald']]}
             enchant={items['devoAvoidance']}
           />
           <GearPiece
             item={{
-              name: 'Scepter of Drastic Measures',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_mace_1h_primalistraid_d_02.jpg',
-              link: 'https://www.wowhead.com/item=195481/scepter-of-drastic-measures',
-              ilvl: 421,
+              name: 'Erethos, the Empty Promise',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_staff_2h_dragonraid_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202565/erethos-the-empty-promise?bonus=7981:1498',
+              ilvl: 450,
             }}
             enchant={items['sophicDevo']}
-          />
-          <GearPiece
-            item={{
-              name: 'Scripture of Primal Devotion',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_offhand_1h_primalistraid_d_01.jpg',
-              link: 'https://www.wowhead.com/item=195513/scripture-of-primal-devotion',
-              ilvl: 421,
-            }}
           />
         </div>
         <div className="flex flex-col gap-1 ">
           <GearPiece
             item={{
-              name: 'Life-Bound Gloves',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193418/life-bound-gloves?bonus=8846:8792',
-              ilvl: 418,
+              name: 'Fists of the Vermillion Forge',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_glove_leather_raidmonkdragon_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202507/fists-of-the-vermillion-forge?bonus=1498',
+              ilvl: 447,
             }}
           />
           <GearPiece
             item={{
-              name: 'Life-Bound Belt',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_dragonpvp_d_01.jpg',
-              link: 'https://www.wowhead.com/item=193407/life-bound-belt?bonus=8846:8792',
-              ilvl: 418,
+              name: 'Blackbelt of the Vermillion Forge',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_raidmonkdragon_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202503/blackbelt-of-the-vermillion-forge?bonus=1507',
+              ilvl: 450,
             }}
-            gems={[items['radiantMalygite']]}
+            gems={[items['craftyYsemerald']]}
           />
           <GearPiece
             item={{
-              name: 'Legguards of the Waking Fist',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_pant_leather_raidmonkprimalist_d_01.jpg',
-              link: 'https://www.wowhead.com/item=200364/legguards-of-the-waking-fist?bonus=1498',
-              ilvl: 415,
+              name: 'Pantaloons of the Vermillion Forge',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_pant_leather_raidmonkdragon_d_01.jpg',
+              link: 'https://www.wowhead.com/item=202505/pantaloons-of-the-vermillion-forge?bonus=1504',
+              ilvl: 447,
             }}
             enchant={items['frozenSpellthread']}
           />
           <GearPiece
             item={{
-              name: 'Toxic Thorn Footwraps',
+              name: 'Treads of Restored Order',
               icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_leather_dragondungeon_c_01_boot.jpg',
-              link: 'https://www.wowhead.com/item=193452/toxic-thorn-footwraps?bonus=9404:8846',
-              ilvl: 418,
+              link: 'https://www.wowhead.com/item=193739/treads-of-restored-order?bonus=9635',
+              ilvl: 447,
             }}
             enchant={items['watchersLoam']}
           />
           <GearPiece
             item={{
-              name: "Emissary's Flamewrought Seal",
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_ring_1_fire.jpg',
-              link: 'https://www.wowhead.com/item=201992/emissarys-flamewrought-seal?bonus=1498',
-              ilvl: 421,
+              name: 'Signet of Titanic Insight',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_jewelcrafting_rings_ring2_color3.jpg',
+              link: 'https://www.wowhead.com/item=192999/signet-of-titanic-insight?bonus=9375:9405:8792',
+              ilvl: 447,
             }}
-            gems={[items['radiantMalygite']]}
-            enchant={items['devoCrit']}
+            gems={[items['craftyYsemerald']]}
+            enchant={items['devoHaste']}
           />
           <GearPiece
             item={{
-              name: 'Onyx Annulet',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_ring_4_omni.jpg',
-              link: 'https://www.wowhead.com/item=203460/onyx-annulet',
-              ilvl: 424,
+              name: 'Circle of Ascended Frost',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_ring_4_frost.jpg',
+              link: 'https://www.wowhead.com/item=193731/circle-of-ascended-frost?bonus=9635',
+              ilvl: 447,
             }}
             gems={[
               items['stormInfused'],
@@ -153,18 +145,18 @@ function FullBuild() {
           />
           <GearPiece
             item={{
-              name: 'Horn of Valor',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_horn_03.jpg',
-              link: 'https://www.wowhead.com/item=133642/horn-of-valor',
-              ilvl: 421,
+              name: 'Ominous Chromatic Essence',
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_orb_blue.jpg',
+              link: 'https://www.wowhead.com/item=203729/ominous-chromatic-essence?bonus=1501',
+              ilvl: 447,
             }}
           />
           <GearPiece
             item={{
-              name: 'Whispering Incarnate Icon',
-              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_10_dungeonjewelry_primalist_necklace_1_omni.jpg',
-              link: 'https://www.wowhead.com/item=194301/whispering-incarnate-icon?bonus=1498',
-              ilvl: 421,
+              name: "Rashok's Molten Heart",
+              icon: 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_trinket6oih_orb4.jpg',
+              link: 'https://www.wowhead.com/item=202614/rashoks-molten-heart?bonus=1501',
+              ilvl: 447,
             }}
           />
         </div>

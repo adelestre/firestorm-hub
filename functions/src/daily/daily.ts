@@ -10,7 +10,7 @@ import { getPlayers } from '../db/players'
 import { updateDb } from '../db/db'
 
 export async function daily() {
-  const browser = await puppeteer.launch({ headless: true })
+  const browser = await puppeteer.launch({ headless: false })
   const page = await browser.newPage()
   await page.goto('https://firestorm-servers.com/en/challenge/index/11')
   await page.waitForNetworkIdle()
