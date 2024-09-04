@@ -137,11 +137,8 @@ function FullBuild() {
               link: 'https://www.wowhead.com/item=193731/circle-of-ascended-frost?bonus=9635',
               ilvl: 447,
             }}
-            gems={[
-              items['stormInfused'],
-              items['desirousBlood'],
-              items['propheticTwilight'],
-            ]}
+            gems={[items['craftyYsemerald']]}
+            enchant={items['devoHaste']}
           />
           <GearPiece
             item={{
